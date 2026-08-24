@@ -130,10 +130,15 @@ export interface RangeDef {
   taperPoints?: ReadonlyArray<readonly [number, number]>;
 }
 
-/** Per-family cache section tag + fn=0x1F channel-block wire stride. */
+/** Per-family cache section tag + observed record span. */
 export interface RangeSectionMeta {
   sectionTag: number;
-  /** Ordinary records only (id < 0xff00). */
+  /** How many ordinary records (id < 0xff00) the walk COLLECTED for this section.
+   *  NOT the fn=0x1F channel-block wire stride: a walk that misses records (they are
+   *  routinely missed — an FM3 walk brings back 126 of DISTORT's 144) reports fewer,
+   *  so treat this only as a LOWER BOUND on the section's true width. Consumers that
+   *  slice channel blocks must prefer the catalog's validated stride (or the width the
+   *  fn=0x1F body itself advertises) and never let this value shrink it. */
   stride: number;
   /** Declared cache section record count, INCLUDING special table records. */
   recordCount: number;

@@ -427,6 +427,8 @@ export function buildDeviceCache(
     const grp = groupOf.get(tag) ?? [tag];
     const meta: RangeSectionMeta = {
       sectionTag: tag,
+      // Records collected, not the section's true width — see RangeSectionMeta.stride: a walk that
+      // misses records reports a short stride, so this is a lower bound, never a wire stride.
       stride: sec.size,
       recordCount: declared.get(tag) ?? sec.size,
     };

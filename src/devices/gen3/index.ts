@@ -69,6 +69,7 @@ export {
   gen3BlockParamModel,
   hasBlockParamModel,
   modelsFromBlocks,
+  decodeOne,
   FM3_BLOCK_PARAM_TABLES,
   FM3_BODY_LAYOUT,
 } from './blockParams.js';
@@ -77,6 +78,7 @@ export type {
   Gen3BodyLayout,
   DecodedBlock,
   DecodedBlockParam,
+  Gen3RawParamAccessor,
 } from './blockParams.js';
 export {
   findBlockHeader,
@@ -86,6 +88,12 @@ export {
   typeParamForFamily,
 } from './blockParams.js';
 export type { RawWritableParam } from './blockParams.js';
+
+export {
+  parseGen3BlockFile,
+  decodeGen3BlockFile,
+} from './blockFile.js';
+export type { Gen3BlockFile } from './blockFile.js';
 
 export {
   authorGen3PresetFromIR,

@@ -229,7 +229,9 @@ export interface DecodedBlock {
   slug: string;
   /** 1-based instance (a family can place up to 4). */
   instance: number;
-  /** Amp only: channel index 0-3 (A-D). Undefined for single-channel blocks. */
+  /** Channel index 0-3 (A-D) when the source is channel-blocked — the amp family in
+   *  the preset-body path, or (via `blockFile.ts`) any family in a `.blk` container.
+   *  Undefined for single-channel blocks. */
   channel?: number;
   /** The block's type/model name, when it has a single type selector. */
   typeName: string | null;
@@ -280,27 +282,37 @@ function enumLabel(tables: Gen3BlockParamTables, family: string, slug: string, p
   return `#${ord}`;
 }
 
-function decodeOne(
-  body: Uint8Array,
+/** Raw-u16-per-paramId accessor for one block's one channel. `undefined` means the
+ *  paramId isn't present at this offset — a `.blk` save from before the catalog grew
+ *  a param — and `decodeOne` skips it rather than fabricating a zero. */
+export type Gen3RawParamAccessor = (paramId: number) => number | undefined;
+
+/**
+ * Join a block's raw values (via `getRaw`) against its catalog into named, scaled,
+ * enum-labelled params. Shared by the preset-body path (`readBlockParams` below,
+ * whose accessor always resolves — a live decompressed body pads every paramId to
+ * zero) and the `.blk` container path (`blockFile.ts`'s `decodeGen3BlockFile`, whose
+ * accessor returns `undefined` for a paramId an older save never wrote).
+ */
+export function decodeOne(
   tables: Gen3BlockParamTables,
-  layout: Gen3BodyLayout,
   eid: number,
   family: string,
-  header: number,
   instance: number,
+  getRaw: Gen3RawParamAccessor,
   channel?: number,
 ): DecodedBlock {
   const slug = tables.familyToSlug?.[family] ?? family.toLowerCase();
   const typePid = typeParamFor(tables, family);
-  const chOff = channel == null ? 0 : channel * layout.ampChannelStride;
   const ranges = tables.ranges[family] ?? {};
   const catalog = tables.paramsByFamily[family] ?? [];
 
   const params: DecodedBlockParam[] = [];
   let typeName: string | null = null;
   for (const { paramId, name, displayLabel, unit } of catalog) {
+    const raw = getRaw(paramId);
+    if (raw === undefined) continue;
     const r = ranges[paramId];
-    const raw = u16(body, header + layout.paramArrayBase + 2 * paramId + chOff);
     const isType = typePid != null && paramId === typePid;
     let value: number | null = null;
     let eLabel: string | undefined;
@@ -344,9 +356,12 @@ export function readBlockParams(
       if (placedEids.has(eid - k) && tables.familyByEffectId[String(eid - k)] === family) instance++;
     }
     if (family === layout.ampFamily) {
-      for (let ch = 0; ch < layout.ampChannels; ch++) out.push(decodeOne(body, tables, layout, eid, family, header, instance, ch));
+      for (let ch = 0; ch < layout.ampChannels; ch++) {
+        const chOff = ch * layout.ampChannelStride;
+        out.push(decodeOne(tables, eid, family, instance, (paramId) => u16(body, header + layout.paramArrayBase + 2 * paramId + chOff), ch));
+      }
     } else {
-      out.push(decodeOne(body, tables, layout, eid, family, header, instance));
+      out.push(decodeOne(tables, eid, family, instance, (paramId) => u16(body, header + layout.paramArrayBase + 2 * paramId)));
     }
   }
   return out;

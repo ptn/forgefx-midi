@@ -531,7 +531,7 @@ export const FM9_PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 78, name: 'DISTORT_INEQFREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 78 (III 72 would mis-address)
   { family: 'DISTORT', paramId: 79, name: 'DISTORT_INEQGAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 79 (III 73 would mis-address)
   { family: 'DISTORT', paramId: 80, name: 'DISTORT_DRIVE2', displayLabel: 'Overdrive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 80 (III 74 would mis-address)
-  { family: 'DISTORT', paramId: 81, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4; device-true 81 (III 75 would mis-address)
+  { family: 'DISTORT', paramId: 81, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 81 (III 75 would mis-address)
   { family: 'DISTORT', paramId: 82, name: 'DISTORT_THRESHOLD', displayLabel: 'Out Comp Threshold', unit: 'db', displayMin: -60, displayMax: 0 }, // inferred from AM4; device-true 82 (III 76 would mis-address)
   { family: 'DISTORT', paramId: 83, name: 'DISTORT_MVTRIM', displayLabel: 'Master Vol Trim', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 83 (III 77 would mis-address)
   { family: 'DISTORT', paramId: 84, name: 'DISTORT_FAT', displayLabel: 'Fat', unit: 'enum' }, // inferred from AM4; device-true 84 (III 78 would mis-address)

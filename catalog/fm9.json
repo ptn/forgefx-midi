@@ -3672,9 +3672,9 @@
         "paramId": 81,
         "name": "DISTORT_COMPRESSION",
         "displayLabel": "Out Compression",
-        "unit": "percent",
+        "unit": "knob_0_10",
         "displayMin": 0,
-        "displayMax": 100
+        "displayMax": 10
       },
       {
         "family": "DISTORT",

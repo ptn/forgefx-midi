@@ -744,7 +744,7 @@ export const PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 72, name: 'DISTORT_INEQFREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DISTORT', paramId: 73, name: 'DISTORT_INEQGAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DISTORT', paramId: 74, name: 'DISTORT_DRIVE2', displayLabel: 'Overdrive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DISTORT', paramId: 75, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
+     { family: 'DISTORT', paramId: 75, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'DISTORT', paramId: 76, name: 'DISTORT_THRESHOLD', displayLabel: 'Out Comp Threshold', unit: 'db', displayMin: -60, displayMax: 0 }, // inferred from AM4
   { family: 'DISTORT', paramId: 77, name: 'DISTORT_MVTRIM', displayLabel: 'Master Vol Trim', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DISTORT', paramId: 78, name: 'DISTORT_FAT', displayLabel: 'Fat', unit: 'enum' }, // inferred from AM4
@@ -2982,7 +2982,7 @@ export const PARAMS_BY_FAMILY: Readonly<Record<string, readonly Param[]>> = {
     { family: 'DISTORT', paramId: 72, name: 'DISTORT_INEQFREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
     { family: 'DISTORT', paramId: 73, name: 'DISTORT_INEQGAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
     { family: 'DISTORT', paramId: 74, name: 'DISTORT_DRIVE2', displayLabel: 'Overdrive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-    { family: 'DISTORT', paramId: 75, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
+    { family: 'DISTORT', paramId: 75, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
     { family: 'DISTORT', paramId: 76, name: 'DISTORT_THRESHOLD', displayLabel: 'Out Comp Threshold', unit: 'db', displayMin: -60, displayMax: 0 }, // inferred from AM4
     { family: 'DISTORT', paramId: 77, name: 'DISTORT_MVTRIM', displayLabel: 'Master Vol Trim', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
     { family: 'DISTORT', paramId: 78, name: 'DISTORT_FAT', displayLabel: 'Fat', unit: 'enum' }, // inferred from AM4
@@ -5289,7 +5289,7 @@ export const PARAM_BY_KEY: Readonly<Record<string, Param>> = {
   'DISTORT.DISTORT_INEQFREQ': { family: 'DISTORT', paramId: 72, name: 'DISTORT_INEQFREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   'DISTORT.DISTORT_INEQGAIN': { family: 'DISTORT', paramId: 73, name: 'DISTORT_INEQGAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   'DISTORT.DISTORT_DRIVE2': { family: 'DISTORT', paramId: 74, name: 'DISTORT_DRIVE2', displayLabel: 'Overdrive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  'DISTORT.DISTORT_COMPRESSION': { family: 'DISTORT', paramId: 75, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
+   'DISTORT.DISTORT_COMPRESSION': { family: 'DISTORT', paramId: 75, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   'DISTORT.DISTORT_THRESHOLD': { family: 'DISTORT', paramId: 76, name: 'DISTORT_THRESHOLD', displayLabel: 'Out Comp Threshold', unit: 'db', displayMin: -60, displayMax: 0 }, // inferred from AM4
   'DISTORT.DISTORT_MVTRIM': { family: 'DISTORT', paramId: 77, name: 'DISTORT_MVTRIM', displayLabel: 'Master Vol Trim', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   'DISTORT.DISTORT_FAT': { family: 'DISTORT', paramId: 78, name: 'DISTORT_FAT', displayLabel: 'Fat', unit: 'enum' }, // inferred from AM4

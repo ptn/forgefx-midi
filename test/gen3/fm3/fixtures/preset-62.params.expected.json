@@ -1402,7 +1402,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "percent"
+          "unit": "knob_0_10"
         },
         {
           "paramId": 78,
@@ -2733,7 +2733,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "percent"
+          "unit": "knob_0_10"
         },
         {
           "paramId": 78,
@@ -4064,7 +4064,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "percent"
+          "unit": "knob_0_10"
         },
         {
           "paramId": 78,
@@ -5395,7 +5395,7 @@
           "kind": "float",
           "raw": 3277,
           "value": 0.500045777764214,
-          "unit": "percent"
+          "unit": "knob_0_10"
         },
         {
           "paramId": 78,

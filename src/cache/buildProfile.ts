@@ -22,6 +22,13 @@ import { buildDeviceCache } from './assign.js';
 import type { BuiltCacheData, CacheRecord, DeviceParam } from './types.js';
 
 /**
+ * Current cache format schema. Bump whenever the live-walk classification or the section→family
+ * assignment shape changes in a way that would make a previously-persisted cache serve wrong data
+ * (e.g. the enum/float kind heuristic). Consuming runtimes reject docs whose `meta.schema` differs.
+ */
+export const CACHE_SCHEMA = 1;
+
+/**
  * Where the decoded cache records come from.
  *   - `bytes`: a raw decoded `.cache` buffer (walked here).
  *   - `live`: an injected async producer of already-decoded records (a device
@@ -41,6 +48,9 @@ export interface BuiltCache extends BuiltCacheData {
   /** Firmware version string, when known (e.g. '12.0'). */
   firmware?: string;
   meta: {
+    /** Cache format version — bumped whenever the walk/assign shape changes such that an older
+     *  persisted doc must not be trusted (a stale build would serve wrong classifications). */
+    schema?: number;
     /** Total decoded records consumed (incl. special table records). */
     recordCount: number;
     /** Caller-supplied build timestamp; never wall-clock-stamped here. */
@@ -74,6 +84,7 @@ export async function buildCache(
   const data = buildDeviceCache(records, params, seeds);
 
   const meta: BuiltCache['meta'] = {
+    schema: CACHE_SCHEMA,
     recordCount: records.length,
     source: source.kind,
   };

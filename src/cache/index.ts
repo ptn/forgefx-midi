@@ -7,7 +7,7 @@
 export { parseCacheRecords, WalkError } from './records.js';
 export { buildDeviceCache, HW_SEEDS } from './assign.js';
 export type { BuildDeviceCacheOptions } from './assign.js';
-export { buildCache } from './buildProfile.js';
+export { buildCache, CACHE_SCHEMA } from './buildProfile.js';
 export type { RecordSource, BuiltCache } from './buildProfile.js';
 export {
   liveWalk,

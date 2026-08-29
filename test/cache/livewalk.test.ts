@@ -36,6 +36,7 @@ import {
   liveSource,
   VIEW_DEFINITION,
   VIEW_ENUM_LABEL,
+  VIEW_VALUE,
 } from '../../src/cache/index.js';
 import type { CacheRecord, EnumRecord } from '../../src/cache/types.js';
 import { FM3_PARAMS } from '../../src/gen3/fm3/index.js';
@@ -44,7 +45,7 @@ import { assertFm3Equivalence } from './oracle.js';
 const FIXTURES = join(dirname(fileURLToPath(import.meta.url)), 'fixtures');
 const FM3 = 0x11;
 
-export const LIVEWALK_CASE_COUNT = 15;
+export const LIVEWALK_CASE_COUNT = 16;
 
 // ===========================================================================
 // Test-only wire ENCODER (inverse of the liveWalk codec)
@@ -144,6 +145,12 @@ function definitionBlockScaled(r: CacheRecord, scale: number): Uint8Array {
 function labelReply(label: string, param: number, tag = 0x3a): Uint8Array {
   const raw = Uint8Array.from([...label].map((c) => c.charCodeAt(0) & 0x7f));
   return replyFrame(VIEW_ENUM_LABEL, param, tag, raw);
+}
+
+/** A view-0x00 formatted-value reply, e.g. '200.00 Hz' (device-true readout). */
+function valueReply(value: string, param: number, tag = 0x3a): Uint8Array {
+  const raw = Uint8Array.from([...value].map((c) => c.charCodeAt(0) & 0x7f));
+  return replyFrame(VIEW_VALUE, param, tag, raw);
 }
 
 // ===========================================================================
@@ -613,4 +620,28 @@ export async function runLiveWalk(): Promise<void> {
     if (defQueries > 8) fail(`block 0 not skipped early: ${defQueries} def queries (probe depth must cut it short)`);
   }
   console.log('  cache/livewalk: real FM3 block-0 junk definitions are absent — no records, no 0x1f, early skip');
+
+  // ---- Case 16: continuous unit vetoes the enum heuristic ------------------
+  // CABINET_LOCUT1/2 (FM3 paramId 62/63) walk with scale==0, step==0 and integral
+  // 20..200 bounds — the enum signature — but their device-true value string carries
+  // a continuous 'Hz' unit. The heuristic must not tag them enum (that renders a
+  // dropdown in Axis); a captured continuous unit downgrades the record to float.
+  {
+    const rec: CacheRecord = { kind: 'float', section: 96, offset: 0, id: 0, tc: 2, min: 20, max: 200, def: 20, step: 0, t1: 0, t2: 0 };
+    const t: LiveTransport = {
+      request(q) {
+        const view = q[6]!;
+        const param = q[10]! | (q[11]! << 7);
+        if (view === VIEW_DEFINITION && param === 0) return Promise.resolve(replyFrame(VIEW_DEFINITION, 0, 0x3a, definitionBlockScaled(rec, 0)));
+        if (view === VIEW_ENUM_LABEL) return Promise.resolve(endOfRangeFrame(VIEW_ENUM_LABEL, param));
+        if (view === VIEW_VALUE && param === 0) return Promise.resolve(valueReply('200.00 Hz', 0));
+        return Promise.resolve(sentinelFrame(view, param));
+      },
+    };
+    const recs = await liveWalk(t, { model: FM3, blocks: [96], maxParamId: 0 });
+    if (recs.length !== 1) fail(`LOCUT-style param produced ${recs.length} records (must be 1)`);
+    if (recs[0]!.kind !== 'float') fail(`continuous-unit param mis-classified as ${recs[0]!.kind} (must be float)`);
+    if (recs[0]!.unit !== 'Hz') fail(`continuous-unit param lost its unit: got ${recs[0]!.unit}`);
+  }
+  console.log('  cache/livewalk: a captured continuous unit vetoes the enum heuristic (LOCUT 20..200 Hz)');
 }

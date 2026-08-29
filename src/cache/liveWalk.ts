@@ -453,7 +453,7 @@ function invertTaper(
 }
 
 function buildRecord(block: number, param: number, d: LiveDefinition, labels: readonly string[], unit?: string, taper?: FloatTaper): CacheRecord {
-  const enumKind = labels.length > 0 || d.kind === 'enum';
+  const enumKind = labels.length > 0 || (d.kind === 'enum' && !unit);
   if (enumKind) {
     let count = Math.round(d.max - d.min + 1);
     if (count < 1) count = labels.length;

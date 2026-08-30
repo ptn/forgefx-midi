@@ -210,7 +210,11 @@ export {
   buildRequestPresetDump,
   isGen3BroadcastFrame,
   assembleGen3BlockBulkRead,
+  buildGen3BlockBulkWrite,
   FN_BLOCK_BULK_READ,
+  FN_BROADCAST_HEAD,
+  FN_BROADCAST_BODY,
+  FN_BROADCAST_END,
   FN_REQUEST_PRESET_DUMP,
   createModernFractalCodec,
 } from './setParam.js';
@@ -220,6 +224,7 @@ export type {
   StatusDumpEntry,
   AxeFxIIIParameterFrameKind,
   Gen3BlockBulkRead,
+  Gen3BlockBulkWrite,
   ModernFractalCodec,
   Gen3BankSelectMode,
 } from './setParam.js';

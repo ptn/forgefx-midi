@@ -627,15 +627,18 @@ export function parseStateBroadcast(bytes: readonly number[]): {
 // observed to emit). The device emits this burst both on a front-panel edit and as the
 // response to an fn=0x1F bulk-read poll. The burst is four frames:
 //
-//   0x74 head  F0 00 01 74 [model] 74 [blockId:14b] [itemCount:14b] [flag] [cs] F7
-//   0x75 body  F0 00 01 74 [model] 75 [sectionId] [flag] [N × packValue16] [cs] F7
-//   0x75 tail  (a continuation section; sectionId differs)
+//   0x74 head  F0 00 01 74 [model] 74 [blockId:14b] [itemCount:14b] [cs] F7
+//   0x75 body  F0 00 01 74 [model] 75 encode14(pageLen) [N × packValue16] [cs] F7
+//   0x75 tail  (a continuation section; pageLen differs)
 //   0x76 end   F0 00 01 74 [model] 76 [cs] F7
 //
 // The body carries one 3-septet packValue16 per parameter in device-true
 // paramId order (body index i == that block family's paramId i — validated
-// against the mined FM9 catalog). Read-only decode of device-emitted bytes;
-// emits nothing on the wire.
+// against the mined FM9 catalog). The head has NO flag byte after itemCount
+// (12 B total); the 0x75 body's bytes 6-7 are the page's 14-bit value-count
+// (`encode14(pageLen)`), paged every 256 values — proven against two `.blk`
+// fixtures. These frames are decoded read-only here; the host→device WRITE
+// twin is `buildGen3BlockBulkWrite` (same envelope, same bytes 6-7).
 
 /** Parse the 0x74 head of a gen-3 state-broadcast burst → which block + item count. */
 export function parseGen3StateBroadcastHead(bytes: readonly number[]): {
@@ -861,6 +864,86 @@ export function assembleGen3BlockBulkRead(
     throw new Error('assembleGen3BlockBulkRead: no 0x74 head frame in the burst');
   }
   return { blockId: head.blockId, itemCount: head.itemCount, values };
+}
+
+// ── 0x74/0x75/0x76 gen-3 block bulk WRITE (host → device) ──────────
+//
+// The write twin of the 0x1F bulk-read burst. Applying a saved `.blk` block
+// (or any whole-block value set) back to the device is a single
+// 0x74 head / 0x75×N body / 0x76 end burst — the same frames FM3-Edit emits
+// when it applies a saved block, and the same frames the `.blk` file stores.
+//
+// KEY FINDING (byte-verified against two `.blk` fixtures): the 0x75 body's
+// bytes 6-7 are NOT a sectionId+flag pair — they are the 14-bit value-count
+// for that body page (`encode14(pageLen)`), paged every 256 values:
+//
+//   head  F0 00 01 74 [model] 74 encode14(blockId) encode14(itemCount) [cs] F7   (12 B, NO flag byte)
+//   body  F0 00 01 74 [model] 75 encode14(pageLen) [pageLen × packValue16] [cs] F7 (pageLen ≤ 256)
+//   end   F0 00 01 74 [model] 76 [cs] F7
+//
+// `assembleGen3BlockBulkRead` is the exact inverse — it concatenates 0x75
+// bodies and ignores bytes 6-7, which is why the read path already works
+// regardless of that field. The writer must still emit `encode14(pageLen)`
+// (not `[0x00,0x00]`), matching the editor's own burst.
+
+export const FN_BROADCAST_HEAD = 0x74;
+export const FN_BROADCAST_BODY = 0x75;
+export const FN_BROADCAST_END = 0x76;
+
+/** Max values per 0x75 body page (the gen-3 whole-block page size). */
+const BULK_WRITE_PAGE_SIZE = 256;
+
+/** A whole-block value set written in one 0x74/0x75/0x76 burst. */
+export interface Gen3BlockBulkWrite {
+  /** Block/effect id for the 0x74 head (the target grid slot). */
+  blockId: number;
+  /** Value count the head advertises; must equal `values.length`. */
+  itemCount: number;
+  /** Positional wire values; index i == device-true paramId i (channel-blocked). */
+  values: number[];
+}
+
+/**
+ * Build the 0x74/0x75…/0x76 burst that applies a whole block's values to
+ * `blockId` in one atomic write — the same envelope FM3-Edit emits to apply
+ * a saved `.blk` block. Returns the frames in wire order; the caller flattens
+ * and sends them back-to-back.
+ *
+ * Values are channel-blocked exactly like the read path (`index = channel ×
+ * stride + paramId`); the burst is positional and remaps nothing. The body
+ * pages every 256 values, each page's bytes 6-7 carrying `encode14` of its
+ * own count. Rejection arrives as a 0x64 MULTIPURPOSE_RESPONSE; the burst is
+ * fire-and-forget (mirroring preset writes), so rejection is best-effort.
+ */
+export function buildGen3BlockBulkWrite(
+  spec: Gen3BlockBulkWrite,
+  modelByte: number = AXE_FX_III_MODEL_ID,
+): number[][] {
+  const { blockId, itemCount, values } = spec;
+  if (!Number.isInteger(blockId) || blockId < 0 || blockId > 0x3fff) {
+    throw new Error(`buildGen3BlockBulkWrite: blockId out of range (0..16383): ${blockId}`);
+  }
+  if (!Number.isInteger(itemCount) || itemCount < 0) {
+    throw new Error(`buildGen3BlockBulkWrite: itemCount must be a non-negative integer: ${itemCount}`);
+  }
+  if (values.length !== itemCount) {
+    throw new Error(`buildGen3BlockBulkWrite: values.length ${values.length} !== itemCount ${itemCount}`);
+  }
+
+  const frames: number[][] = [];
+  frames.push(
+    buildEnvelope(FN_BROADCAST_HEAD, [...encode14(blockId), ...encode14(itemCount)], modelByte),
+  );
+
+  for (let i = 0; i < values.length; i += BULK_WRITE_PAGE_SIZE) {
+    const page = values.slice(i, i + BULK_WRITE_PAGE_SIZE);
+    const payload: number[] = [...encode14(page.length)];
+    for (const value of page) payload.push(...packValue16(value));
+    frames.push(buildEnvelope(FN_BROADCAST_BODY, payload, modelByte));
+  }
+
+  frames.push(buildEnvelope(FN_BROADCAST_END, [], modelByte));
+  return frames;
 }
 
 // ── SET_GRID_CELL / block INSERT (fn=0x01 sub=0x32) ────────────────
@@ -2362,6 +2445,8 @@ export interface ModernFractalCodec {
   buildBlockBulkReadPoll(effectId: number): number[];
   isGen3BroadcastFrame(bytes: readonly number[], fn: 0x74 | 0x75 | 0x76): boolean;
   assembleGen3BlockBulkRead(frames: readonly (readonly number[])[]): Gen3BlockBulkRead;
+  // fn=0x74/0x75/0x76 block bulk-write (apply a whole block's values in one burst).
+  buildGen3BlockBulkWrite(spec: Gen3BlockBulkWrite): number[][];
   // ── added for the per-device driver migration (2026-07): the full builder/
   //    parser surface a device driver needs, bound to one model byte so no
   //    call site can fall back to the 0x10 default. ──
@@ -2434,6 +2519,7 @@ export function createModernFractalCodec(
     buildBlockBulkReadPoll: (e) => buildBlockBulkReadPoll(e, modelByte),
     isGen3BroadcastFrame: (b, fn) => isGen3BroadcastFrame(b, fn, modelByte),
     assembleGen3BlockBulkRead: (frames) => assembleGen3BlockBulkRead(frames, modelByte),
+    buildGen3BlockBulkWrite: (spec) => buildGen3BlockBulkWrite(spec, modelByte),
     buildGetBypass: (e) => buildGetBypass(e, modelByte),
     isSetGetBypassResponse: (b) => isSetGetBypassResponse(b, modelByte),
     parseBypassResponse: (b) => parseBypassResponse(b, modelByte),

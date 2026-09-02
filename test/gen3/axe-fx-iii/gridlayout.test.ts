@@ -118,6 +118,68 @@ cases.push(() => {
   assert(threw, 'a frame too short for the grid region must throw');
 });
 
+// ── FM3 (model 0x11): 32-bit-per-cell, column-major 12x4 layout ──
+// Byte-exact against two real FM3 responses per gridLayout.ts; these cases lock the offsets/strides
+// and the cable-mask normalization (bits 4-7 of the cable byte -> source rows 0-3) against drift.
+const FM3 = 0x11;
+const FM3_REGION_OFFSET = 366;
+const FM3_BASE_BIT = 6;
+const FM3_COL_STRIDE = 128;
+const FM3_ROW_STRIDE = 32;
+
+function buildFm3Frame(
+  cells: { col: number; row: number; id: number; type: number; cable: number }[],
+): number[] {
+  const region = new Array(230).fill(0);
+  for (const c of cells) {
+    const base = FM3_BASE_BIT + c.col * FM3_COL_STRIDE + c.row * FM3_ROW_STRIDE;
+    writeBitsMsb(region, base + 0, c.id, 12); // bits 31-20: effect id / shunt index
+    writeBitsMsb(region, base + 16, c.type, 8); // bits 15-8: 0x00 block, 0x40 shunt
+    writeBitsMsb(region, base + 24, c.cable << 4, 8); // bits 7-0: source rows in the HIGH nibble
+  }
+  return [0xf0, ...new Array(FM3_REGION_OFFSET).fill(0), ...region, 0xf7];
+}
+
+// 6. FM3 round-trip: real block, shunt, and a cross-row cable mask.
+cases.push(() => {
+  const frame = buildFm3Frame([
+    { col: 0, row: 0, id: 58, type: 0x00, cable: 0b0000 }, // Amp 1, no input
+    { col: 1, row: 0, id: 1024, type: 0x40, cable: 0b0001 }, // shunt fed from row 0
+    { col: 2, row: 3, id: 46, type: 0x00, cable: 0b1001 }, // Comp fed from rows 0 and 3
+  ]);
+  const cells = parseGen3GridLayout(frame, FM3);
+  assert(cells.length === 3, `FM3: expected 3 placed cells, got ${cells.length}`);
+
+  const amp = cells.find((c) => c.col === 0 && c.row === 0)!;
+  assert(amp.effectId === 58 && !amp.isShunt, 'FM3 col0row0 should be Amp (id 58)');
+
+  const shunt = cells.find((c) => c.col === 1 && c.row === 0)!;
+  assert(shunt.isShunt && shunt.shuntIndex === 1024, 'FM3 col1row0 should be a shunt carrying its stored id');
+  assert(shunt.cableInputMask === 0b0001, 'FM3 shunt cable mask normalizes to source row 0');
+
+  const comp = cells.find((c) => c.col === 2 && c.row === 3)!;
+  assert(comp.effectId === 46, 'FM3 col2row3 should be Comp (id 46)');
+  assert(comp.cableInputMask === 0b1001, 'FM3 cross-row cable mask round-trip (rows 0 + 3)');
+});
+
+// 7. FM3 uses 4 rows / 12 columns — a cell beyond that geometry is not decoded.
+cases.push(() => {
+  const cells = parseGen3GridLayout(buildFm3Frame([{ col: 12, row: 0, id: 58, type: 0x00, cable: 0 }]), FM3);
+  assert(cells.length === 0, 'FM3: column 12 is outside the 12-column grid');
+});
+
+// 8. FM3 empty grid + too-short frame.
+cases.push(() => {
+  assert(parseGen3GridLayout(buildFm3Frame([]), FM3).length === 0, 'FM3: an empty grid yields zero cells');
+  let threw = false;
+  try {
+    parseGen3GridLayout([0xf0, 0x00, 0x01, 0xf7], FM3);
+  } catch {
+    threw = true;
+  }
+  assert(threw, 'FM3: a frame too short for the grid region must throw');
+});
+
 export function runGen3GridLayoutTests(): void {
   for (const c of cases) c();
 }

@@ -12,6 +12,16 @@ export {
   type Fm9ParamRange,
   type Fm9RangeFamilyMeta,
 } from './ranges.generated.js';
+// FM9_RANGES with the discrete overlay applied — the READ-side counterpart of
+// FM9_ROUNDTRIP_DISCRETE above (which factory.ts already applies on the
+// write/SET-encoding path). Consumers that classify params as continuous vs.
+// discrete for DISPLAY (knob vs. toggle/select) should use this, not the raw
+// generated FM9_RANGES.
+import { applyDiscreteOverlay } from '../discreteOverlay.js';
+import { FM9_PARAMS_BY_FAMILY } from './params.js';
+import { FM9_RANGES } from './ranges.generated.js';
+import { FM9_ROUNDTRIP_DISCRETE } from './discreteOverlay.js';
+export const FM9_RANGES_CLASSIFIED = applyDiscreteOverlay(FM9_RANGES, FM9_PARAMS_BY_FAMILY, FM9_ROUNDTRIP_DISCRETE);
 export {
   FM9_EFFECT_ID_TABLE,
   FM9_EFFECT_IDS,

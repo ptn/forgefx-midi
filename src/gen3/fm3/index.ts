@@ -35,6 +35,7 @@ export {
   type Fm3EffectAddressing,
 } from './effectIds.js';
 export { FM3_LAYOUTS } from './layouts.generated.js';
+export { FM3_RENDERER } from './renderer.generated.js';
 export {
   normalizeWidget,
   EDITOR_WIDGET_KINDS,
@@ -48,6 +49,10 @@ export {
   type EditorCrossBlockRef,
   type EditorWidgetKind,
   type EditorFwRange,
+  type EditorPageLayout,
+  type EditorWidgetBounds,
+  type EditorRendererProfile,
+  type EditorControlRenderMeta,
 } from '../../editorLayouts.js';
 export {
   FM3_FC_EFFECT_ID,

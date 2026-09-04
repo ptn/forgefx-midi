@@ -72,6 +72,54 @@ export interface EditorCrossBlockRef {
   paramId: number | null;
 }
 
+/**
+ * Typed, renderer-relevant per-control metadata from the layout XML — the fields
+ * the editor authors on a control beyond its position and binding. Preserved
+ * verbatim (typed) so the renderer never has to re-derive them, and so the
+ * sweep test can assert none are silently dropped. Named for what they mean,
+ * not for the private XML spelling.
+ */
+export interface EditorControlRenderMeta {
+  /** Section-heading span: `sectionLabel_col_count` / `sectionLabel_pixel_count`. */
+  sectionSpan?: { cols?: number; pixels?: number };
+  /** `min_dB` — meter floor in dB. */
+  minDb?: number;
+  /** `max_dB` — meter ceiling in dB. */
+  maxDb?: number;
+  /** `seperator_height` — vertical-rule (`labelSeperator`) height. */
+  separatorHeight?: number;
+  /** `controllingParamName` + `controllingParamValue` — visibility/alternate gate:
+   *  this control renders when the named param's value is in the comma-joined list. */
+  controllingParamName?: string;
+  controllingParamValue?: string;
+  /** `secondaryParameterName` — a second param this control also reads/writes. */
+  secondaryParameterName?: string;
+  /** `parameterOffset` — index offset into a repeated parameter group. */
+  parameterOffset?: number;
+  /** `lock` — the param whose value locks this control. */
+  lock?: string;
+  /** `graphIndex` — comma-joined graph band/ordinal list. */
+  graphIndex?: string;
+  /** `graphOScope` — the graph is an oscilloscope. */
+  graphOScope?: boolean;
+  /** `graphMarkerX` — the param that positions a graph marker on the X axis. */
+  graphMarkerX?: string;
+  /** `dynamicParamInfo` / `dynamicParamId` — dynamic-parameter flags. */
+  dynamicParamInfo?: boolean;
+  dynamicParamId?: boolean;
+  /** `knobDirection` — `'bipolar'` | `'reverse'`. */
+  knobDirection?: string;
+  /** `disabledText` — the caption shown while disabled (e.g. `'--'`). */
+  disabledText?: string;
+  /** `ctrl_label_color` — control label colour. */
+  ctrlLabelColor?: string;
+  /** `markerColor` / `useMarker` — graph marker styling. */
+  markerColor?: string;
+  useMarker?: boolean;
+  /** `message` — the device message this control triggers (e.g. `'MESSAGE_EXECUTE'`). */
+  message?: string;
+}
+
 /** One control on an editor page. */
 export interface EditorLayoutControl {
   /** Editor caption (HTML entities decoded; may contain `\n`). '' if none. */
@@ -90,6 +138,12 @@ export interface EditorLayoutControl {
   crossBlock?: EditorCrossBlockRef;
   /** Per-control firmware gate, when present. */
   fw?: EditorFwRange;
+  /** Typed per-control rendering metadata (section span, meter dB range, gates, …). */
+  render?: EditorControlRenderMeta;
+  /** Server-resolved outer widget bounds (from the renderer profile's `widgetBounds`).
+   *  NOT present in the raw generated data — the server resolves `rawWidget` and
+   *  attaches it so the renderer sizes every control from device metadata. */
+  bounds?: EditorWidgetBounds;
 }
 
 /** One row of controls (editor order). */
@@ -110,6 +164,13 @@ export interface EditorLayoutPage {
   rows: EditorLayoutRow[];
   /** Firmware gate for the whole page, when present. */
   fw?: EditorFwRange;
+  /** The `PageLayout` name this page is drawn on (e.g. `'LAYOUT_MIXER2'`). The
+   *  server resolves it to an `EditorPageLayout` geometry when serving. */
+  layout?: string;
+  /** Server-resolved page geometry (the `EditorPageLayout` this page's `layout`
+   *  names). NOT present in the raw generated data — the server resolves and
+   *  attaches it so the renderer never reproduces PageLayout constants. */
+  geometry?: EditorPageLayout;
   /**
    * Block-type / amp-model selector value(s) that activate this page, as the
    * editor's comma-joined list (e.g. amp pages keyed by `DISTORT_TYPE`). Only
@@ -154,6 +215,59 @@ export interface EditorBlockLayout {
 
 /** A device's editor layouts, keyed by catalog family symbol. */
 export type DeviceEditorLayouts = Readonly<Record<string, EditorBlockLayout>>;
+
+/**
+ * One `PageLayout` entry from an editor's `__components.xml` — the geometry the
+ * device-authored page is laid out on. Pages reference one by name
+ * (`EditorLayoutPage.layout`); the renderer resolves that name to these values
+ * and uses them for the parameter/mixer baselines, per-section horizontal
+ * pitch, and the Bypass / Scene Ignore / Kill Dry button anchors.
+ */
+export interface EditorPageLayout {
+  /** The `name` attribute (e.g. `'LAYOUT_MIXER2'`). */
+  name: string;
+  /** X origin of the parameters section. */
+  parametersX?: number;
+  /** Y origin of the parameters section (first parameters row). */
+  parametersY?: number;
+  /** Horizontal pitch between parameter columns. */
+  parametersSpacingX?: number;
+  /** Vertical pitch between parameter rows. */
+  parametersSpacingY?: number;
+  /** X origin of the mixer section. */
+  mixerX?: number;
+  /** Y origin of the mixer section (first mixer row). */
+  mixerY?: number;
+  /** Horizontal pitch between mixer columns. */
+  mixerSpacingX?: number;
+  /** Vertical pitch between mixer rows. */
+  mixerSpacingY?: number;
+  /** Absolute `"x,y"` anchor for the Bypass button, when supplied. */
+  btnBypassPosition?: string;
+  /** Absolute `"x,y"` anchor for the Scene Ignore button, when supplied. */
+  btnIgnoreScenePosition?: string;
+  /** Absolute `"x,y"` anchor for the Kill Dry button, when supplied. */
+  btnKillDryPosition?: string;
+}
+
+/** Outer box of one editor widget, in device canvas pixels (`__components.xml`). */
+export interface EditorWidgetBounds {
+  w: number;
+  h: number;
+}
+
+/**
+ * A device's renderer profile: the `__components.xml`-derived geometry that is
+ * shared across every page of the device's layouts. Emitted per device by the
+ * generator as a sibling of the layout data; the server resolves each page's
+ * `layout` name and each control's `rawWidget` against it when serving.
+ */
+export interface EditorRendererProfile {
+  /** PageLayout entries by name. */
+  pageLayouts: Readonly<Record<string, EditorPageLayout>>;
+  /** Widget outer bounds by editor `type` (rawWidget) token. */
+  widgetBounds: Readonly<Record<string, EditorWidgetBounds>>;
+}
 
 /**
  * Map an editor `type` string to a coarse {@link EditorWidgetKind}. Prefix

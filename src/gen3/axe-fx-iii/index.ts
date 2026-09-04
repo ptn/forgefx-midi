@@ -261,6 +261,7 @@ export {
 // keyed by catalog family. Powers editor-authentic block-editor tabs incl.
 // Setup (Global) / Controllers / Modifier. See `layouts.generated.ts`.
 export { AXE3_LAYOUTS } from './layouts.generated.js';
+export { AXE3_RENDERER } from './renderer.generated.js';
 export {
   normalizeWidget,
   EDITOR_WIDGET_KINDS,
@@ -274,6 +275,10 @@ export {
   type EditorCrossBlockRef,
   type EditorWidgetKind,
   type EditorFwRange,
+  type EditorPageLayout,
+  type EditorWidgetBounds,
+  type EditorRendererProfile,
+  type EditorControlRenderMeta,
 } from '../../editorLayouts.js';
 
 // Live telemetry (tuner / output meters / CPU) + the FM3-validated tempo

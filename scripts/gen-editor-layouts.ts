@@ -43,7 +43,11 @@ import {
   type EditorLayoutPage,
   type EditorLayoutRow,
   type EditorLayoutControl,
+  type EditorControlRenderMeta,
   type EditorFwRange,
+  type EditorPageLayout,
+  type EditorWidgetBounds,
+  type EditorRendererProfile,
 } from '../src/editorLayouts.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -189,6 +193,120 @@ function fwFrom(attrs: Record<string, string>): EditorFwRange | undefined {
   return fw.gtet || fw.lt ? fw : undefined;
 }
 
+const numAttr = (attrs: Record<string, string>, k: string): number | undefined => {
+  const v = attrs[k];
+  if (v === undefined) return undefined;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : undefined;
+};
+const boolAttr = (attrs: Record<string, string>, k: string): boolean | undefined => {
+  const v = attrs[k];
+  if (v === undefined) return undefined;
+  return v === 'true' ? true : v === 'false' ? false : undefined;
+};
+const strAttr = (attrs: Record<string, string>, k: string): string | undefined => {
+  const v = attrs[k];
+  return v === undefined || v === '' ? undefined : v;
+};
+
+/**
+ * Typed per-control rendering metadata (Phase 1.4-ish): the editor-authored
+ * fields a control carries beyond position + binding, mapped off their private
+ * XML spellings onto a named contract. Nothing is dropped silently — the sweep
+ * test asserts the corpus's authorable set is fully covered here.
+ */
+function buildRenderMeta(attrs: Record<string, string>): EditorControlRenderMeta | undefined {
+  const meta: EditorControlRenderMeta = {};
+  const cols = numAttr(attrs, 'sectionLabel_col_count');
+  const px = numAttr(attrs, 'sectionLabel_pixel_count');
+  if (cols !== undefined || px !== undefined) {
+    const span: NonNullable<EditorControlRenderMeta['sectionSpan']> = {};
+    if (cols !== undefined) span.cols = cols;
+    if (px !== undefined) span.pixels = px;
+    meta.sectionSpan = span;
+  }
+  const minDb = numAttr(attrs, 'min_dB'); if (minDb !== undefined) meta.minDb = minDb;
+  const maxDb = numAttr(attrs, 'max_dB'); if (maxDb !== undefined) meta.maxDb = maxDb;
+  const sep = numAttr(attrs, 'seperator_height'); if (sep !== undefined) meta.separatorHeight = sep;
+  const cpn = strAttr(attrs, 'controllingParamName'); if (cpn !== undefined) meta.controllingParamName = cpn;
+  const cpv = strAttr(attrs, 'controllingParamValue'); if (cpv !== undefined) meta.controllingParamValue = cpv;
+  const spn = strAttr(attrs, 'secondaryParameterName'); if (spn !== undefined) meta.secondaryParameterName = spn;
+  const po = numAttr(attrs, 'parameterOffset'); if (po !== undefined) meta.parameterOffset = po;
+  const lock = strAttr(attrs, 'lock'); if (lock !== undefined) meta.lock = lock;
+  const gi = strAttr(attrs, 'graphIndex'); if (gi !== undefined) meta.graphIndex = gi;
+  const go = boolAttr(attrs, 'graphOScope'); if (go !== undefined) meta.graphOScope = go;
+  const gmx = strAttr(attrs, 'graphMarkerX'); if (gmx !== undefined) meta.graphMarkerX = gmx;
+  const dpi = boolAttr(attrs, 'dynamicParamInfo'); if (dpi !== undefined) meta.dynamicParamInfo = dpi;
+  const dpid = boolAttr(attrs, 'dynamicParamId'); if (dpid !== undefined) meta.dynamicParamId = dpid;
+  const kd = strAttr(attrs, 'knobDirection'); if (kd !== undefined) meta.knobDirection = kd;
+  const dt = strAttr(attrs, 'disabledText'); if (dt !== undefined) meta.disabledText = dt;
+  const clc = strAttr(attrs, 'ctrl_label_color'); if (clc !== undefined) meta.ctrlLabelColor = clc;
+  const mc = strAttr(attrs, 'markerColor'); if (mc !== undefined) meta.markerColor = mc;
+  const um = boolAttr(attrs, 'useMarker'); if (um !== undefined) meta.useMarker = um;
+  const msg = strAttr(attrs, 'message'); if (msg !== undefined) meta.message = msg;
+  return Object.keys(meta).length ? meta : undefined;
+}
+
+// Widget bounds derivation from an editor's `__components.xml`.
+//
+// A `<Widget>` declares its OUTER size one of three ways:
+//   • `controlWidth` + `controlHeight` attributes (knob, knobCompact, sliders);
+//   • a `bounds="x,y,w,h"` attribute (dropdown1, meters, readouts, …);
+//   • a composite: no own size, but child `<Widget>`s whose first one carries
+//     the control's `bounds` (btnBypass / btnIgnoreScene / btnSquareReverse).
+// A handful of tokens have no `__components.xml` entry at all (structural
+// `spacer`, `btnKillDry`) or are pure scale modifiers (`dropdown1mhz`): those
+// resolve through an explicit override, sized to the nearest sibling control.
+const WIDGET_BOUNDS_OVERRIDES: Record<string, EditorWidgetBounds> = {
+  btnKillDry: { w: 74, h: 28 }, // same geometry as btnBypass (a button + modifier badge)
+  spacer: { w: 0, h: 0 },       // structural: consumes a flow slot, draws nothing
+  dropdown1mhz: { w: 83, h: 136 }, // inherits dropdown1 (minHorzScale modifier only)
+};
+
+/** Parse `__components.xml` into the device's renderer profile (page layouts + widget bounds). */
+function parseComponents(xml: string): EditorRendererProfile {
+  const root = parseXml(xml);
+  const pageLayouts: Record<string, EditorPageLayout> = {};
+  for (const pl of findAll(root, 'PageLayout')) {
+    const name = pl.attrs.name;
+    if (!name) continue;
+    const layout: EditorPageLayout = { name };
+    const num = (k: string) => numAttr(pl.attrs, k);
+    const p = (k: string) => strAttr(pl.attrs, k);
+    if (num('parametersX') !== undefined) layout.parametersX = num('parametersX');
+    if (num('parametersY') !== undefined) layout.parametersY = num('parametersY');
+    if (num('parametersSpacingX') !== undefined) layout.parametersSpacingX = num('parametersSpacingX');
+    if (num('parametersSpacingY') !== undefined) layout.parametersSpacingY = num('parametersSpacingY');
+    if (num('mixerX') !== undefined) layout.mixerX = num('mixerX');
+    if (num('mixerY') !== undefined) layout.mixerY = num('mixerY');
+    if (num('mixerSpacingX') !== undefined) layout.mixerSpacingX = num('mixerSpacingX');
+    if (num('mixerSpacingY') !== undefined) layout.mixerSpacingY = num('mixerSpacingY');
+    if (p('btnBypassPosition') !== undefined) layout.btnBypassPosition = p('btnBypassPosition');
+    if (p('btnIgnoreScenePosition') !== undefined) layout.btnIgnoreScenePosition = p('btnIgnoreScenePosition');
+    if (p('btnKillDryPosition') !== undefined) layout.btnKillDryPosition = p('btnKillDryPosition');
+    pageLayouts[name] = layout;
+  }
+
+  const widgetBounds: Record<string, EditorWidgetBounds> = { ...WIDGET_BOUNDS_OVERRIDES };
+  // First-wins: a handful of widget names are redefined later in the file for DIALOG contexts (e.g.
+  // `slider` is the block-editor's vertical 73×320 slider first, then a 215×20 horizontal one for a
+  // preset-browser scrollbar). The block-editor definitions are authored first, so the first size wins.
+  for (const w of findAll(root, 'Widget')) {
+    const name = w.attrs.name;
+    if (!name || name in widgetBounds) continue;
+    const cw = numAttr(w.attrs, 'controlWidth');
+    const ch = numAttr(w.attrs, 'controlHeight');
+    if (cw !== undefined && ch !== undefined) { widgetBounds[name] = { w: cw, h: ch }; continue; }
+    const b = /^\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*$/.exec(w.attrs.bounds ?? '');
+    if (b) { widgetBounds[name] = { w: Number(b[3]), h: Number(b[4]) }; continue; }
+    // Composite: the first child Widget's bounds is the control's outer size.
+    const child = w.children.find((c) => c.tag === 'Widget' && c.attrs.bounds);
+    const cb = child ? /^\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*$/.exec(child.attrs.bounds) : null;
+    if (cb) widgetBounds[name] = { w: Number(cb[3]), h: Number(cb[4]) };
+  }
+  return { pageLayouts, widgetBounds };
+}
+
 function buildControl(ec: XmlNode, resolve: Resolver, editorBlock: string): EditorLayoutControl {
   const a = ec.attrs;
   const paramName = a.parameterName ?? null;
@@ -222,6 +340,8 @@ function buildControl(ec: XmlNode, resolve: Resolver, editorBlock: string): Edit
   }
   const fw = fwFrom(a);
   if (fw) ctrl.fw = fw;
+  const render = buildRenderMeta(a);
+  if (render) ctrl.render = render;
   return ctrl;
 }
 
@@ -230,6 +350,14 @@ function buildPages(variantNode: XmlNode, resolve: Resolver, editorBlock: string
   for (const pageNode of variantNode.children.filter((c) => c.tag === 'Page')) {
     const pa = pageNode.attrs;
     const rows: EditorLayoutRow[] = [];
+    // Some controls are authored as DIRECT children of the Page (section labels,
+    // the amp Output-EQ Type/Location/Zero-All strip, the looper graph) — always
+    // `positionExact` (absolute). They are not in a Row and would otherwise be
+    // dropped; they are collected into a leading parameters row in document order.
+    const direct = pageNode.children
+      .filter((c) => c.tag === 'EditorControl')
+      .map((ec) => buildControl(ec, resolve, editorBlock));
+    if (direct.length) rows.push({ section: 'parameters', controls: direct });
     // Sections appear as <Parameters> and <Mixer>, each holding <Row>s.
     for (const section of pageNode.children) {
       let sectionName: 'parameters' | 'mixer' | null = null;
@@ -245,6 +373,7 @@ function buildPages(variantNode: XmlNode, resolve: Resolver, editorBlock: string
     }
     const page: EditorLayoutPage = { name: pa.name ?? '', rows };
     if (pa.pageNum !== undefined) page.pageNum = Number(pa.pageNum);
+    if (pa.layout !== undefined) page.layout = pa.layout;
     const fw = fwFrom(pa);
     if (fw) page.fw = fw;
     if (pa.value !== undefined) page.value = pa.value;
@@ -580,6 +709,7 @@ function serialize(layouts: DeviceEditorLayouts): string {
         if (p.fw) ph.push(`"fw": ${j(p.fw)}`);
         if (p.value !== undefined) ph.push(`"value": ${j(p.value)}`);
         if (p.selectorParamName !== undefined) ph.push(`"selectorParamName": ${j(p.selectorParamName)}`);
+        if (p.layout !== undefined) ph.push(`"layout": ${j(p.layout)}`);
         lines.push(`        { ${ph.join(', ')}, "rows": [`);
         p.rows.forEach((r, ri) => {
           lines.push(`          { "section": ${j(r.section)}, "controls": [`);
@@ -614,6 +744,30 @@ function relImport(filePath: string): string {
   let rel = relative(fromDir, target).replace(/\\/g, '/');
   if (!rel.startsWith('.')) rel = './' + rel;
   return rel;
+}
+
+/** Serialize a renderer profile (page layouts + widget bounds) as a compact, reviewable literal. */
+function serializeRenderer(p: EditorRendererProfile): string {
+  const j = (v: unknown) => JSON.stringify(v);
+  const lines: string[] = ['{ "pageLayouts": {'];
+  const plKeys = Object.keys(p.pageLayouts).sort();
+  plKeys.forEach((k, i) => lines.push(`  ${j(k)}: ${j(p.pageLayouts[k])}${i < plKeys.length - 1 ? ',' : ''}`));
+  lines.push('}, "widgetBounds": {');
+  const wbKeys = Object.keys(p.widgetBounds).sort();
+  wbKeys.forEach((k, i) => lines.push(`  ${j(k)}: ${j(p.widgetBounds[k])}${i < wbKeys.length - 1 ? ',' : ''}`));
+  lines.push('} }');
+  return lines.join('\n');
+}
+
+/** Emit a per-device renderer profile (PageLayouts + widget bounds from `__components.xml`). */
+function emitRenderer(
+  filePath: string,
+  constName: string,
+  header: string,
+  profile: EditorRendererProfile,
+): void {
+  const content = `${header}\n/* eslint-disable */\nimport type { EditorRendererProfile } from '${relImport(filePath)}';\n\nexport const ${constName}: EditorRendererProfile = ${serializeRenderer(profile)};\n`;
+  writeFileSync(filePath, content);
 }
 
 // --------------------------------------------------------------------------
@@ -751,11 +905,23 @@ async function main() {
         ? `Source: ${d.configName} config (AM4-mac). Amp is inline (no separate amp layout).`
         : `Source: ${d.configName} config (firmware ceiling ${dev.ceiling.toFixed(2)}). Amp layout is firmware-versioned; historical variants retained.`;
     emit(outFile, constName, headerFor(dev.label, sourceNote, constName), layouts);
-    console.log(
-      `\n${dev.label}: families=${stats.families} variants=${stats.variants} pages=${stats.pages} ` +
-        `controls=${stats.controls} paramCtrls=${stats.withParam} joined=${stats.joined} (${rate}%)`,
+
+    // Renderer profile (PageLayouts + widget bounds) parsed from the sibling `__components.xml`.
+    const rendererConst = constName.replace(/_LAYOUTS$/, '_RENDERER');
+    const rendererFile = join(dirname(outFile), 'renderer.generated.ts');
+    const componentsPath = join(d.juceDir, '__components.xml');
+    const components = existsSync(componentsPath)
+      ? parseComponents(readFileSync(componentsPath, 'utf8'))
+      : { pageLayouts: {}, widgetBounds: {} };
+    emitRenderer(
+      rendererFile,
+      rendererConst,
+      `// GENERATED by scripts/gen-editor-layouts.ts — DO NOT EDIT BY HAND.\n` +
+        `// ${dev.label} editor renderer profile: PageLayout geometry + widget outer bounds\n` +
+        `// (v2 schema, see src/editorLayouts.ts). Source: ${d.configName} __components.xml.`,
+      components,
     );
-    console.log(`  -> ${outFile}`);
+    console.log(`  -> ${rendererFile} (pageLayouts=${Object.keys(components.pageLayouts).length}, widgets=${Object.keys(components.widgetBounds).length})`);
     targets.push({ file: outFile, constName, label: dev.label });
   }
 

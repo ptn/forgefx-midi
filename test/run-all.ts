@@ -51,6 +51,7 @@ import { runGen3GridLayoutTests, GEN3_GRIDLAYOUT_CASE_COUNT } from './gen3/axe-f
 import { runModernFamilyTests, MODERN_FAMILY_CASE_COUNT } from './gen3/modern-family/catalog.test.js';
 import { runBoundCodecTests, BOUNDCODEC_CASE_COUNT } from './gen3/modern-family/boundcodec.test.js';
 import { runFm3MetersTests, FM3_METERS_CASE_COUNT } from './gen3/fm3/meters.test.js';
+import { runFm3CabIrTests, FM3_CAB_IR_CASE_COUNT } from './gen3/fm3/cab-irs.test.js';
 import { runFm3BlockParamsTests, FM3_BLOCKPARAMS_CASE_COUNT } from './gen3/fm3/blockparams.test.js';
 import { runFm3BlockFileTests, FM3_BLOCKFILE_CASE_COUNT } from './gen3/fm3/blockfile.test.js';
 import { runBlockFileWriteTests, BLOCKFILE_WRITE_CASE_COUNT } from './gen3/fm3/blockfile-write.test.js';
@@ -154,6 +155,7 @@ const tests: Array<{ name: string; run: () => void | Promise<void> }> = [
   { name: `modern-family/catalog (${MODERN_FAMILY_CASE_COUNT} goldens)`, run: runModernFamilyTests },
   { name: `modern-family/boundcodec (${BOUNDCODEC_CASE_COUNT} model bytes, full surface)`, run: runBoundCodecTests },
   { name: `fm3/meters (${FM3_METERS_CASE_COUNT} cases)`, run: runFm3MetersTests },
+  { name: `fm3/cab-irs (${FM3_CAB_IR_CASE_COUNT} cases)`, run: runFm3CabIrTests },
   { name: `fm3/blockparams (${FM3_BLOCKPARAMS_CASE_COUNT} live-FM3 preset goldens)`, run: runFm3BlockParamsTests },
   { name: `fm3/blockfile (${FM3_BLOCKFILE_CASE_COUNT} real .blk goldens)`, run: runFm3BlockFileTests },
   { name: `fm3/blockfile-write (${BLOCKFILE_WRITE_CASE_COUNT} round-trip + author goldens)`, run: runBlockFileWriteTests },

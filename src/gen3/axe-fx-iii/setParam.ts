@@ -44,6 +44,49 @@ const SYSEX_START = 0xf0;
 const SYSEX_END = 0xf7;
 const FRACTAL_MFR_PREFIX = [0x00, 0x01, 0x74] as const;
 
+/** fn=0x01 sub=0x4b: read one named entry from a Gen-3 table. */
+export const SUB_ACTION_CAB_IR_NAME_READ = 0x4b;
+
+/**
+ * Read one Gen-3 cab/IR table entry. `flatIndex` is a 14-bit address carried
+ * low-first at frame bytes 12..13. FM3 USER occupies 2048..2559.
+ */
+export function buildCabIrNameRead(modelByte: number, flatIndex: number): number[] {
+  if (!Number.isInteger(flatIndex) || flatIndex < 0 || flatIndex > 0x3fff) {
+    throw new Error(`buildCabIrNameRead: flatIndex out of range (0..16383): ${flatIndex}`);
+  }
+  const frame = [
+    SYSEX_START, ...FRACTAL_MFR_PREFIX, modelByte & 0x7f, 0x01, SUB_ACTION_CAB_IR_NAME_READ,
+    0, 0, 0, 0, 0, flatIndex & 0x7f, (flatIndex >> 7) & 0x7f,
+    0, 0, 0, 0, 0, 0, 0,
+  ];
+  frame.push(fractalChecksum(frame), SYSEX_END);
+  return frame;
+}
+
+/** Decode a Gen-3 cab/IR name reply. Empty slots decode to the empty string. */
+export function parseCabIrNameResponse(bytes: readonly number[]): string | null {
+  if (
+    bytes.length < 23 ||
+    bytes[0] !== SYSEX_START ||
+    bytes[1] !== FRACTAL_MFR_PREFIX[0] ||
+    bytes[2] !== FRACTAL_MFR_PREFIX[1] ||
+    bytes[3] !== FRACTAL_MFR_PREFIX[2] ||
+    bytes[5] !== 0x01 ||
+    bytes[6] !== SUB_ACTION_CAB_IR_NAME_READ ||
+    bytes[bytes.length - 1] !== SYSEX_END
+  ) return null;
+  const rawLen = (bytes[19]! & 0x7f) | ((bytes[20]! & 0x7f) << 7);
+  if (rawLen === 0) return '';
+  const raw = unpackValueChunked(Uint8Array.from(bytes.slice(21, -2)), rawLen);
+  let end = raw.indexOf(0);
+  if (end < 0) end = raw.length;
+  for (let i = 0; i < end; i++) {
+    if (raw[i]! < 0x20 || raw[i]! > 0x7e) return null;
+  }
+  return String.fromCharCode(...raw.slice(0, end));
+}
+
 // ── Function-ID bytes from the Axe-Fx III spec v1.4 ────────────────
 
 export const FN_SET_GET_BYPASS = 0x0a;
@@ -2398,6 +2441,8 @@ export function parseGetParameterResponse(
 
 export interface ModernFractalCodec {
   readonly modelByte: number;
+  buildCabIrNameRead(flatIndex: number): number[];
+  parseCabIrNameResponse(bytes: readonly number[]): string | null;
   /** DISCRETE SET (sub 09 00): `value` is the read-roster ordinal → float32(ordinal) @pos12. */
   buildSetParameter(effectId: number, paramId: number, value: number): number[];
   /** CONTINUOUS SET (sub 52 00): `normalized` in [0,1] → float32(normalized) @pos12. */
@@ -2487,6 +2532,8 @@ export function createModernFractalCodec(
   const bankSelect = opts.bankSelect ?? 'standard';
   return {
     modelByte,
+    buildCabIrNameRead: (i) => buildCabIrNameRead(modelByte, i),
+    parseCabIrNameResponse,
     buildSetParameter: (e, p, v) => buildSetParameter(e, p, v, modelByte),
     buildSetParameterContinuous: (e, p, v) => buildSetParameterContinuous(e, p, v, modelByte),
     buildGetParameter: (e, p) => buildGetParameter(e, p, modelByte),

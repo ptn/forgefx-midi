@@ -92,8 +92,9 @@ export type { RawWritableParam } from './blockParams.js';
 export {
   parseGen3BlockFile,
   decodeGen3BlockFile,
+  writeGen3BlockFile,
 } from './blockFile.js';
-export type { Gen3BlockFile } from './blockFile.js';
+export type { Gen3BlockFile, Gen3BlockFileWrite, Gen3BlockFileExtraSection } from './blockFile.js';
 
 export {
   authorGen3PresetFromIR,

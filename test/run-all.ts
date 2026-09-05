@@ -53,6 +53,7 @@ import { runBoundCodecTests, BOUNDCODEC_CASE_COUNT } from './gen3/modern-family/
 import { runFm3MetersTests, FM3_METERS_CASE_COUNT } from './gen3/fm3/meters.test.js';
 import { runFm3BlockParamsTests, FM3_BLOCKPARAMS_CASE_COUNT } from './gen3/fm3/blockparams.test.js';
 import { runFm3BlockFileTests, FM3_BLOCKFILE_CASE_COUNT } from './gen3/fm3/blockfile.test.js';
+import { runBlockFileWriteTests, BLOCKFILE_WRITE_CASE_COUNT } from './gen3/fm3/blockfile-write.test.js';
 import { runPresetAuthorIrTests, PRESET_AUTHOR_IR_CASE_COUNT } from './gen3/fm3/preset-author-ir.test.js';
 import { runPresetSynthIrTests, PRESET_SYNTH_IR_CASE_COUNT } from './gen3/fm3/preset-synth-ir.test.js';
 import { runDefaultRawRoundTripTests, DEFAULT_RAW_ROUNDTRIP_CASE_COUNT } from './gen3/default-raw-roundtrip.test.js';
@@ -155,6 +156,7 @@ const tests: Array<{ name: string; run: () => void | Promise<void> }> = [
   { name: `fm3/meters (${FM3_METERS_CASE_COUNT} cases)`, run: runFm3MetersTests },
   { name: `fm3/blockparams (${FM3_BLOCKPARAMS_CASE_COUNT} live-FM3 preset goldens)`, run: runFm3BlockParamsTests },
   { name: `fm3/blockfile (${FM3_BLOCKFILE_CASE_COUNT} real .blk goldens)`, run: runFm3BlockFileTests },
+  { name: `fm3/blockfile-write (${BLOCKFILE_WRITE_CASE_COUNT} round-trip + author goldens)`, run: runBlockFileWriteTests },
   { name: `fm3/preset-author-ir (${PRESET_AUTHOR_IR_CASE_COUNT} offline round-trip)`, run: runPresetAuthorIrTests },
   { name: `fm3/preset-synth-ir (${PRESET_SYNTH_IR_CASE_COUNT} full-body synthesis round-trip)`, run: runPresetSynthIrTests },
   { name: `fm3/preset-synth-catalog (${PRESET_SYNTH_CATALOG_CASE_COUNT} geometry families, catalog/defaults build)`, run: runPresetSynthCatalogTests },

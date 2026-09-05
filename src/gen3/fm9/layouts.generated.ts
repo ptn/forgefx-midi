@@ -19,7 +19,7 @@ export const FM9_LAYOUTS: DeviceEditorLayouts = {
     "editorName": "Cab",
     "family": "CABINET",
     "variants": [
-      { "name": "0", "value": "0", "pages": [
+      { "name": "0", "value": "0", "selectorParamName": "CABINET_MODE", "pages": [
         { "name": "Cab", "pageNum": 0, "fw": {"lt":"5,00"}, "rows": [
           { "section": "parameters", "controls": [
             {"label":"CAB 1","paramName":"CABINET_LABEL1","paramId":65288,"widget":"label","rawWidget":"labelBold","placement":{"positionExact":"315,63"}},
@@ -233,7 +233,7 @@ export const FM9_LAYOUTS: DeviceEditorLayouts = {
           ] }
         ] }
       ] },
-      { "name": "1", "value": "1", "pages": [
+      { "name": "1", "value": "1", "selectorParamName": "CABINET_MODE", "pages": [
         { "name": "Cab", "pageNum": 0, "fw": {"lt":"5,00"}, "rows": [
           { "section": "parameters", "controls": [
             {"label":"CAB 1","paramName":"CABINET_LABEL1","paramId":65288,"widget":"label","rawWidget":"labelBold","placement":{"positionExact":"315,63"}},
@@ -2261,6 +2261,116 @@ export const FM9_LAYOUTS: DeviceEditorLayouts = {
             {"label":"","paramName":null,"paramId":null,"widget":"spacer","rawWidget":"spacer"},
             {"label":"Bypass\nMode","paramName":"CROSSOVER_BYPASSMODE","paramId":13,"widget":"dropdown","rawWidget":"dropdown1Tight"},
             {"label":"Bypass","paramName":"CROSSOVER_BYPASS","paramId":14,"widget":"button","rawWidget":"btnBypass"},
+          ] }
+        ] }
+      ] }
+    ]
+  },
+  "DELAY": {
+    "editorName": "Delay",
+    "family": "DELAY",
+    "variants": [
+      { "name": "0", "value": "0", "pages": [
+        { "name": "Time/FB", "pageNum": 0, "rows": [
+          { "section": "parameters", "controls": [
+            {"label":"Time","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
+            {"label":"Tempo","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
+            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
+            {"label":"Feedback","paramName":"DELAY_FEED","paramId":14,"widget":"knob","rawWidget":"knob"},
+            {"label":"Right\nPost Delay","paramName":"DELAY_OFFSET","paramId":73,"widget":"knob","rawWidget":"knob"},
+            {"label":"Master Feedback","paramName":"DELAY_MSTRFDBK","paramId":32,"widget":"knob","rawWidget":"knob"},
+            {"label":"Echo Pan","paramName":"DELAY_DELAYPAN","paramId":17,"widget":"knob","rawWidget":"knob"},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Input Gain","paramName":"DELAY_GAIN","paramId":27,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
+            {"label":"Mix","paramName":"DELAY_MIX","paramId":0,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
+            {"label":"Level","paramName":"DELAY_LEVEL","paramId":1,"widget":"knob","rawWidget":"knobCompact","placement":{"col":2}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Balance","paramName":"DELAY_PAN","paramId":2,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Bypass\nMode","paramName":"DELAY_BYPASSMODE","paramId":3,"widget":"dropdown","rawWidget":"dropdown1TightXtra","placement":{"col":2}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Kill Dry","paramName":"DELAY_KILLDRY","paramId":7,"widget":"button","rawWidget":"btnKillDry","fw":{"gtet":"7,00"}},
+            {"label":"Scene\nIgnore","paramName":"DELAY_SCENEIGNORE","paramId":6,"widget":"button","rawWidget":"btnIgnoreScene","fw":{"gtet":"2,03"}},
+            {"label":"Bypass","paramName":"DELAY_BYPASS","paramId":5,"widget":"button","rawWidget":"btnBypass"},
+          ] }
+        ] }
+      ] },
+      { "name": "1", "value": "1", "pages": [
+        { "name": "Time/FB", "pageNum": 0, "rows": [
+          { "section": "parameters", "controls": [
+            {"label":"Time","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
+            {"label":"Tempo","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
+            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
+            {"label":"Feedback L","paramName":"DELAY_FEED","paramId":14,"widget":"knob","rawWidget":"knob"},
+            {"label":"Master Feedback","paramName":"DELAY_MSTRFDBK","paramId":32,"widget":"knob","rawWidget":"knob"},
+          ] },
+          { "section": "parameters", "controls": [
+            {"label":"L/R Time Ratio","paramName":"DELAY_RATIO","paramId":13,"widget":"knob","rawWidget":"knob"},
+            {"label":"","paramName":null,"paramId":null,"widget":"spacer","rawWidget":"spacer"},
+            {"label":"","paramName":null,"paramId":null,"widget":"spacer","rawWidget":"spacer"},
+            {"label":"Feedback R","paramName":"DELAY_FEEDR","paramId":16,"widget":"knob","rawWidget":"knob"},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Input Gain","paramName":"DELAY_GAIN","paramId":27,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
+            {"label":"Mix","paramName":"DELAY_MIX","paramId":0,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
+            {"label":"Level","paramName":"DELAY_LEVEL","paramId":1,"widget":"knob","rawWidget":"knobCompact","placement":{"col":2}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Balance","paramName":"DELAY_PAN","paramId":2,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
+            {"label":"Spread","paramName":"DELAY_SPREAD","paramId":18,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Bypass\nMode","paramName":"DELAY_BYPASSMODE","paramId":3,"widget":"dropdown","rawWidget":"dropdown1TightXtra","placement":{"col":2}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Kill Dry","paramName":"DELAY_KILLDRY","paramId":7,"widget":"button","rawWidget":"btnKillDry","fw":{"gtet":"7,00"}},
+            {"label":"Scene\nIgnore","paramName":"DELAY_SCENEIGNORE","paramId":6,"widget":"button","rawWidget":"btnIgnoreScene","fw":{"gtet":"2,03"}},
+            {"label":"Bypass","paramName":"DELAY_BYPASS","paramId":5,"widget":"button","rawWidget":"btnBypass"},
+          ] }
+        ] }
+      ] },
+      { "name": "2", "value": "2", "pages": [
+        { "name": "Time/FB", "pageNum": 0, "rows": [
+          { "section": "parameters", "controls": [
+            {"label":"Time","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
+            {"label":"Tempo","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
+            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
+            {"label":"Feedback","paramName":"DELAY_FEED","paramId":14,"widget":"knob","rawWidget":"knob"},
+            {"label":"Master Feedback","paramName":"DELAY_MSTRFDBK","paramId":32,"widget":"knob","rawWidget":"knob"},
+          ] },
+          { "section": "parameters", "controls": [
+            {"label":"L/R Time Ratio","paramName":"DELAY_RATIO","paramId":13,"widget":"knob","rawWidget":"knob"},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Input Gain","paramName":"DELAY_GAIN","paramId":27,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
+            {"label":"Mix","paramName":"DELAY_MIX","paramId":0,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
+            {"label":"Level","paramName":"DELAY_LEVEL","paramId":1,"widget":"knob","rawWidget":"knobCompact","placement":{"col":2}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Balance","paramName":"DELAY_PAN","paramId":2,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
+            {"label":"Spread","paramName":"DELAY_SPREAD","paramId":18,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Bypass\nMode","paramName":"DELAY_BYPASSMODE","paramId":3,"widget":"dropdown","rawWidget":"dropdown1TightXtra","placement":{"col":2}},
+          ] },
+          { "section": "mixer", "controls": [
+            {"label":"Kill Dry","paramName":"DELAY_KILLDRY","paramId":7,"widget":"button","rawWidget":"btnKillDry","fw":{"gtet":"7,00"}},
+            {"label":"Scene\nIgnore","paramName":"DELAY_SCENEIGNORE","paramId":6,"widget":"button","rawWidget":"btnIgnoreScene","fw":{"gtet":"2,03"}},
+            {"label":"Bypass","paramName":"DELAY_BYPASS","paramId":5,"widget":"button","rawWidget":"btnBypass"},
+          ] }
+        ] }
+      ] },
+      { "name": "3", "value": "3", "pages": [
+        { "name": "Time/FB", "pageNum": 0, "rows": [
+          { "section": "parameters", "controls": [
+            {"label":"Time L","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
+            {"label":"Tempo L","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
+            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
+            {"label":"","paramName":null,"paramId":null,"widget":"unknown","rawWidget":""},
           ] }
         ] }
       ] }
@@ -14910,113 +15020,9 @@ export const FM9_LAYOUTS: DeviceEditorLayouts = {
     ]
   },
   "MULTITAP": {
-    "editorName": "Delay",
+    "editorName": "MultiDelay",
     "family": "MULTITAP",
     "variants": [
-      { "name": "0", "value": "0", "pages": [
-        { "name": "Time/FB", "pageNum": 0, "rows": [
-          { "section": "parameters", "controls": [
-            {"label":"Time","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
-            {"label":"Tempo","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
-            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
-            {"label":"Feedback","paramName":"DELAY_FEED","paramId":14,"widget":"knob","rawWidget":"knob"},
-            {"label":"Right\nPost Delay","paramName":"DELAY_OFFSET","paramId":73,"widget":"knob","rawWidget":"knob"},
-            {"label":"Master Feedback","paramName":"DELAY_MSTRFDBK","paramId":32,"widget":"knob","rawWidget":"knob"},
-            {"label":"Echo Pan","paramName":"DELAY_DELAYPAN","paramId":17,"widget":"knob","rawWidget":"knob"},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Input Gain","paramName":"DELAY_GAIN","paramId":27,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
-            {"label":"Mix","paramName":"DELAY_MIX","paramId":0,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
-            {"label":"Level","paramName":"DELAY_LEVEL","paramId":1,"widget":"knob","rawWidget":"knobCompact","placement":{"col":2}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Balance","paramName":"DELAY_PAN","paramId":2,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Bypass\nMode","paramName":"DELAY_BYPASSMODE","paramId":3,"widget":"dropdown","rawWidget":"dropdown1TightXtra","placement":{"col":2}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Kill Dry","paramName":"DELAY_KILLDRY","paramId":7,"widget":"button","rawWidget":"btnKillDry","fw":{"gtet":"7,00"}},
-            {"label":"Scene\nIgnore","paramName":"DELAY_SCENEIGNORE","paramId":6,"widget":"button","rawWidget":"btnIgnoreScene","fw":{"gtet":"2,03"}},
-            {"label":"Bypass","paramName":"DELAY_BYPASS","paramId":5,"widget":"button","rawWidget":"btnBypass"},
-          ] }
-        ] }
-      ] },
-      { "name": "1", "value": "1", "pages": [
-        { "name": "Time/FB", "pageNum": 0, "rows": [
-          { "section": "parameters", "controls": [
-            {"label":"Time","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
-            {"label":"Tempo","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
-            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
-            {"label":"Feedback L","paramName":"DELAY_FEED","paramId":14,"widget":"knob","rawWidget":"knob"},
-            {"label":"Master Feedback","paramName":"DELAY_MSTRFDBK","paramId":32,"widget":"knob","rawWidget":"knob"},
-          ] },
-          { "section": "parameters", "controls": [
-            {"label":"L/R Time Ratio","paramName":"DELAY_RATIO","paramId":13,"widget":"knob","rawWidget":"knob"},
-            {"label":"","paramName":null,"paramId":null,"widget":"spacer","rawWidget":"spacer"},
-            {"label":"","paramName":null,"paramId":null,"widget":"spacer","rawWidget":"spacer"},
-            {"label":"Feedback R","paramName":"DELAY_FEEDR","paramId":16,"widget":"knob","rawWidget":"knob"},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Input Gain","paramName":"DELAY_GAIN","paramId":27,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
-            {"label":"Mix","paramName":"DELAY_MIX","paramId":0,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
-            {"label":"Level","paramName":"DELAY_LEVEL","paramId":1,"widget":"knob","rawWidget":"knobCompact","placement":{"col":2}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Balance","paramName":"DELAY_PAN","paramId":2,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
-            {"label":"Spread","paramName":"DELAY_SPREAD","paramId":18,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Bypass\nMode","paramName":"DELAY_BYPASSMODE","paramId":3,"widget":"dropdown","rawWidget":"dropdown1TightXtra","placement":{"col":2}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Kill Dry","paramName":"DELAY_KILLDRY","paramId":7,"widget":"button","rawWidget":"btnKillDry","fw":{"gtet":"7,00"}},
-            {"label":"Scene\nIgnore","paramName":"DELAY_SCENEIGNORE","paramId":6,"widget":"button","rawWidget":"btnIgnoreScene","fw":{"gtet":"2,03"}},
-            {"label":"Bypass","paramName":"DELAY_BYPASS","paramId":5,"widget":"button","rawWidget":"btnBypass"},
-          ] }
-        ] }
-      ] },
-      { "name": "2", "value": "2", "pages": [
-        { "name": "Time/FB", "pageNum": 0, "rows": [
-          { "section": "parameters", "controls": [
-            {"label":"Time","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
-            {"label":"Tempo","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
-            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
-            {"label":"Feedback","paramName":"DELAY_FEED","paramId":14,"widget":"knob","rawWidget":"knob"},
-            {"label":"Master Feedback","paramName":"DELAY_MSTRFDBK","paramId":32,"widget":"knob","rawWidget":"knob"},
-          ] },
-          { "section": "parameters", "controls": [
-            {"label":"L/R Time Ratio","paramName":"DELAY_RATIO","paramId":13,"widget":"knob","rawWidget":"knob"},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Input Gain","paramName":"DELAY_GAIN","paramId":27,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
-            {"label":"Mix","paramName":"DELAY_MIX","paramId":0,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
-            {"label":"Level","paramName":"DELAY_LEVEL","paramId":1,"widget":"knob","rawWidget":"knobCompact","placement":{"col":2}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Balance","paramName":"DELAY_PAN","paramId":2,"widget":"knob","rawWidget":"knobCompact","placement":{"col":0}},
-            {"label":"Spread","paramName":"DELAY_SPREAD","paramId":18,"widget":"knob","rawWidget":"knobCompact","placement":{"col":1}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Bypass\nMode","paramName":"DELAY_BYPASSMODE","paramId":3,"widget":"dropdown","rawWidget":"dropdown1TightXtra","placement":{"col":2}},
-          ] },
-          { "section": "mixer", "controls": [
-            {"label":"Kill Dry","paramName":"DELAY_KILLDRY","paramId":7,"widget":"button","rawWidget":"btnKillDry","fw":{"gtet":"7,00"}},
-            {"label":"Scene\nIgnore","paramName":"DELAY_SCENEIGNORE","paramId":6,"widget":"button","rawWidget":"btnIgnoreScene","fw":{"gtet":"2,03"}},
-            {"label":"Bypass","paramName":"DELAY_BYPASS","paramId":5,"widget":"button","rawWidget":"btnBypass"},
-          ] }
-        ] }
-      ] },
-      { "name": "3", "value": "3", "pages": [
-        { "name": "Time/FB", "pageNum": 0, "rows": [
-          { "section": "parameters", "controls": [
-            {"label":"Time L","paramName":"DELAY_TIME","paramId":12,"widget":"knob","rawWidget":"knob"},
-            {"label":"Tempo L","paramName":"DELAY_TEMPO","paramId":19,"widget":"dropdown","rawWidget":"dropdown1"},
-            {"label":"Master\nTime","paramName":"DELAY_MSTRTIME","paramId":78,"widget":"knob","rawWidget":"knob"},
-            {"label":"","paramName":null,"paramId":null,"widget":"unknown","rawWidget":""},
-          ] }
-        ] }
-      ] },
       { "name": "Quad-Tap Delay", "value": "0", "fw": {"lt":"8,02"}, "pages": [
         { "name": "Delays 1+2", "rows": [
           { "section": "parameters", "controls": [

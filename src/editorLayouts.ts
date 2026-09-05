@@ -185,12 +185,24 @@ export interface EditorLayoutPage {
  * One block-type variant of a block's layout. The `value` is the block-type
  * selector value(s) that select this variant (comma-joined as in the editor
  * XML), or null when the block has a single unconditional layout.
+ *
+ * A variant whose `value` was folded up from PAGE-level selectors (a family with
+ * exactly one selector parameter) carries that parameter on `selectorParamName`:
+ * the variant is then selected by that selector's CURRENT value, not by the
+ * block type. Most such families key on their model selector (equivalent to the
+ * block-type value), but a family like CABINET keys on `CABINET_MODE` — it has
+ * no model selector at all, so a type-value match could never pick its DynaCab
+ * variant.
  */
 export interface EditorLayoutVariant {
   /** Editor variant display name (e.g. 'Analog', '10 Band', 'Amp GTE 6.00'). */
   name: string;
   /** Block-type selector value(s) selecting this variant, or null. */
   value: string | null;
+  /** The selector parameter whose current value keys `value`, when this variant
+   *  was split out of page-level selectors. Absent for raw-`value` and value-less
+   *  (firmware-pinned) variants. */
+  selectorParamName?: string;
   /** Firmware gate for the whole variant, when present. */
   fw?: EditorFwRange;
   /**

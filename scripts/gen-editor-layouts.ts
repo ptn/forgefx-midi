@@ -113,8 +113,20 @@ function parseXml(text: string): XmlNode {
       i = end < 0 ? n : end + 1;
       continue;
     }
-    const gt = text.indexOf('>', i);
-    if (gt < 0) break;
+    // Find the tag's closing '>', skipping any '>' that appears inside a
+    // double-quoted attribute value. The genuine editor XML carries literal
+    // '>' glyphs in control labels (e.g. name="Feedback&#10;L>R", name=
+    // "Feedback 1->2"); treating them as the tag end would mis-nest the tree
+    // and swallow every following block under the Delay component.
+    let gt = i;
+    let inQuote = false;
+    while (gt < n) {
+      const ch = text[gt];
+      if (ch === '"') inQuote = !inQuote;
+      else if (ch === '>' && !inQuote) break;
+      gt++;
+    }
+    if (gt >= n) break;
     const inner = text.slice(i + 1, gt);
     i = gt + 1;
     if (inner.startsWith('/')) {
@@ -392,10 +404,28 @@ const EDITORNAME_FAMILY_ALIAS: Record<string, string> = {
   Tuner: 'TUNER',
 };
 
-/** Family key = mode of own controls' paramName prefix; else editorName alias. */
-function deriveFamily(editorName: string, ecsNode: XmlNode): string {
+/**
+ * Editor component name for a derived family. Most families keep their source
+ * component's own name; the gen-3 `Delay` component hosts two distinct catalog
+ * families — the delay block (DELAY_*) and the legacy MultiDelay block
+ * (MULTITAP_*, the "Quad-Tap"/"Quad Parallel" firmware-lt 9,02 variants) — so a
+ * family keyed MULTITAP out of that node is named after the MultiDelay block,
+ * not "Delay".
+ */
+const FAMILY_EDITORNAME: Record<string, string> = {
+  MULTITAP: 'MultiDelay',
+};
+
+/**
+ * Family key = mode of the node's own controls' paramName prefix; else the
+ * editorName alias. `node` may be an `EditorControls` node or a single
+ * `EffectVariant` — the latter is what enables a multi-family component (the
+ * gen-3 Delay/MultiDelay merge) to resolve each of its variants to its own
+ * family instead of collapsing the whole component under one key.
+ */
+function deriveFamily(editorName: string, node: XmlNode): string {
   const prefixes = new Map<string, number>();
-  for (const ec of findAll(ecsNode, 'EditorControl')) {
+  for (const ec of findAll(node, 'EditorControl')) {
     if (ec.attrs.effectName) continue; // cross-block controls belong elsewhere
     const pn = ec.attrs.parameterName;
     if (!pn) continue;
@@ -506,6 +536,7 @@ function splitVariantByPageSelectors(base: EditorLayoutVariant): EditorLayoutVar
     const variant: EditorLayoutVariant = {
       name: isFallback ? (values.length ? `${values.join(',')}+default` : 'Default') : values.join(','),
       value: isFallback ? null : values.join(','),
+      selectorParamName: selParam,
       pages: outPages,
     };
     if (base.fw) variant.fw = base.fw;
@@ -514,7 +545,16 @@ function splitVariantByPageSelectors(base: EditorLayoutVariant): EditorLayoutVar
   return out;
 }
 
-/** Parse a `__block_layout.xml` root into families -> block layout. */
+/**
+ * Parse a `__block_layout.xml` root into families -> block layout.
+ *
+ * Family is derived PER VARIANT (not per `EditorControls` node): a single
+ * editor component can host more than one catalog family. The gen-3 `Delay`
+ * component carries both the delay block (DELAY_*) and the legacy MultiDelay
+ * block (MULTITAP_*, the "Quad-Tap"/"Quad Parallel" firmware-lt 9,02 variants)
+ * in one node — keying the whole node off the mode of every control's prefix
+ * let the MULTITAP_* controls win and swallowed the DELAY family entirely.
+ */
 function parseBlockLayout(root: XmlNode, resolve: Resolver, skipAmp: boolean): Map<string, EditorBlockLayout> {
   const out = new Map<string, EditorBlockLayout>();
   for (const ecs of findAll(root, 'EditorControls')) {
@@ -523,9 +563,8 @@ function parseBlockLayout(root: XmlNode, resolve: Resolver, skipAmp: boolean): M
     const variantsGroup = firstChild(ecs, 'EffectVariants');
     if (!variantsGroup) continue;
     const variantNodes = variantsGroup.children.filter((c) => c.tag === 'EffectVariant');
-    const family = deriveFamily(editorName, ecs);
-    const variants: EditorLayoutVariant[] = [];
     for (const vn of variantNodes) {
+      const family = deriveFamily(editorName, vn);
       const pages = buildPages(vn, resolve, editorName);
       if (!pages.length) continue;
       const variant: EditorLayoutVariant = {
@@ -535,12 +574,12 @@ function parseBlockLayout(root: XmlNode, resolve: Resolver, skipAmp: boolean): M
       const fw = fwFrom(vn.attrs);
       if (fw) variant.fw = fw;
       variant.pages = pages;
-      variants.push(...splitVariantByPageSelectors(variant));
+      const split = splitVariantByPageSelectors(variant);
+      const blockName = FAMILY_EDITORNAME[family] ?? editorName;
+      const existing = out.get(family);
+      if (existing) existing.variants.push(...split);
+      else out.set(family, { editorName: blockName, family, variants: [...split] });
     }
-    if (!variants.length) continue;
-    const existing = out.get(family);
-    if (existing) existing.variants.push(...variants);
-    else out.set(family, { editorName, family, variants });
   }
   return out;
 }
@@ -700,6 +739,7 @@ function serialize(layouts: DeviceEditorLayouts): string {
     lines.push(`    "variants": [`);
     block.variants.forEach((v, vi) => {
       const head: string[] = [`"name": ${j(v.name)}`, `"value": ${j(v.value)}`];
+      if (v.selectorParamName) head.push(`"selectorParamName": ${j(v.selectorParamName)}`);
       if (v.fw) head.push(`"fw": ${j(v.fw)}`);
       if (v.pinned) head.push(`"pinned": true`);
       lines.push(`      { ${head.join(', ')}, "pages": [`);

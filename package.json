@@ -87,12 +87,14 @@
   ],
   "scripts": {
     "build": "tsx scripts/gen-version.ts && tsc -p tsconfig.json && tsx scripts/copy-build-assets.ts",
-    "test": "tsx test/run-all.ts && tsx scripts/check-browser-safe.ts && tsx scripts/export-catalog.ts --check && tsx scripts/cache-check.ts",
+    "test": "tsx test/run-all.ts && tsx scripts/check-browser-safe.ts && tsx scripts/derive-gen3-units.ts --check && tsx scripts/export-catalog.ts --check && tsx scripts/cache-check.ts",
     "check:browser": "tsx scripts/check-browser-safe.ts",
     "prepack": "npm run build",
     "catalog:export": "tsx scripts/export-catalog.ts",
     "catalog:check": "tsx scripts/export-catalog.ts --check",
-    "cache:check": "tsx scripts/cache-check.ts"
+    "cache:check": "tsx scripts/cache-check.ts",
+    "units:derive": "tsx scripts/derive-gen3-units.ts",
+    "units:check": "tsx scripts/derive-gen3-units.ts --check"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

@@ -14,7 +14,7 @@
           "kind": "float",
           "raw": 13107,
           "value": -79.99969481490524,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 1,
@@ -32,7 +32,7 @@
           "kind": "float",
           "raw": 32801,
           "value": 505.513626514481,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 3,
@@ -41,7 +41,7 @@
           "kind": "float",
           "raw": 0,
           "value": 1,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 4,
@@ -60,7 +60,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 6,
@@ -116,7 +116,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 1,
@@ -125,7 +125,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 2,
@@ -134,7 +134,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 3,
@@ -143,7 +143,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 4,
@@ -152,7 +152,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 5,
@@ -161,7 +161,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 6,
@@ -224,7 +224,7 @@
           "kind": "float",
           "raw": 52427,
           "value": -0.00030518509475996325,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 13,
@@ -278,7 +278,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 19,
@@ -287,7 +287,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 20,
@@ -296,7 +296,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 21,
@@ -305,7 +305,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 22,
@@ -314,7 +314,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 23,
@@ -323,7 +323,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 24,
@@ -332,7 +332,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 25,
@@ -341,7 +341,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         }
       ]
     },
@@ -434,7 +434,7 @@
           "kind": "float",
           "raw": 0,
           "value": 20,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 9,
@@ -500,7 +500,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 16,
@@ -547,7 +547,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 20000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 21,
@@ -556,7 +556,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 22,
@@ -565,7 +565,7 @@
           "kind": "float",
           "raw": 42631,
           "value": 6540.121158482621,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 23,
@@ -611,7 +611,7 @@
           "kind": "float",
           "raw": 0,
           "value": -60,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 28,
@@ -647,7 +647,7 @@
           "kind": "float",
           "raw": 21845,
           "value": 334.0050813318278,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 32,
@@ -665,7 +665,7 @@
           "kind": "float",
           "raw": 42631,
           "value": 6540.121158482621,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 34,
@@ -804,7 +804,7 @@
           "kind": "float",
           "raw": 0,
           "value": 10,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 13,
@@ -813,7 +813,7 @@
           "kind": "float",
           "raw": 61440,
           "value": 37526.132999664296,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 14,
@@ -822,7 +822,7 @@
           "kind": "float",
           "raw": 24318,
           "value": 867.9342020935698,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 15,
@@ -849,7 +849,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 18,
@@ -858,7 +858,7 @@
           "kind": "float",
           "raw": 9864,
           "value": 79.50605792413099,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 19,
@@ -867,7 +867,7 @@
           "kind": "float",
           "raw": 52157,
           "value": 32651.57017731254,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 20,
@@ -960,7 +960,7 @@
           "kind": "float",
           "raw": 21453,
           "value": 157.8484450819422,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 30,
@@ -997,7 +997,7 @@
           "kind": "float",
           "raw": 0,
           "value": 1,
-          "unit": "numeric"
+          "unit": "pf"
         },
         {
           "paramId": 34,
@@ -1006,7 +1006,7 @@
           "kind": "float",
           "raw": 15269,
           "value": 467.52113406781217,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 35,
@@ -1034,7 +1034,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50.5,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 38,
@@ -1109,7 +1109,7 @@
           "kind": "float",
           "raw": 35655,
           "value": 2358.647419660024,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 46,
@@ -1292,7 +1292,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 66,
@@ -1301,7 +1301,7 @@
           "kind": "float",
           "raw": 45058,
           "value": 17.266899624622333,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 67,
@@ -1310,7 +1310,7 @@
           "kind": "float",
           "raw": 55383,
           "value": 42.33261360515152,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 68,
@@ -1319,7 +1319,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 69,
@@ -1328,7 +1328,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 70,
@@ -1375,7 +1375,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 5050,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 75,
@@ -1384,7 +1384,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 76,
@@ -1448,7 +1448,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 83,
@@ -1512,7 +1512,7 @@
           "kind": "float",
           "raw": 28086,
           "value": 60,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 90,
@@ -1568,7 +1568,7 @@
           "kind": "float",
           "raw": 39648,
           "value": 60.499893185216834,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 96,
@@ -1577,7 +1577,7 @@
           "kind": "float",
           "raw": 34123,
           "value": 52.54846339304788,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 97,
@@ -1605,7 +1605,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 100,
@@ -1688,7 +1688,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 109,
@@ -1763,7 +1763,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 117,
@@ -1781,7 +1781,7 @@
           "kind": "float",
           "raw": 42631,
           "value": 6540.121158482621,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 119,
@@ -1835,7 +1835,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 12,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 125,
@@ -1864,7 +1864,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 128,
@@ -1902,7 +1902,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 132,
@@ -1929,7 +1929,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 135,
@@ -2135,7 +2135,7 @@
           "kind": "float",
           "raw": 0,
           "value": 10,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 13,
@@ -2144,7 +2144,7 @@
           "kind": "float",
           "raw": 61440,
           "value": 37526.132999664296,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 14,
@@ -2153,7 +2153,7 @@
           "kind": "float",
           "raw": 24318,
           "value": 867.9342020935698,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 15,
@@ -2180,7 +2180,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 18,
@@ -2189,7 +2189,7 @@
           "kind": "float",
           "raw": 9864,
           "value": 79.50605792413099,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 19,
@@ -2198,7 +2198,7 @@
           "kind": "float",
           "raw": 52157,
           "value": 32651.57017731254,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 20,
@@ -2291,7 +2291,7 @@
           "kind": "float",
           "raw": 21453,
           "value": 157.8484450819422,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 30,
@@ -2328,7 +2328,7 @@
           "kind": "float",
           "raw": 0,
           "value": 1,
-          "unit": "numeric"
+          "unit": "pf"
         },
         {
           "paramId": 34,
@@ -2337,7 +2337,7 @@
           "kind": "float",
           "raw": 15269,
           "value": 467.52113406781217,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 35,
@@ -2365,7 +2365,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50.5,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 38,
@@ -2440,7 +2440,7 @@
           "kind": "float",
           "raw": 35655,
           "value": 2358.647419660024,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 46,
@@ -2623,7 +2623,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 66,
@@ -2632,7 +2632,7 @@
           "kind": "float",
           "raw": 45058,
           "value": 17.266899624622333,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 67,
@@ -2641,7 +2641,7 @@
           "kind": "float",
           "raw": 55383,
           "value": 42.33261360515152,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 68,
@@ -2650,7 +2650,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 69,
@@ -2659,7 +2659,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 70,
@@ -2706,7 +2706,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 5050,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 75,
@@ -2715,7 +2715,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 76,
@@ -2779,7 +2779,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 83,
@@ -2843,7 +2843,7 @@
           "kind": "float",
           "raw": 28086,
           "value": 60,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 90,
@@ -2899,7 +2899,7 @@
           "kind": "float",
           "raw": 39648,
           "value": 60.499893185216834,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 96,
@@ -2908,7 +2908,7 @@
           "kind": "float",
           "raw": 34123,
           "value": 52.54846339304788,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 97,
@@ -2936,7 +2936,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 100,
@@ -3019,7 +3019,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 109,
@@ -3094,7 +3094,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 117,
@@ -3112,7 +3112,7 @@
           "kind": "float",
           "raw": 42631,
           "value": 6540.121158482621,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 119,
@@ -3166,7 +3166,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 12,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 125,
@@ -3195,7 +3195,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 128,
@@ -3233,7 +3233,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 132,
@@ -3260,7 +3260,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 135,
@@ -3466,7 +3466,7 @@
           "kind": "float",
           "raw": 0,
           "value": 10,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 13,
@@ -3475,7 +3475,7 @@
           "kind": "float",
           "raw": 61440,
           "value": 37526.132999664296,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 14,
@@ -3484,7 +3484,7 @@
           "kind": "float",
           "raw": 24318,
           "value": 867.9342020935698,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 15,
@@ -3511,7 +3511,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 18,
@@ -3520,7 +3520,7 @@
           "kind": "float",
           "raw": 9864,
           "value": 79.50605792413099,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 19,
@@ -3529,7 +3529,7 @@
           "kind": "float",
           "raw": 52157,
           "value": 32651.57017731254,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 20,
@@ -3622,7 +3622,7 @@
           "kind": "float",
           "raw": 21453,
           "value": 157.8484450819422,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 30,
@@ -3659,7 +3659,7 @@
           "kind": "float",
           "raw": 0,
           "value": 1,
-          "unit": "numeric"
+          "unit": "pf"
         },
         {
           "paramId": 34,
@@ -3668,7 +3668,7 @@
           "kind": "float",
           "raw": 15269,
           "value": 467.52113406781217,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 35,
@@ -3696,7 +3696,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50.5,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 38,
@@ -3771,7 +3771,7 @@
           "kind": "float",
           "raw": 35655,
           "value": 2358.647419660024,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 46,
@@ -3954,7 +3954,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 66,
@@ -3963,7 +3963,7 @@
           "kind": "float",
           "raw": 45058,
           "value": 17.266899624622333,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 67,
@@ -3972,7 +3972,7 @@
           "kind": "float",
           "raw": 55383,
           "value": 42.33261360515152,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 68,
@@ -3981,7 +3981,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 69,
@@ -3990,7 +3990,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 70,
@@ -4037,7 +4037,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 5050,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 75,
@@ -4046,7 +4046,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 76,
@@ -4110,7 +4110,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 83,
@@ -4174,7 +4174,7 @@
           "kind": "float",
           "raw": 28086,
           "value": 60,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 90,
@@ -4230,7 +4230,7 @@
           "kind": "float",
           "raw": 39648,
           "value": 60.499893185216834,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 96,
@@ -4239,7 +4239,7 @@
           "kind": "float",
           "raw": 34123,
           "value": 52.54846339304788,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 97,
@@ -4267,7 +4267,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 100,
@@ -4350,7 +4350,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 109,
@@ -4425,7 +4425,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 117,
@@ -4443,7 +4443,7 @@
           "kind": "float",
           "raw": 42631,
           "value": 6540.121158482621,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 119,
@@ -4497,7 +4497,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 12,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 125,
@@ -4526,7 +4526,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 128,
@@ -4564,7 +4564,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 132,
@@ -4591,7 +4591,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 135,
@@ -4797,7 +4797,7 @@
           "kind": "float",
           "raw": 0,
           "value": 10,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 13,
@@ -4806,7 +4806,7 @@
           "kind": "float",
           "raw": 61440,
           "value": 37526.132999664296,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 14,
@@ -4815,7 +4815,7 @@
           "kind": "float",
           "raw": 24318,
           "value": 867.9342020935698,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 15,
@@ -4842,7 +4842,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 18,
@@ -4851,7 +4851,7 @@
           "kind": "float",
           "raw": 9864,
           "value": 79.50605792413099,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 19,
@@ -4860,7 +4860,7 @@
           "kind": "float",
           "raw": 52157,
           "value": 32651.57017731254,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 20,
@@ -4953,7 +4953,7 @@
           "kind": "float",
           "raw": 21453,
           "value": 157.8484450819422,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 30,
@@ -4990,7 +4990,7 @@
           "kind": "float",
           "raw": 0,
           "value": 1,
-          "unit": "numeric"
+          "unit": "pf"
         },
         {
           "paramId": 34,
@@ -4999,7 +4999,7 @@
           "kind": "float",
           "raw": 15269,
           "value": 467.52113406781217,
-          "unit": "unverified"
+          "unit": "hz"
         },
         {
           "paramId": 35,
@@ -5027,7 +5027,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50.5,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 38,
@@ -5102,7 +5102,7 @@
           "kind": "float",
           "raw": 35655,
           "value": 2358.647419660024,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 46,
@@ -5285,7 +5285,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 66,
@@ -5294,7 +5294,7 @@
           "kind": "float",
           "raw": 45058,
           "value": 17.266899624622333,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 67,
@@ -5303,7 +5303,7 @@
           "kind": "float",
           "raw": 55383,
           "value": 42.33261360515152,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 68,
@@ -5312,7 +5312,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 69,
@@ -5321,7 +5321,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 40000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 70,
@@ -5368,7 +5368,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 5050,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 75,
@@ -5377,7 +5377,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 76,
@@ -5441,7 +5441,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 83,
@@ -5505,7 +5505,7 @@
           "kind": "float",
           "raw": 28086,
           "value": 60,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 90,
@@ -5561,7 +5561,7 @@
           "kind": "float",
           "raw": 39648,
           "value": 60.499893185216834,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 96,
@@ -5570,7 +5570,7 @@
           "kind": "float",
           "raw": 34123,
           "value": 52.54846339304788,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 97,
@@ -5598,7 +5598,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 100,
@@ -5681,7 +5681,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 109,
@@ -5756,7 +5756,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 117,
@@ -5774,7 +5774,7 @@
           "kind": "float",
           "raw": 42631,
           "value": 6540.121158482621,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 119,
@@ -5828,7 +5828,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 12,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 125,
@@ -5857,7 +5857,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 128,
@@ -5895,7 +5895,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 132,
@@ -5922,7 +5922,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 135,
@@ -6109,7 +6109,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 9,
@@ -6118,7 +6118,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 10,
@@ -6181,7 +6181,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 17,
@@ -6190,7 +6190,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 18,
@@ -6291,7 +6291,7 @@
           "kind": "float",
           "raw": 52427,
           "value": -0.00030518509475996325,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 29,
@@ -6356,7 +6356,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 36,
@@ -6383,7 +6383,7 @@
           "kind": "float",
           "raw": 20079,
           "value": 626.6533402508621,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 39,
@@ -6392,7 +6392,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 20000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 40,
@@ -6410,7 +6410,7 @@
           "kind": "float",
           "raw": 50995,
           "value": 160.0662251655629,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 42,
@@ -6439,7 +6439,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 45,
@@ -6448,7 +6448,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 46,
@@ -6457,7 +6457,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 47,
@@ -6521,7 +6521,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 54,
@@ -6530,7 +6530,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 55,
@@ -6539,7 +6539,7 @@
           "kind": "float",
           "raw": 26079,
           "value": 9163.029877620778,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 56,
@@ -6576,7 +6576,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 60,
@@ -6603,7 +6603,7 @@
           "kind": "float",
           "raw": 0,
           "value": 20,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 63,
@@ -6612,7 +6612,7 @@
           "kind": "float",
           "raw": 0,
           "value": 20,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 64,
@@ -6639,7 +6639,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 20000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 67,
@@ -6648,7 +6648,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 20000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 68,
@@ -7076,7 +7076,7 @@
           "kind": "float",
           "raw": 52427,
           "value": -0.00015259254737998162,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 9,
@@ -7130,7 +7130,7 @@
           "kind": "float",
           "raw": 52427,
           "value": -0.00030518509475996325,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 15,
@@ -7167,7 +7167,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 19,
@@ -7185,7 +7185,7 @@
           "kind": "float",
           "raw": 52427,
           "value": 79.99969481490524,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 21,
@@ -7194,7 +7194,7 @@
           "kind": "float",
           "raw": 16384,
           "value": 25.0007629627369,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 22,
@@ -7311,7 +7311,7 @@
           "kind": "float",
           "raw": 19728,
           "value": 3080.2423169652393,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 35,
@@ -7320,7 +7320,7 @@
           "kind": "float",
           "raw": 49151,
           "value": 100.0030518509476,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 36,
@@ -7329,7 +7329,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 37,
@@ -7347,7 +7347,7 @@
           "kind": "float",
           "raw": 0,
           "value": 1,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 39,
@@ -7383,7 +7383,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 43,
@@ -7440,7 +7440,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 49,
@@ -7516,7 +7516,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 57,
@@ -7535,7 +7535,7 @@
           "kind": "float",
           "raw": 0,
           "value": 10,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 59,
@@ -7554,7 +7554,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 61,
@@ -7563,7 +7563,7 @@
           "kind": "float",
           "raw": 0,
           "value": -100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 62,
@@ -7582,7 +7582,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 64,
@@ -7591,7 +7591,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 65,
@@ -7600,7 +7600,7 @@
           "kind": "float",
           "raw": 0,
           "value": 200,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 66,
@@ -7749,7 +7749,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 10,
@@ -7758,7 +7758,7 @@
           "kind": "float",
           "raw": 42233,
           "value": 28.888821069978945,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 11,
@@ -7767,7 +7767,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "unverified"
+          "unit": "percent"
         },
         {
           "paramId": 12,
@@ -7776,7 +7776,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 13,
@@ -7794,7 +7794,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 15,
@@ -7831,7 +7831,7 @@
           "kind": "float",
           "raw": 27691,
           "value": 4.283185827204199,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 19,
@@ -7840,7 +7840,7 @@
           "kind": "float",
           "raw": 45806,
           "value": 14.039515366069521,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 20,
@@ -7849,7 +7849,7 @@
           "kind": "float",
           "raw": 26760,
           "value": 40.83376567888424,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 21,
@@ -7858,7 +7858,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 22,
@@ -7876,7 +7876,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 24,
@@ -7905,7 +7905,7 @@
           "kind": "float",
           "raw": 2044,
           "value": 500.00747703482165,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 27,
@@ -7943,7 +7943,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 31,
@@ -7952,7 +7952,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "unverified"
+          "unit": "percent"
         },
         {
           "paramId": 32,
@@ -7997,7 +7997,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "degrees"
         },
         {
           "paramId": 37,
@@ -8006,7 +8006,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "degrees"
         },
         {
           "paramId": 38,
@@ -8015,7 +8015,7 @@
           "kind": "float",
           "raw": 2322,
           "value": 9.999725333414716,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 39,
@@ -8054,7 +8054,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 43,
@@ -8063,7 +8063,7 @@
           "kind": "float",
           "raw": 26214,
           "value": -39.99938962981048,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 44,
@@ -8072,7 +8072,7 @@
           "kind": "float",
           "raw": 21845,
           "value": 334.0050813318278,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 45,
@@ -8149,7 +8149,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0.1,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 53,
@@ -8168,7 +8168,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "degrees"
         },
         {
           "paramId": 55,
@@ -8187,7 +8187,7 @@
           "kind": "float",
           "raw": 0,
           "value": 100,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 57,
@@ -8196,7 +8196,7 @@
           "kind": "float",
           "raw": 0,
           "value": 500,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 58,
@@ -8232,7 +8232,7 @@
           "kind": "float",
           "raw": 42631,
           "value": 1308.024231696524,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 62,
@@ -8241,7 +8241,7 @@
           "kind": "float",
           "raw": 29592,
           "value": 4570.363475447859,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 63,
@@ -8268,7 +8268,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 66,
@@ -8277,7 +8277,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 67,
@@ -8305,7 +8305,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 70,
@@ -8334,7 +8334,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50.5,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 73,
@@ -8343,7 +8343,7 @@
           "kind": "float",
           "raw": 32767,
           "value": -60,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 74,
@@ -8389,7 +8389,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 5.05,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 79,
@@ -8408,7 +8408,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 81,
@@ -8417,7 +8417,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 180,
-          "unit": "numeric"
+          "unit": "degrees"
         },
         {
           "paramId": 82,
@@ -8503,7 +8503,7 @@
           "kind": "float",
           "raw": 31268,
           "value": 529.413739432966,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 2,
@@ -8512,7 +8512,7 @@
           "kind": "float",
           "raw": 32201,
           "value": 2711.1346781823177,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 3,
@@ -8622,7 +8622,7 @@
           "kind": "float",
           "raw": 29502,
           "value": 911.3534958952604,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 15,
@@ -8798,7 +8798,7 @@
           "kind": "float",
           "raw": 52427,
           "value": -0.00030518509475996325,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 8,
@@ -8871,7 +8871,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 180,
-          "unit": "numeric"
+          "unit": "degrees"
         },
         {
           "paramId": 16,
@@ -8890,7 +8890,7 @@
           "kind": "float",
           "raw": 35655,
           "value": 1179.323709830012,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 18,
@@ -8899,7 +8899,7 @@
           "kind": "float",
           "raw": 0,
           "value": -60,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 19,
@@ -8918,7 +8918,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50.00000000000001,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 21,
@@ -9019,7 +9019,7 @@
           "kind": "float",
           "raw": 0,
           "value": 20,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 9,
@@ -9028,7 +9028,7 @@
           "kind": "float",
           "raw": 61440,
           "value": 18763.066499832148,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 10,
@@ -9074,7 +9074,7 @@
           "kind": "float",
           "raw": 31268,
           "value": 1058.827478865932,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 15,
@@ -9120,7 +9120,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 48000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 20,
@@ -9276,7 +9276,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 37,
@@ -9442,7 +9442,7 @@
           "kind": "float",
           "raw": 27524,
           "value": -8.000427259132664,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 11,
@@ -9451,7 +9451,7 @@
           "kind": "float",
           "raw": 38010,
           "value": 8.000427259132657,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 12,
@@ -9460,7 +9460,7 @@
           "kind": "float",
           "raw": 32308,
           "value": -0.700399792474137,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 13,
@@ -9469,7 +9469,7 @@
           "kind": "float",
           "raw": 33226,
           "value": 0.700399792474137,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 14,
@@ -9478,7 +9478,7 @@
           "kind": "float",
           "raw": 27983,
           "value": -7.300027466658527,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 15,
@@ -9487,7 +9487,7 @@
           "kind": "float",
           "raw": 37551,
           "value": 7.300027466658534,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 16,
@@ -9496,7 +9496,7 @@
           "kind": "float",
           "raw": 31456,
           "value": -2.000488296151616,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 17,
@@ -9505,7 +9505,7 @@
           "kind": "float",
           "raw": 34078,
           "value": 2.000488296151616,
-          "unit": "numeric"
+          "unit": "cents"
         },
         {
           "paramId": 18,
@@ -9514,7 +9514,7 @@
           "kind": "float",
           "raw": 525,
           "value": 17.014206366161076,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 19,
@@ -9523,7 +9523,7 @@
           "kind": "float",
           "raw": 852,
           "value": 26.988769188512833,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 20,
@@ -9532,7 +9532,7 @@
           "kind": "float",
           "raw": 1442,
           "value": 44.98568681905576,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 21,
@@ -9541,7 +9541,7 @@
           "kind": "float",
           "raw": 2328,
           "value": 72.01156651509142,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 22,
@@ -9550,7 +9550,7 @@
           "kind": "float",
           "raw": 3803,
           "value": 117.00386059144871,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 23,
@@ -9559,7 +9559,7 @@
           "kind": "float",
           "raw": 6130,
           "value": 187.98492385631886,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 24,
@@ -9568,7 +9568,7 @@
           "kind": "float",
           "raw": 9966,
           "value": 304.99539170506915,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 25,
@@ -9577,7 +9577,7 @@
           "kind": "float",
           "raw": 16129,
           "value": 492.98692281868955,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 26,
@@ -9666,7 +9666,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 35,
@@ -9675,7 +9675,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 36,
@@ -9684,7 +9684,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 37,
@@ -9693,7 +9693,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 38,
@@ -9702,7 +9702,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 39,
@@ -9711,7 +9711,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 40,
@@ -9720,7 +9720,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 41,
@@ -9729,7 +9729,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 42,
@@ -9810,7 +9810,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 51,
@@ -9819,7 +9819,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 52,
@@ -9828,7 +9828,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 53,
@@ -9837,7 +9837,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 54,
@@ -9846,7 +9846,7 @@
           "kind": "float",
           "raw": 49151,
           "value": 100.0030518509476,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 55,
@@ -9855,7 +9855,7 @@
           "kind": "float",
           "raw": 49151,
           "value": 100.0030518509476,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 56,
@@ -9864,7 +9864,7 @@
           "kind": "float",
           "raw": 10913,
           "value": 9.999789574877164,
-          "unit": "numeric"
+          "unit": "seconds"
         },
         {
           "paramId": 57,
@@ -9873,7 +9873,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 58,
@@ -9892,7 +9892,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 50,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 60,
@@ -9901,7 +9901,7 @@
           "kind": "float",
           "raw": 22903,
           "value": 711.9757683034761,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 61,
@@ -9910,7 +9910,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 20000,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 62,
@@ -9919,7 +9919,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 63,
@@ -9928,7 +9928,7 @@
           "kind": "float",
           "raw": 0,
           "value": -80,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 64,
@@ -9937,7 +9937,7 @@
           "kind": "float",
           "raw": 590,
           "value": 9.993957335123753,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 65,
@@ -9946,7 +9946,7 @@
           "kind": "float",
           "raw": 65534,
           "value": 100,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 66,
@@ -9955,7 +9955,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 50,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 67,
@@ -9964,7 +9964,7 @@
           "kind": "float",
           "raw": 45627,
           "value": 6.977528458510085,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 68,
@@ -9973,7 +9973,7 @@
           "kind": "float",
           "raw": 1900,
           "value": 2.8992584002197335,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 69,
@@ -9992,7 +9992,7 @@
           "kind": "float",
           "raw": 0,
           "value": -100,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 71,
@@ -10001,7 +10001,7 @@
           "kind": "float",
           "raw": 43689,
           "value": 6669.9491866817225,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 72,
@@ -10010,7 +10010,7 @@
           "kind": "float",
           "raw": 0,
           "value": 1,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 73,
@@ -10028,7 +10028,7 @@
           "kind": "float",
           "raw": 52427,
           "value": -0.00030518509475996325,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 75,
@@ -10074,7 +10074,7 @@
           "kind": "float",
           "raw": 32436,
           "value": 49.999969481490524,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 80,
@@ -10083,7 +10083,7 @@
           "kind": "float",
           "raw": 49151,
           "value": 100.0030518509476,
-          "unit": "numeric"
+          "unit": "percent"
         },
         {
           "paramId": 81,
@@ -10092,7 +10092,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0,
-          "unit": "numeric"
+          "unit": "ms"
         },
         {
           "paramId": 82,
@@ -10111,7 +10111,7 @@
           "kind": "float",
           "raw": 21845,
           "value": 6680.101626636555,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 84,
@@ -10129,7 +10129,7 @@
           "kind": "float",
           "raw": 32767,
           "value": 0,
-          "unit": "numeric"
+          "unit": "db"
         },
         {
           "paramId": 86,
@@ -10187,7 +10187,7 @@
           "kind": "float",
           "raw": 0,
           "value": 0.1,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 93,
@@ -10196,7 +10196,7 @@
           "kind": "float",
           "raw": 0,
           "value": 20,
-          "unit": "numeric"
+          "unit": "hz"
         },
         {
           "paramId": 94,

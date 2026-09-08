@@ -58,6 +58,7 @@ import { runBlockFileWriteTests, BLOCKFILE_WRITE_CASE_COUNT } from './gen3/fm3/b
 import { runPresetAuthorIrTests, PRESET_AUTHOR_IR_CASE_COUNT } from './gen3/fm3/preset-author-ir.test.js';
 import { runPresetSynthIrTests, PRESET_SYNTH_IR_CASE_COUNT } from './gen3/fm3/preset-synth-ir.test.js';
 import { runDefaultRawRoundTripTests, DEFAULT_RAW_ROUNDTRIP_CASE_COUNT } from './gen3/default-raw-roundtrip.test.js';
+import { runDerivedUnitsTests, DERIVED_UNITS_CASE_COUNT } from './gen3/derived-units.test.js';
 import { runPresetSynthCatalogTests, PRESET_SYNTH_CATALOG_CASE_COUNT } from './gen3/fm3/preset-synth-catalog.test.js';
 import { runGen3SynthNonFm3Tests, GEN3_SYNTH_NONFM3_CASE_COUNT } from './gen3/gen3-synth-nonfm3.test.js';
 import { runRoutingRoundTripTests, ROUTING_ROUNDTRIP_CASE_COUNT } from './gen3/fm3/routing-roundtrip.test.js';
@@ -167,6 +168,7 @@ const tests: Array<{ name: string; run: () => void | Promise<void> }> = [
   { name: `modern-family/blockparams-cross (${CROSS_BLOCKPARAMS_CASE_COUNT} cross-device preset goldens)`, run: runCrossBlockParamsTests },
   { name: `modern-family/blockfile-cross (${CROSS_BLOCKFILE_CASE_COUNT} .blk edge-case goldens)`, run: runCrossBlockFileTests },
   { name: `gen3/default-raw-roundtrip (${DEFAULT_RAW_ROUNDTRIP_CASE_COUNT} models: FM3/FM9/III)`, run: runDefaultRawRoundTripTests },
+  { name: `gen3/derived-units (${DERIVED_UNITS_CASE_COUNT} checks: FM3/FM9/III)`, run: runDerivedUnitsTests },
   { name: `fm3/telemetry (${FM3_TELEMETRY_CASE_COUNT} live-FM3 frame goldens)`, run: runFm3TelemetryTests },
   { name: `gen3/roster (${FM3_ROSTER_CASE_COUNT} projection goldens)`, run: runGen3RosterTests },
   { name: `gen3/preset-validate (${PRESET_VALIDATE_CASE_COUNT} cases)`, run: runPresetValidateTests },

@@ -21,8 +21,12 @@
  * knob_0_10, etc.) but NOT the gen-3 wire encoding. Display↔wire
  * conversion is still the caller's responsibility
  * until hardware verification lands.
+ *
+ * Tags may also be DERIVED from the device's own `typecode` bitfield —
+ * see `scripts/derive-gen3-units.ts`. Those rows carry a
+ * `// unit from typecode class N` provenance comment in the catalog.
  */
-export type Unit = 'bipolar_percent' | 'count' | 'db' | 'degrees' | 'enum' | 'hz' | 'knob_0_10' | 'knob_0_20' | 'ms' | 'numeric' | 'percent' | 'pf' | 'ratio' | 'seconds' | 'semitones' | 'unverified';
+export type Unit = 'bipolar_percent' | 'cents' | 'count' | 'db' | 'degrees' | 'enum' | 'hz' | 'knob_0_10' | 'knob_0_20' | 'ms' | 'numeric' | 'percent' | 'pf' | 'ratio' | 'seconds' | 'semitones' | 'unverified';
 
 /** One entry in a gen-3 device parameter catalog. */
 export interface Param {

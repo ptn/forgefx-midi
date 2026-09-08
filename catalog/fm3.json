@@ -73,14 +73,14 @@
         "paramId": 8,
         "name": "CABINET_LEVEL1",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CABINET",
         "paramId": 9,
         "name": "CABINET_LEVEL2",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CABINET",
@@ -137,14 +137,14 @@
         "paramId": 16,
         "name": "CABINET_DELAY1",
         "displayLabel": "Distance 1",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CABINET",
         "paramId": 17,
         "name": "CABINET_DELAY2",
         "displayLabel": "Distance 2",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CABINET",
@@ -217,7 +217,7 @@
         "paramId": 28,
         "name": "CABINET_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CABINET",
@@ -267,7 +267,7 @@
         "paramId": 35,
         "name": "CABINET_ROOMMIX",
         "displayLabel": "Room Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CABINET",
@@ -288,14 +288,14 @@
         "paramId": 38,
         "name": "CABINET_LOCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
         "paramId": 39,
         "name": "CABINET_HICUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
@@ -309,7 +309,7 @@
         "paramId": 41,
         "name": "CABINET_PROXFREQ",
         "displayLabel": "Proximity Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
@@ -330,21 +330,21 @@
         "paramId": 44,
         "name": "CABINET_BASS",
         "displayLabel": "Bass",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CABINET",
         "paramId": 45,
         "name": "CABINET_MID",
         "displayLabel": "Mid",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CABINET",
         "paramId": 46,
         "name": "CABINET_TREBLE",
         "displayLabel": "Treble",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CABINET",
@@ -393,21 +393,21 @@
         "paramId": 53,
         "name": "CABINET_FLOORLVL",
         "displayLabel": "Floor Reflections",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CABINET",
         "paramId": 54,
         "name": "CABINET_AIR",
         "displayLabel": "Air",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CABINET",
         "paramId": 55,
         "name": "CABINET_AIRFREQ",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
@@ -435,7 +435,7 @@
         "paramId": 59,
         "name": "CABINET_DIFFUSION",
         "displayLabel": "Room Diffusion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CABINET",
@@ -455,14 +455,14 @@
         "paramId": 62,
         "name": "CABINET_LOCUT1",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
         "paramId": 63,
         "name": "CABINET_LOCUT2",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
@@ -483,14 +483,14 @@
         "paramId": 66,
         "name": "CABINET_HICUT1",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
         "paramId": 67,
         "name": "CABINET_HICUT2",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CABINET",
@@ -817,7 +817,7 @@
         "paramId": 7,
         "name": "CHORUS_LFOPHASE",
         "displayLabel": "LFO Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "CHORUS",
@@ -903,14 +903,14 @@
         "paramId": 18,
         "name": "CHORUS_RATE2",
         "displayLabel": "LFO2 Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CHORUS",
         "paramId": 19,
         "name": "CHORUS_DEPTH2",
         "displayLabel": "LFO2 Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CHORUS",
@@ -936,7 +936,7 @@
         "paramId": 22,
         "name": "CHORUS_SPREAD",
         "displayLabel": "Stereo Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CHORUS",
@@ -1060,7 +1060,7 @@
         "paramId": 8,
         "name": "COMP_LOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "COMP",
@@ -1110,7 +1110,7 @@
         "paramId": 15,
         "name": "COMP_DELAYTIME",
         "displayLabel": "Look-Ahead Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "COMP",
@@ -1149,21 +1149,21 @@
         "paramId": 20,
         "name": "COMP_HIGHCUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "COMP",
         "paramId": 21,
         "name": "COMP_GAIN",
         "displayLabel": "Gain",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "COMP",
         "paramId": 22,
         "name": "COMP_FREQ",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "COMP",
@@ -1200,7 +1200,7 @@
         "paramId": 27,
         "name": "COMP_THRESH2",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "COMP",
@@ -1226,7 +1226,7 @@
         "paramId": 31,
         "name": "COMP_COMPTIME",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "COMP",
@@ -1240,7 +1240,7 @@
         "paramId": 33,
         "name": "COMP_EMPHFREQ",
         "displayLabel": "Emphasis Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "COMP",
@@ -1279,28 +1279,28 @@
         "paramId": 1,
         "name": "CONTROLLERS_LFO1FREQ",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 2,
         "name": "CONTROLLERS_LFO1DEPTH",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 3,
         "name": "CONTROLLERS_LFO1DUTY",
         "displayLabel": "Duty Cycle",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 4,
         "name": "CONTROLLERS_LFO1PHASE",
         "displayLabel": "Output B Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "CONTROLLERS",
@@ -1321,28 +1321,28 @@
         "paramId": 7,
         "name": "CONTROLLERS_LFO2FREQ",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 8,
         "name": "CONTROLLERS_LFO2DEPTH",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 9,
         "name": "CONTROLLERS_LFO2DUTY",
         "displayLabel": "Duty Cycle",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 10,
         "name": "CONTROLLERS_LFO2PHASE",
         "displayLabel": "Output B Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "CONTROLLERS",
@@ -1370,42 +1370,42 @@
         "paramId": 14,
         "name": "CONTROLLERS_ADSR1ATTACK",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 15,
         "name": "CONTROLLERS_ADSR1DECAY",
         "displayLabel": "Decay",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 16,
         "name": "CONTROLLERS_ADSR1SUSTAIN",
         "displayLabel": "Sustain",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 17,
         "name": "CONTROLLERS_ADSR1LEVEL",
         "displayLabel": "Sustain Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 18,
         "name": "CONTROLLERS_ADSR1RELEASE",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 19,
         "name": "CONTROLLERS_ADSR1THRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CONTROLLERS",
@@ -1426,63 +1426,63 @@
         "paramId": 22,
         "name": "CONTROLLERS_ADSR2ATTACK",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 23,
         "name": "CONTROLLERS_ADSR2DECAY",
         "displayLabel": "Decay",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 24,
         "name": "CONTROLLERS_ADSR2SUSTAIN",
         "displayLabel": "Sustain",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 25,
         "name": "CONTROLLERS_ADSR2LEVEL",
         "displayLabel": "Sustain Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 26,
         "name": "CONTROLLERS_ADSR2RELEASE",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 27,
         "name": "CONTROLLERS_ADSR2THRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 28,
         "name": "CONTROLLERS_ENVATTACK",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 29,
         "name": "CONTROLLERS_ENVRELEASE",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 30,
         "name": "CONTROLLERS_ENVSENS",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "CONTROLLERS",
@@ -1510,7 +1510,7 @@
         "paramId": 34,
         "name": "CONTROLLERS_SEQFREQ",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CONTROLLERS",
@@ -1538,224 +1538,224 @@
         "paramId": 38,
         "name": "CONTROLLERS_SEQ1",
         "displayLabel": "1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 39,
         "name": "CONTROLLERS_SEQ2",
         "displayLabel": "2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 40,
         "name": "CONTROLLERS_SEQ3",
         "displayLabel": "3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 41,
         "name": "CONTROLLERS_SEQ4",
         "displayLabel": "4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 42,
         "name": "CONTROLLERS_SEQ5",
         "displayLabel": "5",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 43,
         "name": "CONTROLLERS_SEQ6",
         "displayLabel": "6",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 44,
         "name": "CONTROLLERS_SEQ7",
         "displayLabel": "7",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 45,
         "name": "CONTROLLERS_SEQ8",
         "displayLabel": "8",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 46,
         "name": "CONTROLLERS_SEQ9",
         "displayLabel": "9",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 47,
         "name": "CONTROLLERS_SEQ10",
         "displayLabel": "10",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 48,
         "name": "CONTROLLERS_SEQ11",
         "displayLabel": "11",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 49,
         "name": "CONTROLLERS_SEQ12",
         "displayLabel": "12",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 50,
         "name": "CONTROLLERS_SEQ13",
         "displayLabel": "13",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 51,
         "name": "CONTROLLERS_SEQ14",
         "displayLabel": "14",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 52,
         "name": "CONTROLLERS_SEQ15",
         "displayLabel": "15",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 53,
         "name": "CONTROLLERS_SEQ16",
         "displayLabel": "16",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 54,
         "name": "CONTROLLERS_SEQ17",
         "displayLabel": "17",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 55,
         "name": "CONTROLLERS_SEQ18",
         "displayLabel": "18",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 56,
         "name": "CONTROLLERS_SEQ19",
         "displayLabel": "19",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 57,
         "name": "CONTROLLERS_SEQ20",
         "displayLabel": "20",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 58,
         "name": "CONTROLLERS_SEQ21",
         "displayLabel": "21",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 59,
         "name": "CONTROLLERS_SEQ22",
         "displayLabel": "22",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 60,
         "name": "CONTROLLERS_SEQ23",
         "displayLabel": "23",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 61,
         "name": "CONTROLLERS_SEQ24",
         "displayLabel": "24",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 62,
         "name": "CONTROLLERS_SEQ25",
         "displayLabel": "25",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 63,
         "name": "CONTROLLERS_SEQ26",
         "displayLabel": "26",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 64,
         "name": "CONTROLLERS_SEQ27",
         "displayLabel": "27",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 65,
         "name": "CONTROLLERS_SEQ28",
         "displayLabel": "28",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 66,
         "name": "CONTROLLERS_SEQ29",
         "displayLabel": "29",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 67,
         "name": "CONTROLLERS_SEQ30",
         "displayLabel": "30",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 68,
         "name": "CONTROLLERS_SEQ31",
         "displayLabel": "31",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 69,
         "name": "CONTROLLERS_SEQ32",
         "displayLabel": "32",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
@@ -1776,224 +1776,224 @@
         "paramId": 72,
         "name": "CONTROLLERS_SCENE1_VAL1",
         "displayLabel": "Scene 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 73,
         "name": "CONTROLLERS_SCENE1_VAL2",
         "displayLabel": "Scene 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 74,
         "name": "CONTROLLERS_SCENE1_VAL3",
         "displayLabel": "Scene 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 75,
         "name": "CONTROLLERS_SCENE1_VAL4",
         "displayLabel": "Scene 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 76,
         "name": "CONTROLLERS_SCENE1_VAL5",
         "displayLabel": "Scene 5",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 77,
         "name": "CONTROLLERS_SCENE1_VAL6",
         "displayLabel": "Scene 6",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 78,
         "name": "CONTROLLERS_SCENE1_VAL7",
         "displayLabel": "Scene 7",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 79,
         "name": "CONTROLLERS_SCENE1_VAL8",
         "displayLabel": "Scene 8",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 80,
         "name": "CONTROLLERS_SCENE2_VAL1",
         "displayLabel": "Scene 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 81,
         "name": "CONTROLLERS_SCENE2_VAL2",
         "displayLabel": "Scene 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 82,
         "name": "CONTROLLERS_SCENE2_VAL3",
         "displayLabel": "Scene 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 83,
         "name": "CONTROLLERS_SCENE2_VAL4",
         "displayLabel": "Scene 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 84,
         "name": "CONTROLLERS_SCENE2_VAL5",
         "displayLabel": "Scene 5",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 85,
         "name": "CONTROLLERS_SCENE2_VAL6",
         "displayLabel": "Scene 6",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 86,
         "name": "CONTROLLERS_SCENE2_VAL7",
         "displayLabel": "Scene 7",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 87,
         "name": "CONTROLLERS_SCENE2_VAL8",
         "displayLabel": "Scene 8",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 88,
         "name": "CONTROLLERS_SCENE3_VAL1",
         "displayLabel": "Scene 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 89,
         "name": "CONTROLLERS_SCENE3_VAL2",
         "displayLabel": "Scene 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 90,
         "name": "CONTROLLERS_SCENE3_VAL3",
         "displayLabel": "Scene 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 91,
         "name": "CONTROLLERS_SCENE3_VAL4",
         "displayLabel": "Scene 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 92,
         "name": "CONTROLLERS_SCENE3_VAL5",
         "displayLabel": "Scene 5",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 93,
         "name": "CONTROLLERS_SCENE3_VAL6",
         "displayLabel": "Scene 6",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 94,
         "name": "CONTROLLERS_SCENE3_VAL7",
         "displayLabel": "Scene 7",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 95,
         "name": "CONTROLLERS_SCENE3_VAL8",
         "displayLabel": "Scene 8",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 96,
         "name": "CONTROLLERS_SCENE4_VAL1",
         "displayLabel": "Scene 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 97,
         "name": "CONTROLLERS_SCENE4_VAL2",
         "displayLabel": "Scene 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 98,
         "name": "CONTROLLERS_SCENE4_VAL3",
         "displayLabel": "Scene 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 99,
         "name": "CONTROLLERS_SCENE4_VAL4",
         "displayLabel": "Scene 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 100,
         "name": "CONTROLLERS_SCENE4_VAL5",
         "displayLabel": "Scene 5",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 101,
         "name": "CONTROLLERS_SCENE4_VAL6",
         "displayLabel": "Scene 6",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 102,
         "name": "CONTROLLERS_SCENE4_VAL7",
         "displayLabel": "Scene 7",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 103,
         "name": "CONTROLLERS_SCENE4_VAL8",
         "displayLabel": "Scene 8",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
@@ -2048,84 +2048,84 @@
         "paramId": 111,
         "name": "CONTROLLERS_SEQ_DAMPING",
         "displayLabel": "Damping Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 112,
         "name": "CONTROLLERS_MANUAL1",
         "displayLabel": "Manual 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 113,
         "name": "CONTROLLERS_MANUAL2",
         "displayLabel": "Manual 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 114,
         "name": "CONTROLLERS_MANUAL3",
         "displayLabel": "Manual 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 115,
         "name": "CONTROLLERS_MANUAL4",
         "displayLabel": "Manual 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 116,
         "name": "CONTROLLERS_MANUAL5",
         "displayLabel": "Manual 5",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 117,
         "name": "CONTROLLERS_ENVLOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 118,
         "name": "CONTROLLERS_ENVHIGHCUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 119,
         "name": "CONTROLLERS_LFO1BETA",
         "displayLabel": "Astable Beta",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 120,
         "name": "CONTROLLERS_LFO2BETA",
         "displayLabel": "Astable Beta",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 121,
         "name": "CONTROLLERS_LFO1HICUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CONTROLLERS",
         "paramId": 122,
         "name": "CONTROLLERS_LFO2HICUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "CONTROLLERS",
@@ -2432,27 +2432,27 @@
         "paramId": 9,
         "name": "DELAY_RATIO",
         "displayLabel": "L/R Time Ratio",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
         "paramId": 10,
         "name": "DELAY_FEED",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
         "paramId": 11,
         "name": "DELAY_FEEDL",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
         "paramId": 12,
         "name": "DELAY_FEEDR",
         "displayLabel": "Feedback R",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
@@ -2466,7 +2466,7 @@
         "paramId": 14,
         "name": "DELAY_SPREAD",
         "displayLabel": "Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
@@ -2498,28 +2498,28 @@
         "paramId": 18,
         "name": "DELAY_RATE1",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
         "paramId": 19,
         "name": "DELAY_RATE2",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
         "paramId": 20,
         "name": "DELAY_DEPTH1",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
         "paramId": 21,
         "name": "DELAY_DEPTH2",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
@@ -2533,7 +2533,7 @@
         "paramId": 23,
         "name": "DELAY_GAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
@@ -2554,7 +2554,7 @@
         "paramId": 26,
         "name": "DELAY_TIMER",
         "displayLabel": "Time R",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DELAY",
@@ -2584,13 +2584,13 @@
         "paramId": 30,
         "name": "DELAY_FEEDLR",
         "displayLabel": "Rotation",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
         "paramId": 31,
         "name": "DELAY_FEEDRL",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
@@ -2633,21 +2633,21 @@
         "paramId": 36,
         "name": "DELAY_LFO1PHASE",
         "displayLabel": "Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "DELAY",
         "paramId": 37,
         "name": "DELAY_LFO2PHASE",
         "displayLabel": "Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "DELAY",
         "paramId": 38,
         "name": "DELAY_SPLICETIME",
         "displayLabel": "Crossfade Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DELAY",
@@ -2675,21 +2675,21 @@
         "paramId": 42,
         "name": "DELAY_ATTEN",
         "displayLabel": "Attenuation",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DELAY",
         "paramId": 43,
         "name": "DELAY_THRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DELAY",
         "paramId": 44,
         "name": "DELAY_RELEASE",
         "displayLabel": "Release Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DELAY",
@@ -2745,7 +2745,7 @@
         "paramId": 52,
         "name": "DELAY_RATE3",
         "displayLabel": "Sweep Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
@@ -2759,7 +2759,7 @@
         "paramId": 54,
         "name": "DELAY_LFO3PHASE",
         "displayLabel": "Sweep Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "DELAY",
@@ -2773,14 +2773,14 @@
         "paramId": 56,
         "name": "DELAY_FSTART",
         "displayLabel": "Start Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
         "paramId": 57,
         "name": "DELAY_FSTOP",
         "displayLabel": "Stop Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
@@ -2810,14 +2810,14 @@
         "paramId": 61,
         "name": "DELAY_FREQ1",
         "displayLabel": "Freq 1",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
         "paramId": 62,
         "name": "DELAY_FREQ2",
         "displayLabel": "Freq 2",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
@@ -2838,14 +2838,14 @@
         "paramId": 65,
         "name": "DELAY_GAIN1",
         "displayLabel": "Gain 1",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DELAY",
         "paramId": 66,
         "name": "DELAY_GAIN2",
         "displayLabel": "Gain 2",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DELAY",
@@ -2866,7 +2866,7 @@
         "paramId": 69,
         "name": "DELAY_OFFSET",
         "displayLabel": "Right Post Delay",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DELAY",
@@ -2887,14 +2887,14 @@
         "paramId": 72,
         "name": "DELAY_COMPTIME",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DELAY",
         "paramId": 73,
         "name": "DELAY_COMPTHRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DELAY",
@@ -2931,7 +2931,7 @@
         "paramId": 78,
         "name": "DELAY_RATE4",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DELAY",
@@ -2945,14 +2945,14 @@
         "paramId": 80,
         "name": "DELAY_DEPTH4",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DELAY",
         "paramId": 81,
         "name": "DELAY_LFO4PHASE",
         "displayLabel": "Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "DELAY",
@@ -3088,21 +3088,21 @@
         "paramId": 12,
         "name": "DISTORT_HPFREQ",
         "displayLabel": "Low Cut Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
         "paramId": 13,
         "name": "DISTORT_LPFREQ",
         "displayLabel": "High Cut Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
         "paramId": 14,
         "name": "DISTORT_TONEFREQ",
         "displayLabel": "Tonestack Freq",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
@@ -3124,21 +3124,21 @@
         "family": "DISTORT",
         "paramId": 17,
         "name": "DISTORT_WSLPF",
-        "unit": "unverified"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
         "paramId": 18,
         "name": "DISTORT_XFHPF",
         "displayLabel": "XFormer Low Freq",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
         "paramId": 19,
         "name": "DISTORT_XFLPF",
         "displayLabel": "XFormer Hi Freq",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
@@ -3215,7 +3215,7 @@
         "paramId": 29,
         "name": "DISTORT_SPKRLFREQ",
         "displayLabel": "Low Freq",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
@@ -3244,13 +3244,13 @@
         "paramId": 33,
         "name": "DISTORT_MVCAP",
         "displayLabel": "Master Vol Cap",
-        "unit": "numeric"
+        "unit": "pf"
       },
       {
         "family": "DISTORT",
         "paramId": 34,
         "name": "DISTORT_WSHPF",
-        "unit": "unverified"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
@@ -3271,7 +3271,7 @@
         "paramId": 37,
         "name": "DISTORT_TIMECONST",
         "displayLabel": "B+ Time Constant",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DISTORT",
@@ -3327,7 +3327,7 @@
         "paramId": 45,
         "name": "DISTORT_SPKRHFREQ",
         "displayLabel": "High Freq",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
@@ -3469,35 +3469,35 @@
         "paramId": 65,
         "name": "DISTORT_BIASEXCURSION",
         "displayLabel": "Bias Excursion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
         "paramId": 66,
         "name": "DISTORT_EXCURSIONTIME",
         "displayLabel": "Excursion Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DISTORT",
         "paramId": 67,
         "name": "DISTORT_RECOVERYTIME",
         "displayLabel": "Recovery Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DISTORT",
         "paramId": 68,
         "name": "DISTORT_FEEDFWDFREQ2",
         "displayLabel": "Triode 2 Plate Freq",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
         "paramId": 69,
         "name": "DISTORT_FEEDFWDFREQ1",
         "displayLabel": "Triode 1 Plate Freq",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
@@ -3535,14 +3535,14 @@
         "paramId": 74,
         "name": "DISTORT_INEQFREQ",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
         "paramId": 75,
         "name": "DISTORT_INEQGAIN",
         "displayLabel": "Gain",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DISTORT",
@@ -3597,7 +3597,7 @@
         "paramId": 82,
         "name": "DISTORT_CFTHRESH",
         "displayLabel": "Compression",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
@@ -3653,7 +3653,7 @@
         "paramId": 89,
         "name": "DISTORT_LINEFREQ",
         "displayLabel": "AC Line Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "DISTORT",
@@ -3699,14 +3699,14 @@
         "paramId": 95,
         "name": "DISTORT_CBRATIO",
         "displayLabel": "Cathode Resistance",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
         "paramId": 96,
         "name": "DISTORT_CBTIME",
         "displayLabel": "Cathode Time Const",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DISTORT",
@@ -3728,7 +3728,7 @@
         "paramId": 99,
         "name": "DISTORT_HITREBLE",
         "displayLabel": "High Treble",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DISTORT",
@@ -3796,7 +3796,7 @@
         "paramId": 108,
         "name": "DISTORT_TRIODE2RATIO",
         "displayLabel": "Preamp Bias Excursion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
@@ -3859,7 +3859,7 @@
         "paramId": 116,
         "name": "DISTORT_PIEXCURSION",
         "displayLabel": "PI Bias Excursion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
@@ -3873,7 +3873,7 @@
         "paramId": 118,
         "name": "DISTORT_MDTIME",
         "displayLabel": "Speaker Time Const",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "DISTORT",
@@ -3920,7 +3920,7 @@
         "paramId": 124,
         "name": "DISTORT_BOOSTLVL",
         "displayLabel": "Boost Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "DISTORT",
@@ -3941,7 +3941,7 @@
         "paramId": 127,
         "name": "DISTORT_SPKRDYNAMICS",
         "displayLabel": "Speaker Compliance",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
@@ -3969,7 +3969,7 @@
         "paramId": 131,
         "name": "DISTORT_CABRESONANCE",
         "displayLabel": "Cab Resonance",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
@@ -3990,7 +3990,7 @@
         "paramId": 134,
         "name": "DISTORT_BIASX",
         "displayLabel": "Master Bias Excursion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "DISTORT",
@@ -4341,14 +4341,14 @@
         "paramId": 0,
         "name": "FDBKRET_RETLEVEL",
         "displayLabel": "Return Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "FDBKRET",
         "paramId": 1,
         "name": "FDBKRET_LEVEL",
         "displayLabel": "Output Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "FDBKRET",
@@ -4385,13 +4385,13 @@
         "family": "FDBKSEND",
         "paramId": 0,
         "name": "FDBKSEND_SENDLEVEL",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "FDBKSEND",
         "paramId": 1,
         "name": "FDBKSEND_OUTLEVEL",
-        "unit": "unverified"
+        "unit": "db"
       },
       {
         "family": "FILTER",
@@ -4510,7 +4510,7 @@
         "paramId": 14,
         "name": "FILTER_COMBTIME",
         "displayLabel": "Delay Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "FILTER",
@@ -4540,21 +4540,21 @@
         "paramId": 18,
         "name": "FILTER_LFOFREQ",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FILTER",
         "paramId": 19,
         "name": "FILTER_LFODUTY",
         "displayLabel": "Duty",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "FILTER",
         "paramId": 20,
         "name": "FILTER_MODFREQ",
         "displayLabel": "Mod Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FILTER",
@@ -4596,14 +4596,14 @@
         "paramId": 26,
         "name": "FILTER_START",
         "displayLabel": "Start Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FILTER",
         "paramId": 27,
         "name": "FILTER_STOP",
         "displayLabel": "Stop Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FILTER",
@@ -4617,14 +4617,14 @@
         "paramId": 29,
         "name": "FILTER_ATTACK",
         "displayLabel": "Attack Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "FILTER",
         "paramId": 30,
         "name": "FILTER_RELEASE",
         "displayLabel": "Release Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "FILTER",
@@ -4690,7 +4690,7 @@
         "paramId": 1,
         "name": "OLD_FLANGER_RATE",
         "displayLabel": "Rate",
-        "unit": "unverified"
+        "unit": "hz"
       },
       {
         "family": "FLANGER",
@@ -4720,7 +4720,7 @@
         "paramId": 3,
         "name": "OLD_FLANGER_DEPTH",
         "displayLabel": "Depth",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "FLANGER",
@@ -4736,7 +4736,7 @@
         "paramId": 4,
         "name": "OLD_FLANGER_FEEDBACK",
         "displayLabel": "Feedback",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "FLANGER",
@@ -4768,21 +4768,21 @@
         "paramId": 6,
         "name": "OLD_FLANGER_MANUAL",
         "displayLabel": "Dry Delay",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "FLANGER",
         "paramId": 7,
         "name": "FLANGER_LFOPHASE",
         "displayLabel": "Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "FLANGER",
         "paramId": 7,
         "name": "OLD_FLANGER_LFOPHASE",
         "displayLabel": "LFO Phase",
-        "unit": "unverified"
+        "unit": "degrees"
       },
       {
         "family": "FLANGER",
@@ -4803,14 +4803,14 @@
         "paramId": 9,
         "name": "FLANGER_LFOFILTER",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FLANGER",
         "paramId": 9,
         "name": "OLD_FLANGER_LFOFILTER",
         "displayLabel": "LFO Hicut",
-        "unit": "unverified"
+        "unit": "hz"
       },
       {
         "family": "FLANGER",
@@ -4840,7 +4840,7 @@
         "paramId": 11,
         "name": "OLD_FLANGER_MIX",
         "displayLabel": "Mix",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "FLANGER",
@@ -4856,7 +4856,7 @@
         "paramId": 12,
         "name": "OLD_FLANGER_LEVEL",
         "displayLabel": "Level",
-        "unit": "unverified"
+        "unit": "db"
       },
       {
         "family": "FLANGER",
@@ -4943,14 +4943,14 @@
         "paramId": 19,
         "name": "FLANGER_LPFREQ",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FLANGER",
         "paramId": 19,
         "name": "OLD_FLANGER_HICUT",
         "displayLabel": "High Cut",
-        "unit": "unverified"
+        "unit": "hz"
       },
       {
         "family": "FLANGER",
@@ -4974,28 +4974,28 @@
         "paramId": 21,
         "name": "FLANGER_HPFREQ",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FLANGER",
         "paramId": 21,
         "name": "OLD_FLANGER_LOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "unverified"
+        "unit": "hz"
       },
       {
         "family": "FLANGER",
         "paramId": 22,
         "name": "FLANGER_SPREAD",
         "displayLabel": "Stereo Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "FLANGER",
         "paramId": 22,
         "name": "OLD_FLANGER_SPREAD",
         "displayLabel": "Stereo Spread",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "FLANGER",
@@ -5111,7 +5111,7 @@
         "paramId": 4,
         "name": "FORMANT_CTRL",
         "displayLabel": "Control",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "FORMANT",
@@ -5127,7 +5127,7 @@
         "paramId": 6,
         "name": "FORMANT_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "FORMANT",
@@ -5229,14 +5229,14 @@
         "paramId": 8,
         "name": "FUZZ_LOCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FUZZ",
         "paramId": 9,
         "name": "FUZZ_HICUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FUZZ",
@@ -5271,7 +5271,7 @@
         "paramId": 14,
         "name": "FUZZ_MIDFREQ",
         "displayLabel": "Mid Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FUZZ",
@@ -5308,7 +5308,7 @@
         "paramId": 19,
         "name": "FUZZ_RESAMPLE",
         "displayLabel": "Sample Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "FUZZ",
@@ -5427,7 +5427,7 @@
         "paramId": 36,
         "name": "FUZZ_DRYGAIN",
         "displayLabel": "Dry Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "FUZZ",
@@ -5532,14 +5532,14 @@
         "paramId": 6,
         "name": "GATE_LOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GATE",
         "paramId": 7,
         "name": "GATE_HICUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GATE",
@@ -5601,7 +5601,7 @@
         "paramId": 15,
         "name": "GATE_RANGE",
         "displayLabel": "Attenuation",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GATE",
@@ -5780,14 +5780,14 @@
         "paramId": 1,
         "name": "GLOBAL_REVERBMIX",
         "displayLabel": "Reverb Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "GLOBAL",
         "paramId": 2,
         "name": "GLOBAL_EFFECTSMIX",
         "displayLabel": "Effects Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "GLOBAL",
@@ -5808,7 +5808,7 @@
         "paramId": 5,
         "name": "GLOBAL_TUNINGREF",
         "displayLabel": "Calibration",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
@@ -5836,42 +5836,42 @@
         "paramId": 9,
         "name": "GLOBAL_OFFSET1",
         "displayLabel": "E 1",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "GLOBAL",
         "paramId": 10,
         "name": "GLOBAL_OFFSET2",
         "displayLabel": "B 2",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "GLOBAL",
         "paramId": 11,
         "name": "GLOBAL_OFFSET3",
         "displayLabel": "G 3",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "GLOBAL",
         "paramId": 12,
         "name": "GLOBAL_OFFSET4",
         "displayLabel": "D 4",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "GLOBAL",
         "paramId": 13,
         "name": "GLOBAL_OFFSET5",
         "displayLabel": "A 5",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "GLOBAL",
         "paramId": 14,
         "name": "GLOBAL_OFFSET6",
         "displayLabel": "E 6",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "GLOBAL",
@@ -6032,7 +6032,7 @@
         "paramId": 39,
         "name": "GLOBAL_GATE_OFFSET",
         "displayLabel": "Noisegate Offset",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
@@ -6262,14 +6262,14 @@
         "paramId": 110,
         "name": "GLOBAL_FC_RING_BRIGHT_LEVEL",
         "displayLabel": "Bright",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "GLOBAL",
         "paramId": 111,
         "name": "GLOBAL_FC_RING_DIM_LEVEL",
         "displayLabel": "Dim",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "GLOBAL",
@@ -6296,56 +6296,56 @@
         "paramId": 119,
         "name": "GLOBAL_METLEVEL1",
         "displayLabel": "Output 1",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 120,
         "name": "GLOBAL_METLEVEL2",
         "displayLabel": "Output 2",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 121,
         "name": "GLOBAL_METLEVEL3",
         "displayLabel": "USB / Digital",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 123,
         "name": "GLOBAL_USBLEVEL1",
         "displayLabel": "USB 1/2",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 124,
         "name": "GLOBAL_USBLEVEL2",
         "displayLabel": "USB 3/4",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 125,
         "name": "GLOBAL_USBLEVEL3",
         "displayLabel": "USB 5/6",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 126,
         "name": "GLOBAL_USBLEVEL4",
         "displayLabel": "USB 7/8",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 131,
         "name": "GLOBAL_AESLEVEL",
         "displayLabel": "AES/SPDIF",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
@@ -6550,14 +6550,14 @@
         "paramId": 7115,
         "name": "GLOBAL_FS_BRIGHTNESS",
         "displayLabel": "Bright",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "GLOBAL",
         "paramId": 7116,
         "name": "GLOBAL_FS_LCD_CONTRAST",
         "displayLabel": "Contrast",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "GLOBAL",
@@ -6641,35 +6641,35 @@
         "paramId": 8649,
         "name": "GLOBAL_EQ1_FREQ1",
         "displayLabel": "Frequency 1",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8650,
         "name": "GLOBAL_EQ1_FREQ2",
         "displayLabel": "Frequency 2",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8651,
         "name": "GLOBAL_EQ1_FREQ3",
         "displayLabel": "Frequency 3",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8652,
         "name": "GLOBAL_EQ1_FREQ4",
         "displayLabel": "Frequency 4",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8653,
         "name": "GLOBAL_EQ1_FREQ5",
         "displayLabel": "Frequency 5",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
@@ -6711,70 +6711,70 @@
         "paramId": 8659,
         "name": "GLOBAL_EQ1_GAIN1",
         "displayLabel": "Gain 1",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8660,
         "name": "GLOBAL_EQ1_GAIN2",
         "displayLabel": "Gain 2",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8661,
         "name": "GLOBAL_EQ1_GAIN3",
         "displayLabel": "Gain 3",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8662,
         "name": "GLOBAL_EQ1_GAIN4",
         "displayLabel": "Gain 4",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8663,
         "name": "GLOBAL_EQ1_GAIN5",
         "displayLabel": "Gain 5",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8664,
         "name": "GLOBAL_EQ2_FREQ1",
         "displayLabel": "Frequency 1",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8665,
         "name": "GLOBAL_EQ2_FREQ2",
         "displayLabel": "Frequency 2",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8666,
         "name": "GLOBAL_EQ2_FREQ3",
         "displayLabel": "Frequency 3",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8667,
         "name": "GLOBAL_EQ2_FREQ4",
         "displayLabel": "Frequency 4",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
         "paramId": 8668,
         "name": "GLOBAL_EQ2_FREQ5",
         "displayLabel": "Frequency 5",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "GLOBAL",
@@ -6816,35 +6816,35 @@
         "paramId": 8674,
         "name": "GLOBAL_EQ2_GAIN1",
         "displayLabel": "Gain 1",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8675,
         "name": "GLOBAL_EQ2_GAIN2",
         "displayLabel": "Gain 2",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8676,
         "name": "GLOBAL_EQ2_GAIN3",
         "displayLabel": "Gain 3",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8677,
         "name": "GLOBAL_EQ2_GAIN4",
         "displayLabel": "Gain 4",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
         "paramId": 8678,
         "name": "GLOBAL_EQ2_GAIN5",
         "displayLabel": "Gain 5",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "GLOBAL",
@@ -6976,7 +6976,7 @@
         "paramId": 0,
         "name": "INPUT_THRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "INPUT",
@@ -6990,14 +6990,14 @@
         "paramId": 2,
         "name": "INPUT_RELEASE",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "INPUT",
         "paramId": 3,
         "name": "INPUT_ATTACK",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "INPUT",
@@ -7011,7 +7011,7 @@
         "paramId": 5,
         "name": "INPUT_LEVEL",
         "displayLabel": "Output Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "INPUT",
@@ -7157,14 +7157,14 @@
         "paramId": 0,
         "name": "LOOPER_PLAYLEVEL",
         "displayLabel": "Playback Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "LOOPER",
         "paramId": 1,
         "name": "LOOPER_DUBLEVEL",
         "displayLabel": "Overdub Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "LOOPER",
@@ -7194,14 +7194,14 @@
         "paramId": 5,
         "name": "LOOPER_LOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "LOOPER",
         "paramId": 6,
         "name": "LOOPER_HICUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "LOOPER",
@@ -7249,7 +7249,7 @@
         "paramId": 13,
         "name": "LOOPER_DRYLEVEL",
         "displayLabel": "Dry Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "LOOPER",
@@ -7262,21 +7262,21 @@
         "paramId": 15,
         "name": "LOOPER_THRESH",
         "displayLabel": "Record Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "LOOPER",
         "paramId": 16,
         "name": "LOOPER_START_TRIM",
         "displayLabel": "Trim Start",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "LOOPER",
         "paramId": 17,
         "name": "LOOPER_END_TRIM",
         "displayLabel": "Trim End",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "LOOPER",
@@ -7318,28 +7318,28 @@
         "paramId": 23,
         "name": "LOOPER_MAXTIME",
         "displayLabel": "Max. Loop Time",
-        "unit": "numeric"
+        "unit": "seconds"
       },
       {
         "family": "MEGATAP",
         "paramId": 0,
         "name": "MEGATAP_INGAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 1,
         "name": "MEGATAP_MASTERLVL",
         "displayLabel": "Master level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 2,
         "name": "MEGATAP_TIME",
         "displayLabel": "Delay Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MEGATAP",
@@ -7353,7 +7353,7 @@
         "paramId": 4,
         "name": "MEGATAP_PREDELAY",
         "displayLabel": "Predelay",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MEGATAP",
@@ -7367,7 +7367,7 @@
         "paramId": 6,
         "name": "MEGATAP_TIMEALPHA",
         "displayLabel": "Alpha",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
@@ -7381,7 +7381,7 @@
         "paramId": 8,
         "name": "MEGATAP_AMPALPHA",
         "displayLabel": "Alpha",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
@@ -7395,49 +7395,49 @@
         "paramId": 10,
         "name": "MEGATAP_PANALPHA",
         "displayLabel": "Alpha",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 11,
         "name": "MEGATAP_RANDOM",
         "displayLabel": "Randomize",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 12,
         "name": "MEGATAP_DIFFMIX",
         "displayLabel": "Diffusion Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 13,
         "name": "MEGATAP_DIFFTIME",
         "displayLabel": "Diffusion Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 14,
         "name": "MEGATAP_ENVTHRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MEGATAP",
         "paramId": 15,
         "name": "MEGATAP_ENVATTACK",
         "displayLabel": "Attack Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MEGATAP",
         "paramId": 16,
         "name": "MEGATAP_ENVRELEASE",
         "displayLabel": "Release Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MEGATAP",
@@ -7453,7 +7453,7 @@
         "paramId": 18,
         "name": "MEGATAP_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MEGATAP",
@@ -7498,7 +7498,7 @@
         "paramId": 24,
         "name": "MEGATAP_FEEDBACK",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
@@ -7512,14 +7512,14 @@
         "paramId": 26,
         "name": "MEGATAP_LOWCUT",
         "displayLabel": "Low Cut Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MEGATAP",
         "paramId": 27,
         "name": "MEGATAP_HICUT",
         "displayLabel": "High Cut Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MEGATAP",
@@ -7532,28 +7532,28 @@
         "paramId": 29,
         "name": "MEGATAP_SPREAD",
         "displayLabel": "Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 30,
         "name": "MEGATAP_AMPRAND",
         "displayLabel": "Randomize",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
         "paramId": 31,
         "name": "MEGATAP_DIFFRATE",
         "displayLabel": "LFO Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MEGATAP",
         "paramId": 32,
         "name": "MEGATAP_DIFFDEPTH",
         "displayLabel": "LFO Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MEGATAP",
@@ -7664,42 +7664,42 @@
         "paramId": 0,
         "name": "MIXER_GAIN1",
         "displayLabel": "Row 1 Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MIXER",
         "paramId": 1,
         "name": "MIXER_GAIN2",
         "displayLabel": "Row 2 Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MIXER",
         "paramId": 2,
         "name": "MIXER_GAIN3",
         "displayLabel": "Row 3 Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MIXER",
         "paramId": 3,
         "name": "MIXER_GAIN4",
         "displayLabel": "Row 4 Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MIXER",
         "paramId": 4,
         "name": "MIXER_GAIN5",
         "displayLabel": "Row 5 Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MIXER",
         "paramId": 5,
         "name": "MIXER_GAIN6",
         "displayLabel": "Row 6 Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MIXER",
@@ -7760,7 +7760,7 @@
         "paramId": 12,
         "name": "MIXER_MASTER",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MIXER",
@@ -7816,35 +7816,35 @@
         "paramId": 3,
         "name": "MOD_STARTPT",
         "displayLabel": "Start",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MOD",
         "paramId": 4,
         "name": "MOD_MIDPT",
         "displayLabel": "Mid",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MOD",
         "paramId": 5,
         "name": "MOD_ENDPT",
         "displayLabel": "End",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MOD",
         "paramId": 6,
         "name": "MOD_SLOPE",
         "displayLabel": "Slope",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MOD",
         "paramId": 7,
         "name": "MOD_ATTACK",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MOD",
@@ -7877,7 +7877,7 @@
         "paramId": 12,
         "name": "MOD_OFFVAL",
         "displayLabel": "Off Value",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MOD",
@@ -7891,14 +7891,14 @@
         "paramId": 14,
         "name": "MOD_OFFSET",
         "displayLabel": "Offset",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MOD",
         "paramId": 15,
         "name": "MOD_RELEASE",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MOD",
@@ -7966,21 +7966,21 @@
         "paramId": 0,
         "name": "MULTICOMP_FREQ1",
         "displayLabel": "Crossover",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTICOMP",
         "paramId": 1,
         "name": "MULTICOMP_FREQ2",
         "displayLabel": "Crossover",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTICOMP",
         "paramId": 2,
         "name": "MULTICOMP_THRESH1",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTICOMP",
@@ -7994,21 +7994,21 @@
         "paramId": 4,
         "name": "MULTICOMP_ATTACK1",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTICOMP",
         "paramId": 5,
         "name": "MULTICOMP_RELEASE1",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTICOMP",
         "paramId": 6,
         "name": "MULTICOMP_LEVEL1",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTICOMP",
@@ -8029,7 +8029,7 @@
         "paramId": 9,
         "name": "MULTICOMP_THRESH2",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTICOMP",
@@ -8043,21 +8043,21 @@
         "paramId": 11,
         "name": "MULTICOMP_ATTACK2",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTICOMP",
         "paramId": 12,
         "name": "MULTICOMP_RELEASE2",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTICOMP",
         "paramId": 13,
         "name": "MULTICOMP_LEVEL2",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTICOMP",
@@ -8078,7 +8078,7 @@
         "paramId": 16,
         "name": "MULTICOMP_THRESH3",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTICOMP",
@@ -8092,21 +8092,21 @@
         "paramId": 18,
         "name": "MULTICOMP_ATTACK3",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTICOMP",
         "paramId": 19,
         "name": "MULTICOMP_RELEASE3",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTICOMP",
         "paramId": 20,
         "name": "MULTICOMP_LEVEL3",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTICOMP",
@@ -8136,7 +8136,7 @@
         "paramId": 24,
         "name": "MULTICOMP_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTICOMP",
@@ -8243,7 +8243,7 @@
         "paramId": 2,
         "name": "MULTIPLEXER_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTIPLEXER",
@@ -8285,28 +8285,28 @@
         "paramId": 1,
         "name": "MULTITAP_TIME1",
         "displayLabel": "Delay 1",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 2,
         "name": "MULTITAP_TIME2",
         "displayLabel": "Delay 2",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 3,
         "name": "MULTITAP_TIME3",
         "displayLabel": "Delay 3",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 4,
         "name": "MULTITAP_TIME4",
         "displayLabel": "Delay 4",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
@@ -8341,56 +8341,56 @@
         "paramId": 9,
         "name": "MULTITAP_LEVEL1",
         "displayLabel": "Level 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 10,
         "name": "MULTITAP_LEVEL2",
         "displayLabel": "Level 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 11,
         "name": "MULTITAP_LEVEL3",
         "displayLabel": "Level 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 12,
         "name": "MULTITAP_LEVEL4",
         "displayLabel": "Level 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 13,
         "name": "MULTITAP_FEEDBACK1",
         "displayLabel": "Feedback 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 14,
         "name": "MULTITAP_FEEDBACK2",
         "displayLabel": "Feedback 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 15,
         "name": "MULTITAP_FEEDBACK3",
         "displayLabel": "Feedback 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 16,
         "name": "MULTITAP_FEEDBACK4",
         "displayLabel": "Feedback 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -8433,28 +8433,28 @@
         "paramId": 21,
         "name": "MULTITAP_RATE1",
         "displayLabel": "LFO 1 Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 22,
         "name": "MULTITAP_RATE2",
         "displayLabel": "LFO 2 Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 23,
         "name": "MULTITAP_DEPTH1",
         "displayLabel": "LFO 1 Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 24,
         "name": "MULTITAP_DEPTH2",
         "displayLabel": "LFO 2 Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -8489,14 +8489,14 @@
         "paramId": 29,
         "name": "MULTITAP_LFOPHASE1",
         "displayLabel": "LFO 1 Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "MULTITAP",
         "paramId": 30,
         "name": "MULTITAP_LFOPHASE2",
         "displayLabel": "LFO 2 Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "MULTITAP",
@@ -8512,7 +8512,7 @@
         "paramId": 32,
         "name": "MULTITAP_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTITAP",
@@ -8543,7 +8543,7 @@
         "paramId": 36,
         "name": "MULTITAP_INGAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -8557,42 +8557,42 @@
         "paramId": 38,
         "name": "MULTITAP_DIFFMIX",
         "displayLabel": "Diffusion Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 39,
         "name": "MULTITAP_DIFFTIME",
         "displayLabel": "Diffusion Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 40,
         "name": "MULTITAP_THRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTITAP",
         "paramId": 41,
         "name": "MULTITAP_MSTRTIME",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 42,
         "name": "MULTITAP_MSTRLVL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 43,
         "name": "MULTITAP_MSTRPAN",
         "displayLabel": "Pan",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -8613,49 +8613,49 @@
         "paramId": 46,
         "name": "MULTITAP_MSTRFDBK",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 47,
         "name": "MULTITAP_MSTRRATE",
         "displayLabel": "LFO Rate",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 48,
         "name": "MULTITAP_MSTRDEPTH",
         "displayLabel": "LFO Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 49,
         "name": "MULTITAP_FREQ1",
         "displayLabel": "Frequency 1",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 50,
         "name": "MULTITAP_FREQ2",
         "displayLabel": "Frequency 2",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 51,
         "name": "MULTITAP_FREQ3",
         "displayLabel": "Frequency 3",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 52,
         "name": "MULTITAP_FREQ4",
         "displayLabel": "Frequency 4",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
@@ -8690,7 +8690,7 @@
         "paramId": 57,
         "name": "MULTITAP_ATTEN",
         "displayLabel": "Attenuation",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTITAP",
@@ -8718,28 +8718,28 @@
         "paramId": 61,
         "name": "MULTITAP_LOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 62,
         "name": "MULTITAP_HIGHCUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 63,
         "name": "MULTITAP_FEEDBACK",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 64,
         "name": "MULTITAP_RELEASE",
         "displayLabel": "Release Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
@@ -8753,14 +8753,14 @@
         "paramId": 66,
         "name": "MULTITAP_FLTRATE",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 67,
         "name": "MULTITAP_FLTDEPTH",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -8781,42 +8781,42 @@
         "paramId": 70,
         "name": "MULTITAP_FLTPHASE",
         "displayLabel": "Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "MULTITAP",
         "paramId": 71,
         "name": "MULTITAP_ENVTHRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTITAP",
         "paramId": 72,
         "name": "MULTITAP_ENVATTACK",
         "displayLabel": "Attack Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 73,
         "name": "MULTITAP_ENVRELEASE",
         "displayLabel": "Release Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 74,
         "name": "MULTITAP_MSTRCOMBTIME",
         "displayLabel": "Comb Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 75,
         "name": "MULTITAP_MSTRCOMBGAIN",
         "displayLabel": "Comb Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -8830,70 +8830,70 @@
         "paramId": 77,
         "name": "MULTITAP_COMBTIME1",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 78,
         "name": "MULTITAP_COMBTIME2",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 79,
         "name": "MULTITAP_COMBTIME3",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 80,
         "name": "MULTITAP_COMBTIME4",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "MULTITAP",
         "paramId": 81,
         "name": "MULTITAP_COMBGAIN1",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 82,
         "name": "MULTITAP_COMBGAIN2",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 83,
         "name": "MULTITAP_COMBGAIN3",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 84,
         "name": "MULTITAP_COMBGAIN4",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 85,
         "name": "MULTITAP_MSTRRINGFREQ",
         "displayLabel": "Ring Mod Frequency",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 86,
         "name": "MULTITAP_MSTRRINGMIX",
         "displayLabel": "Ring Mod Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -8928,84 +8928,84 @@
         "paramId": 91,
         "name": "MULTITAP_RINGMIX1",
         "displayLabel": "Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 92,
         "name": "MULTITAP_RINGMIX2",
         "displayLabel": "Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 93,
         "name": "MULTITAP_RINGMIX3",
         "displayLabel": "Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 94,
         "name": "MULTITAP_RINGMIX4",
         "displayLabel": "Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 95,
         "name": "MULTITAP_DRATE1",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 96,
         "name": "MULTITAP_DRATE2",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 97,
         "name": "MULTITAP_DRATE3",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 98,
         "name": "MULTITAP_DRATE4",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 99,
         "name": "MULTITAP_DDEPTH1",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 100,
         "name": "MULTITAP_DDEPTH2",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 101,
         "name": "MULTITAP_DDEPTH3",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 102,
         "name": "MULTITAP_DDEPTH4",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -9019,14 +9019,14 @@
         "paramId": 104,
         "name": "MULTITAP_MSTRDRATE",
         "displayLabel": "Chorus Rate",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 105,
         "name": "MULTITAP_MSTRDDEPTH",
         "displayLabel": "Chorus Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -9040,7 +9040,7 @@
         "paramId": 107,
         "name": "MULTITAP_FREQ",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
@@ -9054,7 +9054,7 @@
         "paramId": 109,
         "name": "MULTITAP_GAIN",
         "displayLabel": "Gain",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "MULTITAP",
@@ -9075,14 +9075,14 @@
         "paramId": 112,
         "name": "MULTITAP_DIFFRATE",
         "displayLabel": "LFO Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "MULTITAP",
         "paramId": 113,
         "name": "MULTITAP_DIFFDEPTH",
         "displayLabel": "LFO Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -9101,25 +9101,25 @@
         "family": "MULTITAP",
         "paramId": 116,
         "name": "MULTITAP_FEEDBACK12",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 117,
         "name": "MULTITAP_FEEDBACK23",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 118,
         "name": "MULTITAP_FEEDBACK34",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
         "paramId": 119,
         "name": "MULTITAP_FEEDBACK41",
-        "unit": "unverified"
+        "unit": "percent"
       },
       {
         "family": "MULTITAP",
@@ -9133,42 +9133,42 @@
         "paramId": 0,
         "name": "OUTPUT_LEVEL1",
         "displayLabel": "Row 1 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 1,
         "name": "OUTPUT_LEVEL2",
         "displayLabel": "Row 2 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 2,
         "name": "OUTPUT_LEVEL3",
         "displayLabel": "Row 3 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 3,
         "name": "OUTPUT_LEVEL4",
         "displayLabel": "Row 4 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 4,
         "name": "OUTPUT_LEVEL5",
         "displayLabel": "Row 5 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 5,
         "name": "OUTPUT_LEVEL6",
         "displayLabel": "Row 6 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
@@ -9229,7 +9229,7 @@
         "paramId": 12,
         "name": "OUTPUT_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
@@ -9272,91 +9272,91 @@
         "paramId": 18,
         "name": "OUTPUT_SCENE1",
         "displayLabel": "Scene 1 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 19,
         "name": "OUTPUT_SCENE2",
         "displayLabel": "Scene 2 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 20,
         "name": "OUTPUT_SCENE3",
         "displayLabel": "Scene 3 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 21,
         "name": "OUTPUT_SCENE4",
         "displayLabel": "Scene 4 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 22,
         "name": "OUTPUT_SCENE5",
         "displayLabel": "Scene 5 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 23,
         "name": "OUTPUT_SCENE6",
         "displayLabel": "Scene 6 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 24,
         "name": "OUTPUT_SCENE7",
         "displayLabel": "Scene 7 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "OUTPUT",
         "paramId": 25,
         "name": "OUTPUT_SCENE8",
         "displayLabel": "Scene 8 Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PEQ",
         "paramId": 0,
         "name": "PEQ_FREQ1",
         "displayLabel": "Frequency 1",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PEQ",
         "paramId": 1,
         "name": "PEQ_FREQ2",
         "displayLabel": "Frequency 2",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PEQ",
         "paramId": 2,
         "name": "PEQ_FREQ3",
         "displayLabel": "Frequency 3",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PEQ",
         "paramId": 3,
         "name": "PEQ_FREQ4",
         "displayLabel": "Frequency 4",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PEQ",
         "paramId": 4,
         "name": "PEQ_FREQ5",
         "displayLabel": "Frequency 5",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PEQ",
@@ -9398,35 +9398,35 @@
         "paramId": 10,
         "name": "PEQ_GAIN1",
         "displayLabel": "Gain 1",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PEQ",
         "paramId": 11,
         "name": "PEQ_GAIN2",
         "displayLabel": "Gain 2",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PEQ",
         "paramId": 12,
         "name": "PEQ_GAIN3",
         "displayLabel": "Gain 3",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PEQ",
         "paramId": 13,
         "name": "PEQ_GAIN4",
         "displayLabel": "Gain 4",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PEQ",
         "paramId": 14,
         "name": "PEQ_GAIN5",
         "displayLabel": "Gain 5",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PEQ",
@@ -9468,7 +9468,7 @@
         "paramId": 20,
         "name": "PEQ_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PEQ",
@@ -9618,21 +9618,21 @@
         "paramId": 7,
         "name": "PHASER_FMIN",
         "displayLabel": "Min Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PHASER",
         "paramId": 8,
         "name": "PHASER_FMAX",
         "displayLabel": "Max Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PHASER",
         "paramId": 9,
         "name": "PHASER_LFOPHASE",
         "displayLabel": "LFO Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "PHASER",
@@ -9778,7 +9778,7 @@
         "paramId": 27,
         "name": "PHASER_LFOLPF",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PHASER",
@@ -9821,14 +9821,14 @@
         "paramId": 32,
         "name": "PHASER_HPF",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PHASER",
         "paramId": 33,
         "name": "PHASER_LPF",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PHASER",
@@ -9855,14 +9855,14 @@
         "paramId": 2,
         "name": "PITCH_CTRL",
         "displayLabel": "Master Pitch",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 3,
         "name": "PITCH_UCTRL",
         "displayLabel": "Control",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -9918,28 +9918,28 @@
         "paramId": 11,
         "name": "PITCH_DETUNE1",
         "displayLabel": "Detune 1",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PITCH",
         "paramId": 12,
         "name": "PITCH_DETUNE2",
         "displayLabel": "Detune 2",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PITCH",
         "paramId": 13,
         "name": "PITCH_DETUNE3",
         "displayLabel": "Detune 3",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PITCH",
         "paramId": 14,
         "name": "PITCH_DETUNE4",
         "displayLabel": "Detune 4",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PITCH",
@@ -9974,28 +9974,28 @@
         "paramId": 19,
         "name": "PITCH_LEVEL1",
         "displayLabel": "Level 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 20,
         "name": "PITCH_LEVEL2",
         "displayLabel": "Level 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 21,
         "name": "PITCH_LEVEL3",
         "displayLabel": "Level 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 22,
         "name": "PITCH_LEVEL4",
         "displayLabel": "Level 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10038,56 +10038,56 @@
         "paramId": 27,
         "name": "PITCH_DELAY1",
         "displayLabel": "Delay 1",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
         "paramId": 28,
         "name": "PITCH_DELAY2",
         "displayLabel": "Delay 2",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
         "paramId": 29,
         "name": "PITCH_DELAY3",
         "displayLabel": "Delay 3",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
         "paramId": 30,
         "name": "PITCH_DELAY4",
         "displayLabel": "Delay 4",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
         "paramId": 31,
         "name": "PITCH_FEEDBACK1",
         "displayLabel": "Feedback 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 32,
         "name": "PITCH_FEEDBACK2",
         "displayLabel": "Feedback 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 33,
         "name": "PITCH_FEEDBACK3",
         "displayLabel": "Feedback 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 34,
         "name": "PITCH_FEEDBACK4",
         "displayLabel": "Feedback 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10123,7 +10123,7 @@
         "paramId": 39,
         "name": "PITCH_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PITCH",
@@ -10154,7 +10154,7 @@
         "paramId": 43,
         "name": "PITCH_GAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10168,7 +10168,7 @@
         "paramId": 45,
         "name": "PITCH_XFADE",
         "displayLabel": "Crossfade Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10182,14 +10182,14 @@
         "paramId": 47,
         "name": "PITCH_SPLICE1",
         "displayLabel": "Time 1",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
         "paramId": 48,
         "name": "PITCH_SPLICE2",
         "displayLabel": "Time 2",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
@@ -10252,42 +10252,42 @@
         "paramId": 57,
         "name": "PITCH_LPFREQ",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PITCH",
         "paramId": 58,
         "name": "PITCH_GLIDE",
         "displayLabel": "Glide Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
         "paramId": 59,
         "name": "PITCH_MDELAY",
         "displayLabel": "Master Delay",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 60,
         "name": "PITCH_MFDBK",
         "displayLabel": "Master Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 61,
         "name": "PITCH_MPAN",
         "displayLabel": "Master Pan",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 62,
         "name": "PITCH_MLEVEL",
         "displayLabel": "Master Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10511,7 +10511,7 @@
         "paramId": 94,
         "name": "PITCH_AMPALPHA",
         "displayLabel": "Amplitude Alpha",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10525,21 +10525,21 @@
         "paramId": 96,
         "name": "PITCH_PANALPHA",
         "displayLabel": "Pan Alpha",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 97,
         "name": "PITCH_TIME1",
         "displayLabel": "Delay Time 1",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
         "paramId": 98,
         "name": "PITCH_TIME2",
         "displayLabel": "Delay Time 2",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PITCH",
@@ -10567,7 +10567,7 @@
         "paramId": 102,
         "name": "PITCH_HPFREQ",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PITCH",
@@ -10581,7 +10581,7 @@
         "paramId": 104,
         "name": "PITCH_LFORATE",
         "displayLabel": "LFO Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PITCH",
@@ -10595,7 +10595,7 @@
         "paramId": 106,
         "name": "PITCH_LFODEPTH",
         "displayLabel": "LFO Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10616,14 +10616,14 @@
         "paramId": 109,
         "name": "PITCH_DIFFMIX",
         "displayLabel": "Diffusion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
         "paramId": 110,
         "name": "PITCH_DIFFTIME",
         "displayLabel": "Diffusion Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PITCH",
@@ -10644,7 +10644,7 @@
         "paramId": 113,
         "name": "PITCH_THRESH",
         "displayLabel": "Trigger Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PLEX",
@@ -10720,112 +10720,112 @@
         "paramId": 10,
         "name": "PLEX_DETUNE1",
         "displayLabel": "Detune 1",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 11,
         "name": "PLEX_DETUNE2",
         "displayLabel": "Detune 2",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 12,
         "name": "PLEX_DETUNE3",
         "displayLabel": "Detune 3",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 13,
         "name": "PLEX_DETUNE4",
         "displayLabel": "Detune 4",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 14,
         "name": "PLEX_DETUNE5",
         "displayLabel": "Detune 5",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 15,
         "name": "PLEX_DETUNE6",
         "displayLabel": "Detune 6",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 16,
         "name": "PLEX_DETUNE7",
         "displayLabel": "Detune 7",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 17,
         "name": "PLEX_DETUNE8",
         "displayLabel": "Detune 8",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "PLEX",
         "paramId": 18,
         "name": "PLEX_TIME1",
         "displayLabel": "Time 1",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 19,
         "name": "PLEX_TIME2",
         "displayLabel": "Time 2",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 20,
         "name": "PLEX_TIME3",
         "displayLabel": "Time 3",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 21,
         "name": "PLEX_TIME4",
         "displayLabel": "Time 4",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 22,
         "name": "PLEX_TIME5",
         "displayLabel": "Time 5",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 23,
         "name": "PLEX_TIME6",
         "displayLabel": "Time 6",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 24,
         "name": "PLEX_TIME7",
         "displayLabel": "Time 7",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 25,
         "name": "PLEX_TIME8",
         "displayLabel": "Time 8",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
@@ -10888,56 +10888,56 @@
         "paramId": 34,
         "name": "PLEX_LEVEL1",
         "displayLabel": "Level 1",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 35,
         "name": "PLEX_LEVEL2",
         "displayLabel": "Level 2",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 36,
         "name": "PLEX_LEVEL3",
         "displayLabel": "Level 3",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 37,
         "name": "PLEX_LEVEL4",
         "displayLabel": "Level 4",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 38,
         "name": "PLEX_LEVEL5",
         "displayLabel": "Level 5",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 39,
         "name": "PLEX_LEVEL6",
         "displayLabel": "Level 6",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 40,
         "name": "PLEX_LEVEL7",
         "displayLabel": "Level 7",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 41,
         "name": "PLEX_LEVEL8",
         "displayLabel": "Level 8",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
@@ -11016,56 +11016,56 @@
         "paramId": 50,
         "name": "PLEX_INGAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 51,
         "name": "PLEX_MSTRTIME",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 52,
         "name": "PLEX_MSTRLVL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 53,
         "name": "PLEX_MSTRPAN",
         "displayLabel": "Pan",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 54,
         "name": "PLEX_MSTRPITCH",
         "displayLabel": "Pitch",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 55,
         "name": "PLEX_MSTRDTN",
         "displayLabel": "Detune",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 56,
         "name": "PLEX_DECAY",
         "displayLabel": "Decay Time",
-        "unit": "numeric"
+        "unit": "seconds"
       },
       {
         "family": "PLEX",
         "paramId": 57,
         "name": "PLEX_DIFFUSION",
         "displayLabel": "Diffusion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
@@ -11079,70 +11079,70 @@
         "paramId": 59,
         "name": "PLEX_SPLICE",
         "displayLabel": "Cross-Fade",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 60,
         "name": "PLEX_LOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PLEX",
         "paramId": 61,
         "name": "PLEX_HIGHCUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PLEX",
         "paramId": 62,
         "name": "PLEX_ATTEN",
         "displayLabel": "Attenuation",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PLEX",
         "paramId": 63,
         "name": "PLEX_THRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PLEX",
         "paramId": 64,
         "name": "PLEX_RELEASE",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 65,
         "name": "PLEX_DIFFMIX",
         "displayLabel": "Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 66,
         "name": "PLEX_DIFFTIME",
         "displayLabel": "Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 67,
         "name": "PLEX_LFORATE",
         "displayLabel": "Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PLEX",
         "paramId": 68,
         "name": "PLEX_LFODEPTH",
         "displayLabel": "Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
@@ -11156,21 +11156,21 @@
         "paramId": 70,
         "name": "PLEX_ENVTHRESH",
         "displayLabel": "Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PLEX",
         "paramId": 71,
         "name": "PLEX_ENVATTACK",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
         "paramId": 72,
         "name": "PLEX_ENVRELEASE",
         "displayLabel": "Release",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
@@ -11186,7 +11186,7 @@
         "paramId": 74,
         "name": "PLEX_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PLEX",
@@ -11224,21 +11224,21 @@
         "paramId": 79,
         "name": "PLEX_SIZE",
         "displayLabel": "Reverb Size",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 80,
         "name": "PLEX_SPREAD",
         "displayLabel": "Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "PLEX",
         "paramId": 81,
         "name": "PLEX_PREDELAY",
         "displayLabel": "Pre-Delay",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "PLEX",
@@ -11252,7 +11252,7 @@
         "paramId": 83,
         "name": "PLEX_FILTERFREQ",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PLEX",
@@ -11266,7 +11266,7 @@
         "paramId": 85,
         "name": "PLEX_FILTERGAIN",
         "displayLabel": "Gain",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "PLEX",
@@ -11307,14 +11307,14 @@
         "paramId": 92,
         "name": "PLEX_FLTLFOFREQ",
         "displayLabel": "LFO Rate",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PLEX",
         "paramId": 93,
         "name": "PLEX_FLTLFOMODFREQ",
         "displayLabel": "Mod Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "PLEX",
@@ -11705,7 +11705,7 @@
         "paramId": 2,
         "name": "RESONATOR_INGAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
@@ -11726,21 +11726,21 @@
         "paramId": 5,
         "name": "RESONATOR_MASTERLVL",
         "displayLabel": "Master Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 6,
         "name": "RESONATOR_MASTERPAN",
         "displayLabel": "Master Pan",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 7,
         "name": "RESONATOR_MASTERFDBK",
         "displayLabel": "Master Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
@@ -11782,28 +11782,28 @@
         "paramId": 13,
         "name": "RESONATOR_FDBK1",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 14,
         "name": "RESONATOR_FDBK2",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 15,
         "name": "RESONATOR_FDBK3",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 16,
         "name": "RESONATOR_FDBK4",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
@@ -11866,28 +11866,28 @@
         "paramId": 25,
         "name": "RESONATOR_LEVEL1",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 26,
         "name": "RESONATOR_LEVEL2",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 27,
         "name": "RESONATOR_LEVEL3",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
         "paramId": 28,
         "name": "RESONATOR_LEVEL4",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "RESONATOR",
@@ -11939,7 +11939,7 @@
         "paramId": 34,
         "name": "RESONATOR_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "RESONATOR",
@@ -12050,7 +12050,7 @@
         "paramId": 8,
         "name": "REVERB_REVERBLEVEL",
         "displayLabel": "Late Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "REVERB",
@@ -12102,7 +12102,7 @@
         "paramId": 14,
         "name": "REVERB_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "REVERB",
@@ -12133,7 +12133,7 @@
         "paramId": 18,
         "name": "REVERB_GAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
@@ -12149,14 +12149,14 @@
         "paramId": 20,
         "name": "REVERB_INPDIFF",
         "displayLabel": "Input Diffusion",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
         "paramId": 21,
         "name": "REVERB_INDIFFTIME",
         "displayLabel": "Input Diff Time",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
@@ -12263,21 +12263,21 @@
         "paramId": 34,
         "name": "REVERB_LFXOVER",
         "displayLabel": "Crossover Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "REVERB",
         "paramId": 35,
         "name": "REVERB_SPREAD",
         "displayLabel": "Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
         "paramId": 36,
         "name": "REVERB_ATTEN",
         "displayLabel": "Attenuation",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "REVERB",
@@ -12293,7 +12293,7 @@
         "paramId": 38,
         "name": "REVERB_RELEASE",
         "displayLabel": "Release Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "REVERB",
@@ -12327,7 +12327,7 @@
         "paramId": 42,
         "name": "REVERB_EARLYSEND",
         "displayLabel": "Late Input Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
@@ -12372,7 +12372,7 @@
         "paramId": 48,
         "name": "REVERB_DISPERSION",
         "displayLabel": "Boiiinnng!",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
@@ -12434,7 +12434,7 @@
         "paramId": 56,
         "name": "REVERB_PITCHFDBK",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
@@ -12450,7 +12450,7 @@
         "paramId": 58,
         "name": "REVERB_PITCHTIME",
         "displayLabel": "Splice Time",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "REVERB",
@@ -12466,14 +12466,14 @@
         "paramId": 60,
         "name": "REVERB_PITCHMOD",
         "displayLabel": "Modulation",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
         "paramId": 61,
         "name": "REVERB_PITCHBAL",
         "displayLabel": "Voice Balance",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
@@ -12487,21 +12487,21 @@
         "paramId": 63,
         "name": "REVERB_PREDLYFDBK",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
         "paramId": 64,
         "name": "REVERB_PREDLYMIX",
         "displayLabel": "Echo Mix",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "REVERB",
         "paramId": 65,
         "name": "REVERB_PITCHLPF",
         "displayLabel": "Pitch High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "REVERB",
@@ -12544,7 +12544,7 @@
         "paramId": 0,
         "name": "RINGMOD_COARSE",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "RINGMOD",
@@ -12565,7 +12565,7 @@
         "paramId": 3,
         "name": "RINGMOD_HICUT",
         "displayLabel": "High Cut Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "RINGMOD",
@@ -12581,7 +12581,7 @@
         "paramId": 5,
         "name": "RINGMOD_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "RINGMOD",
@@ -12648,21 +12648,21 @@
         "paramId": 1,
         "name": "ROTARY_LFDEPTH",
         "displayLabel": "Low Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "ROTARY",
         "paramId": 2,
         "name": "ROTARY_HFDEPTH",
         "displayLabel": "Hi Depth",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "ROTARY",
         "paramId": 3,
         "name": "ROTARY_HFLEVEL",
         "displayLabel": "High Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "ROTARY",
@@ -12718,7 +12718,7 @@
         "paramId": 10,
         "name": "ROTARY_HFLENGTH",
         "displayLabel": "Rotor Length",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "ROTARY",
@@ -12732,7 +12732,7 @@
         "paramId": 12,
         "name": "ROTARY_WIDTH",
         "displayLabel": "Mic Spacing",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "ROTARY",
@@ -12746,21 +12746,21 @@
         "paramId": 14,
         "name": "ROTARY_LOWTIME",
         "displayLabel": "Low Time Constant",
-        "unit": "numeric"
+        "unit": "seconds"
       },
       {
         "family": "ROTARY",
         "paramId": 15,
         "name": "ROTARY_HIGHTIME",
         "displayLabel": "Hi Time Constant",
-        "unit": "numeric"
+        "unit": "seconds"
       },
       {
         "family": "ROTARY",
         "paramId": 16,
         "name": "ROTARY_SPREAD",
         "displayLabel": "Stereo Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "ROTARY",
@@ -12845,7 +12845,7 @@
         "paramId": 1,
         "name": "SYNTH_FREQ1",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "SYNTH",
@@ -12866,21 +12866,21 @@
         "paramId": 4,
         "name": "SYNTH_DETUNE1",
         "displayLabel": "Tune",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "SYNTH",
         "paramId": 5,
         "name": "SYNTH_DUTY1",
         "displayLabel": "Duty Cycle",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "SYNTH",
         "paramId": 6,
         "name": "SYNTH_LEVEL1",
         "displayLabel": "Voice 1 Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "SYNTH",
@@ -12896,14 +12896,14 @@
         "paramId": 8,
         "name": "SYNTH_ATTACK1",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "SYNTH",
         "paramId": 9,
         "name": "SYNTH_HICUT1",
         "displayLabel": "Filter Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "SYNTH",
@@ -12924,7 +12924,7 @@
         "paramId": 12,
         "name": "SYNTH_FREQ2",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "SYNTH",
@@ -12945,21 +12945,21 @@
         "paramId": 15,
         "name": "SYNTH_DETUNE2",
         "displayLabel": "Tune",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "SYNTH",
         "paramId": 16,
         "name": "SYNTH_DUTY2",
         "displayLabel": "Duty Cycle",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "SYNTH",
         "paramId": 17,
         "name": "SYNTH_LEVEL2",
         "displayLabel": "Voice 2 Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "SYNTH",
@@ -12975,14 +12975,14 @@
         "paramId": 19,
         "name": "SYNTH_ATTACK2",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "SYNTH",
         "paramId": 20,
         "name": "SYNTH_HICUT2",
         "displayLabel": "Filter Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "SYNTH",
@@ -13011,7 +13011,7 @@
         "paramId": 24,
         "name": "SYNTH_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "SYNTH",
@@ -13056,7 +13056,7 @@
         "paramId": 30,
         "name": "SYNTH_FREQ3",
         "displayLabel": "Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "SYNTH",
@@ -13077,21 +13077,21 @@
         "paramId": 33,
         "name": "SYNTH_DETUNE3",
         "displayLabel": "Tune",
-        "unit": "numeric"
+        "unit": "cents"
       },
       {
         "family": "SYNTH",
         "paramId": 34,
         "name": "SYNTH_DUTY3",
         "displayLabel": "Duty Cycle",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "SYNTH",
         "paramId": 35,
         "name": "SYNTH_LEVEL3",
         "displayLabel": "Voice 3 Level",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "SYNTH",
@@ -13107,14 +13107,14 @@
         "paramId": 37,
         "name": "SYNTH_ATTACK3",
         "displayLabel": "Attack",
-        "unit": "numeric"
+        "unit": "ms"
       },
       {
         "family": "SYNTH",
         "paramId": 38,
         "name": "SYNTH_HICUT3",
         "displayLabel": "Filter Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "SYNTH",
@@ -13175,7 +13175,7 @@
         "paramId": 5,
         "name": "TENTAP_RDECAY",
         "displayLabel": "Decay",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TENTAP",
@@ -13195,7 +13195,7 @@
         "paramId": 8,
         "name": "TENTAP_SHUFFLE",
         "displayLabel": "Shuffle",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TENTAP",
@@ -13209,7 +13209,7 @@
         "paramId": 10,
         "name": "TENTAP_SPREAD",
         "displayLabel": "Spread",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TENTAP",
@@ -13223,35 +13223,35 @@
         "paramId": 12,
         "name": "TENTAP_PANALPHA",
         "displayLabel": "Pan Alpha",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TENTAP",
         "paramId": 13,
         "name": "TENTAP_LOWCUT",
         "displayLabel": "Low Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "TENTAP",
         "paramId": 14,
         "name": "TENTAP_HIGHCUT",
         "displayLabel": "High Cut",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "TENTAP",
         "paramId": 15,
         "name": "TENTAP_OFFSET",
         "displayLabel": "Ratio",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TENTAP",
         "paramId": 16,
         "name": "TENTAP_FEEDBACK",
         "displayLabel": "Feedback",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TENTAP",
@@ -13328,70 +13328,70 @@
         "paramId": 27,
         "name": "TENTAP_RLEVEL1",
         "displayLabel": "Level 1",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 28,
         "name": "TENTAP_RLEVEL2",
         "displayLabel": "Level 2",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 29,
         "name": "TENTAP_RLEVEL3",
         "displayLabel": "Level 3",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 30,
         "name": "TENTAP_RLEVEL4",
         "displayLabel": "Level 4",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 31,
         "name": "TENTAP_RLEVEL5",
         "displayLabel": "Level 5",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 32,
         "name": "TENTAP_RLEVEL6",
         "displayLabel": "Level 6",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 33,
         "name": "TENTAP_RLEVEL7",
         "displayLabel": "Level 7",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 34,
         "name": "TENTAP_RLEVEL8",
         "displayLabel": "Level 8",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 35,
         "name": "TENTAP_RLEVEL9",
         "displayLabel": "Level 9",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
         "paramId": 36,
         "name": "TENTAP_RLEVEL10",
         "displayLabel": "Level 10",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
@@ -13410,7 +13410,7 @@
         "paramId": 39,
         "name": "TENTAP_INGAIN",
         "displayLabel": "Input Gain",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TENTAP",
@@ -13426,7 +13426,7 @@
         "paramId": 41,
         "name": "TENTAP_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TENTAP",
@@ -13712,7 +13712,7 @@
         "paramId": 7,
         "name": "TREMOLO_LEVEL",
         "displayLabel": "Level",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TREMOLO",
@@ -13777,7 +13777,7 @@
         "paramId": 15,
         "name": "TREMOLO_STARTPHASE",
         "displayLabel": "Start Phase",
-        "unit": "numeric"
+        "unit": "degrees"
       },
       {
         "family": "TREMOLO",
@@ -13791,14 +13791,14 @@
         "paramId": 17,
         "name": "TREMOLO_XOVER",
         "displayLabel": "Crossover Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "TREMOLO",
         "paramId": 18,
         "name": "TREMOLO_THRESH",
         "displayLabel": "Trigger Threshold",
-        "unit": "numeric"
+        "unit": "db"
       },
       {
         "family": "TREMOLO",
@@ -13812,7 +13812,7 @@
         "paramId": 20,
         "name": "TREMOLO_BETA",
         "displayLabel": "LFO Shape",
-        "unit": "numeric"
+        "unit": "percent"
       },
       {
         "family": "TREMOLO",
@@ -14471,14 +14471,14 @@
         "paramId": 1,
         "name": "WAH_FSTART",
         "displayLabel": "Frequency Min",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "WAH",
         "paramId": 2,
         "name": "WAH_FSTOP",
         "displayLabel": "Frequency Max",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "WAH",
@@ -14571,7 +14571,7 @@
         "paramId": 14,
         "name": "WAH_HPF",
         "displayLabel": "Low Cut Frequency",
-        "unit": "numeric"
+        "unit": "hz"
       },
       {
         "family": "WAH",

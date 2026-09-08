@@ -31,16 +31,16 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'CABINET', paramId: 5, name: 'CABINET_TYPE2', displayLabel: 'Type', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 6, name: 'CABINET_TYPE3', displayLabel: 'Type', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 7, name: 'CABINET_TYPE4', displayLabel: 'Type', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 8, name: 'CABINET_LEVEL1', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 9, name: 'CABINET_LEVEL2', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 8, name: 'CABINET_LEVEL1', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'CABINET', paramId: 9, name: 'CABINET_LEVEL2', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'CABINET', paramId: 10, name: 'CABINET_LEVEL3', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 11, name: 'CABINET_LEVEL4', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 12, name: 'CABINET_PAN1', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'CABINET', paramId: 13, name: 'CABINET_PAN2', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'CABINET', paramId: 14, name: 'CABINET_PAN3', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'CABINET', paramId: 15, name: 'CABINET_PAN4', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'CABINET', paramId: 16, name: 'CABINET_DELAY1', displayLabel: 'Distance 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 17, name: 'CABINET_DELAY2', displayLabel: 'Distance 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 16, name: 'CABINET_DELAY1', displayLabel: 'Distance 1', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CABINET', paramId: 17, name: 'CABINET_DELAY2', displayLabel: 'Distance 2', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'CABINET', paramId: 18, name: 'CABINET_DELAY3', displayLabel: 'Distance 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 19, name: 'CABINET_DELAY4', displayLabel: 'Distance 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 20, name: 'CABINET_PROXIMITY1', displayLabel: 'Proximity', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -51,46 +51,46 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'CABINET', paramId: 25, name: 'CABINET_MUTE2', unit: 'unverified' },
   { family: 'CABINET', paramId: 26, name: 'CABINET_MUTE3', unit: 'unverified' },
   { family: 'CABINET', paramId: 27, name: 'CABINET_MUTE4', unit: 'unverified' },
-  { family: 'CABINET', paramId: 28, name: 'CABINET_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 28, name: 'CABINET_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'CABINET', paramId: 29, name: 'CABINET_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'CABINET', paramId: 30, name: 'CABINET_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'CABINET', paramId: 31, name: 'CABINET_MODE', unit: 'unverified' },
   { family: 'CABINET', paramId: 32, name: 'CABINET_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'CABINET', paramId: 33, name: 'CABINET_DRIVE', displayLabel: 'Drive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 34, name: 'CABINET_BIAS', displayLabel: 'Saturation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 35, name: 'CABINET_ROOMMIX', displayLabel: 'Room Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 35, name: 'CABINET_ROOMMIX', displayLabel: 'Room Level', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'CABINET', paramId: 36, name: 'CABINET_ROOMSIZE', displayLabel: 'Room Size', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 37, name: 'CABINET_MICSPACE', displayLabel: 'Mic Spacing', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 38, name: 'CABINET_LOCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 39, name: 'CABINET_HICUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 38, name: 'CABINET_LOCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'CABINET', paramId: 39, name: 'CABINET_HICUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'CABINET', paramId: 40, name: 'CABINET_ZOOM', displayLabel: 'Zoom', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 41, name: 'CABINET_PROXFREQ', displayLabel: 'Proximity Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 41, name: 'CABINET_PROXFREQ', displayLabel: 'Proximity Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'CABINET', paramId: 42, name: 'CABINET_INPUTSEL', displayLabel: 'Input Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 43, name: 'CABINET_PRETYPE', displayLabel: 'Preamp Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 44, name: 'CABINET_BASS', displayLabel: 'Bass', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 45, name: 'CABINET_MID', displayLabel: 'Mid', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 46, name: 'CABINET_TREBLE', displayLabel: 'Treble', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 44, name: 'CABINET_BASS', displayLabel: 'Bass', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'CABINET', paramId: 45, name: 'CABINET_MID', displayLabel: 'Mid', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'CABINET', paramId: 46, name: 'CABINET_TREBLE', displayLabel: 'Treble', unit: 'db' }, // unit from typecode class 0x1
   { family: 'CABINET', paramId: 47, name: 'CABINET_OVERSAMPLE', displayLabel: 'Preamp Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 48, name: 'CABINET_SMOOTH1', displayLabel: 'Smoothing', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 49, name: 'CABINET_SMOOTH2', displayLabel: 'Smoothing', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 50, name: 'CABINET_SMOOTH3', displayLabel: 'Smoothing', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 51, name: 'CABINET_SMOOTH4', displayLabel: 'Smoothing', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 52, name: 'CABINET_ORDER', displayLabel: 'Filter Slope', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 53, name: 'CABINET_FLOORLVL', displayLabel: 'Floor Reflections', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 54, name: 'CABINET_AIR', displayLabel: 'Air', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 55, name: 'CABINET_AIRFREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 53, name: 'CABINET_FLOORLVL', displayLabel: 'Floor Reflections', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CABINET', paramId: 54, name: 'CABINET_AIR', displayLabel: 'Air', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CABINET', paramId: 55, name: 'CABINET_AIRFREQ', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'CABINET', paramId: 56, name: 'CABINET_ROOMSHAPE', displayLabel: 'Room Shape', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 57, name: 'CABINET_LFDAMPING', displayLabel: 'LF Damping', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 58, name: 'CABINET_HFDAMPING', displayLabel: 'HF Damping', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 59, name: 'CABINET_DIFFUSION', displayLabel: 'Room Diffusion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 59, name: 'CABINET_DIFFUSION', displayLabel: 'Room Diffusion', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'CABINET', paramId: 60, name: 'CABINET_GAINMONITOR', unit: 'unverified' },
   { family: 'CABINET', paramId: 61, name: 'CABINET_VUMETER', displayLabel: 'VU', unit: 'db' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 62, name: 'CABINET_LOCUT1', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 63, name: 'CABINET_LOCUT2', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 62, name: 'CABINET_LOCUT1', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'CABINET', paramId: 63, name: 'CABINET_LOCUT2', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'CABINET', paramId: 64, name: 'CABINET_LOCUT3', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 65, name: 'CABINET_LOCUT4', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 66, name: 'CABINET_HICUT1', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CABINET', paramId: 67, name: 'CABINET_HICUT2', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CABINET', paramId: 66, name: 'CABINET_HICUT1', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'CABINET', paramId: 67, name: 'CABINET_HICUT2', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'CABINET', paramId: 68, name: 'CABINET_HICUT3', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 69, name: 'CABINET_HICUT4', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CABINET', paramId: 70, name: 'CABINET_LENGTH1', displayLabel: 'IR Length', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -135,7 +135,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'CHORUS', paramId: 4, name: 'CHORUS_DEPTH', displayLabel: 'Depth', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'CHORUS', paramId: 5, name: 'CHORUS_HICUT', displayLabel: 'High Cut', unit: 'hz', displayMin: 200, displayMax: 20000 }, // inferred from AM4
   { family: 'CHORUS', paramId: 6, name: 'CHORUS_DELAYTIME', displayLabel: 'Delay Time', unit: 'ms', displayMin: 0.1, displayMax: 50 }, // inferred from AM4
-  { family: 'CHORUS', paramId: 7, name: 'CHORUS_LFOPHASE', displayLabel: 'LFO Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CHORUS', paramId: 7, name: 'CHORUS_LFOPHASE', displayLabel: 'LFO Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'CHORUS', paramId: 8, name: 'CHORUS_LFOTYPE', displayLabel: 'LFO Type', unit: 'enum' }, // inferred from AM4
   { family: 'CHORUS', paramId: 9, name: 'CHORUS_AUTO', displayLabel: 'Auto Depth', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CHORUS', paramId: 10, name: 'CHORUS_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
@@ -146,11 +146,11 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'CHORUS', paramId: 15, name: 'CHORUS_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'CHORUS', paramId: 16, name: 'CHORUS_PHASEREV', displayLabel: 'Phase Reverse', unit: 'enum' }, // inferred from AM4
   { family: 'CHORUS', paramId: 17, name: 'CHORUS_WIDTH', displayLabel: 'Width', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
-  { family: 'CHORUS', paramId: 18, name: 'CHORUS_RATE2', displayLabel: 'LFO2 Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CHORUS', paramId: 19, name: 'CHORUS_DEPTH2', displayLabel: 'LFO2 Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CHORUS', paramId: 18, name: 'CHORUS_RATE2', displayLabel: 'LFO2 Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'CHORUS', paramId: 19, name: 'CHORUS_DEPTH2', displayLabel: 'LFO2 Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'CHORUS', paramId: 20, name: 'CHORUS_DRIVE', displayLabel: 'Drive', unit: 'knob_0_10', displayMin: 0.5, displayMax: 500, scaling: 'log10' }, // inferred from AM4
   { family: 'CHORUS', paramId: 21, name: 'CHORUS_LOWCUT', displayLabel: 'Low Cut', unit: 'hz', displayMin: 20, displayMax: 2000 }, // inferred from AM4
-  { family: 'CHORUS', paramId: 22, name: 'CHORUS_SPREAD', displayLabel: 'Stereo Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CHORUS', paramId: 22, name: 'CHORUS_SPREAD', displayLabel: 'Stereo Spread', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'CHORUS', paramId: 23, name: 'CHORUS_MODE', displayLabel: 'Dimension Mode', unit: 'enum' }, // inferred from AM4
   { family: 'CHORUS', paramId: 24, name: 'CHORUS_DEPTHL', displayLabel: 'Depth', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'CHORUS', paramId: 25, name: 'CHORUS_DEPTHC', displayLabel: 'Center Depth', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
@@ -165,139 +165,139 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'COMP', paramId: 5, name: 'COMP_KNEE', displayLabel: 'Knee Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'COMP', paramId: 6, name: 'COMP_AUTO', displayLabel: 'Auto Makeup', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'COMP', paramId: 7, name: 'COMP_PEAKRMS', displayLabel: 'Detector Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'COMP', paramId: 8, name: 'COMP_LOWCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'COMP', paramId: 8, name: 'COMP_LOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'COMP', paramId: 9, name: 'COMP_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'COMP', paramId: 10, name: 'COMP_SIDECHAIN', displayLabel: 'Sidechain Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'COMP', paramId: 11, name: 'COMP_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'COMP', paramId: 12, name: 'COMP_TYPE', unit: 'enum' }, // inferred from AM4
   { family: 'COMP', paramId: 13, name: 'COMP_SUSTAIN', displayLabel: 'Compression', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'COMP', paramId: 14, name: 'COMP_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from AM4
-  { family: 'COMP', paramId: 15, name: 'COMP_DELAYTIME', displayLabel: 'Look-Ahead Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'COMP', paramId: 15, name: 'COMP_DELAYTIME', displayLabel: 'Look-Ahead Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'COMP', paramId: 16, name: 'COMP_AUTOMODE', displayLabel: 'Auto Att/Rel', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'COMP', paramId: 17, name: 'COMP_EMPHASIS', displayLabel: 'Emphasis', unit: 'knob_0_20', displayMin: 0, displayMax: 20 }, // inferred from AM4
   { family: 'COMP', paramId: 18, name: 'COMP_DYNAMICS', displayLabel: 'Dynamics', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'COMP', paramId: 19, name: 'COMP_INPUTSWITCH', displayLabel: 'Input Level', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'COMP', paramId: 20, name: 'COMP_HIGHCUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'COMP', paramId: 21, name: 'COMP_GAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'COMP', paramId: 22, name: 'COMP_FREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'COMP', paramId: 20, name: 'COMP_HIGHCUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'COMP', paramId: 21, name: 'COMP_GAIN', displayLabel: 'Gain', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'COMP', paramId: 22, name: 'COMP_FREQ', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'COMP', paramId: 23, name: 'COMP_Q', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'COMP', paramId: 24, name: 'COMP_LIGHTTYPE', displayLabel: 'Light Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'COMP', paramId: 25, name: 'COMP_GAINMONITOR', displayLabel: 'Gain', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'COMP', paramId: 26, name: 'COMP_EQTYPE', displayLabel: 'Filter Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'COMP', paramId: 27, name: 'COMP_THRESH2', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'COMP', paramId: 27, name: 'COMP_THRESH2', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'COMP', paramId: 28, name: 'COMP_XMARK', unit: 'unverified' },
   { family: 'COMP', paramId: 29, name: 'COMP_YMARK', unit: 'unverified' },
   { family: 'COMP', paramId: 30, name: 'COMP_COMPANSION', displayLabel: 'Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'COMP', paramId: 31, name: 'COMP_COMPTIME', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'COMP', paramId: 31, name: 'COMP_COMPTIME', displayLabel: 'Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'COMP', paramId: 32, name: 'COMP_COMPMATCH', displayLabel: 'Transients', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'COMP', paramId: 33, name: 'COMP_EMPHFREQ', displayLabel: 'Emphasis Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'COMP', paramId: 33, name: 'COMP_EMPHFREQ', displayLabel: 'Emphasis Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'COMP', paramId: 34, name: 'COMP_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'COMP', paramId: 35, name: 'COMP_TONE', displayLabel: 'Tone', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'COMP', paramId: 36, name: 'COMP_DRIVE', displayLabel: 'Drive', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'CONTROLLERS', paramId: 0, name: 'CONTROLLERS_LFO1TYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 1, name: 'CONTROLLERS_LFO1FREQ', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 2, name: 'CONTROLLERS_LFO1DEPTH', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 3, name: 'CONTROLLERS_LFO1DUTY', displayLabel: 'Duty Cycle', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 4, name: 'CONTROLLERS_LFO1PHASE', displayLabel: 'Output B Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CONTROLLERS', paramId: 1, name: 'CONTROLLERS_LFO1FREQ', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'CONTROLLERS', paramId: 2, name: 'CONTROLLERS_LFO1DEPTH', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 3, name: 'CONTROLLERS_LFO1DUTY', displayLabel: 'Duty Cycle', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 4, name: 'CONTROLLERS_LFO1PHASE', displayLabel: 'Output B Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'CONTROLLERS', paramId: 5, name: 'CONTROLLERS_LFO1TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 6, name: 'CONTROLLERS_LFO2TYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 7, name: 'CONTROLLERS_LFO2FREQ', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 8, name: 'CONTROLLERS_LFO2DEPTH', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 9, name: 'CONTROLLERS_LFO2DUTY', displayLabel: 'Duty Cycle', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 10, name: 'CONTROLLERS_LFO2PHASE', displayLabel: 'Output B Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CONTROLLERS', paramId: 7, name: 'CONTROLLERS_LFO2FREQ', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'CONTROLLERS', paramId: 8, name: 'CONTROLLERS_LFO2DEPTH', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 9, name: 'CONTROLLERS_LFO2DUTY', displayLabel: 'Duty Cycle', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 10, name: 'CONTROLLERS_LFO2PHASE', displayLabel: 'Output B Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'CONTROLLERS', paramId: 11, name: 'CONTROLLERS_LFO2TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 12, name: 'CONTROLLERS_ADSR1MODE', displayLabel: 'ADSR Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 13, name: 'CONTROLLERS_ADSR1RETRIG', displayLabel: 'Retrigger', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 14, name: 'CONTROLLERS_ADSR1ATTACK', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 15, name: 'CONTROLLERS_ADSR1DECAY', displayLabel: 'Decay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 16, name: 'CONTROLLERS_ADSR1SUSTAIN', displayLabel: 'Sustain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 17, name: 'CONTROLLERS_ADSR1LEVEL', displayLabel: 'Sustain Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 18, name: 'CONTROLLERS_ADSR1RELEASE', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 19, name: 'CONTROLLERS_ADSR1THRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CONTROLLERS', paramId: 14, name: 'CONTROLLERS_ADSR1ATTACK', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 15, name: 'CONTROLLERS_ADSR1DECAY', displayLabel: 'Decay', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 16, name: 'CONTROLLERS_ADSR1SUSTAIN', displayLabel: 'Sustain', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 17, name: 'CONTROLLERS_ADSR1LEVEL', displayLabel: 'Sustain Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 18, name: 'CONTROLLERS_ADSR1RELEASE', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 19, name: 'CONTROLLERS_ADSR1THRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'CONTROLLERS', paramId: 20, name: 'CONTROLLERS_ADSR2MODE', displayLabel: 'ADSR Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 21, name: 'CONTROLLERS_ADSR2RETRIG', displayLabel: 'Retrigger', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 22, name: 'CONTROLLERS_ADSR2ATTACK', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 23, name: 'CONTROLLERS_ADSR2DECAY', displayLabel: 'Decay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 24, name: 'CONTROLLERS_ADSR2SUSTAIN', displayLabel: 'Sustain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 25, name: 'CONTROLLERS_ADSR2LEVEL', displayLabel: 'Sustain Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 26, name: 'CONTROLLERS_ADSR2RELEASE', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 27, name: 'CONTROLLERS_ADSR2THRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 28, name: 'CONTROLLERS_ENVATTACK', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 29, name: 'CONTROLLERS_ENVRELEASE', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 30, name: 'CONTROLLERS_ENVSENS', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CONTROLLERS', paramId: 22, name: 'CONTROLLERS_ADSR2ATTACK', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 23, name: 'CONTROLLERS_ADSR2DECAY', displayLabel: 'Decay', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 24, name: 'CONTROLLERS_ADSR2SUSTAIN', displayLabel: 'Sustain', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 25, name: 'CONTROLLERS_ADSR2LEVEL', displayLabel: 'Sustain Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 26, name: 'CONTROLLERS_ADSR2RELEASE', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 27, name: 'CONTROLLERS_ADSR2THRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'CONTROLLERS', paramId: 28, name: 'CONTROLLERS_ENVATTACK', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 29, name: 'CONTROLLERS_ENVRELEASE', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'CONTROLLERS', paramId: 30, name: 'CONTROLLERS_ENVSENS', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'CONTROLLERS', paramId: 31, name: 'CONTROLLERS_ENVGAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 32, name: 'CONTROLLERS_TEMPO', displayLabel: 'Tempo', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 33, name: 'CONTROLLERS_TEMPOTOUSE', displayLabel: 'Tempo To Use', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 34, name: 'CONTROLLERS_SEQFREQ', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CONTROLLERS', paramId: 34, name: 'CONTROLLERS_SEQFREQ', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'CONTROLLERS', paramId: 35, name: 'CONTROLLERS_SEQTEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 36, name: 'CONTROLLERS_SEQSTAGES', displayLabel: 'Stages', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 37, name: 'CONTROLLERS_SEQRUN', displayLabel: 'Run', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 38, name: 'CONTROLLERS_SEQ1', displayLabel: '1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 39, name: 'CONTROLLERS_SEQ2', displayLabel: '2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 40, name: 'CONTROLLERS_SEQ3', displayLabel: '3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 41, name: 'CONTROLLERS_SEQ4', displayLabel: '4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 42, name: 'CONTROLLERS_SEQ5', displayLabel: '5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 43, name: 'CONTROLLERS_SEQ6', displayLabel: '6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 44, name: 'CONTROLLERS_SEQ7', displayLabel: '7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 45, name: 'CONTROLLERS_SEQ8', displayLabel: '8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 46, name: 'CONTROLLERS_SEQ9', displayLabel: '9', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 47, name: 'CONTROLLERS_SEQ10', displayLabel: '10', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 48, name: 'CONTROLLERS_SEQ11', displayLabel: '11', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 49, name: 'CONTROLLERS_SEQ12', displayLabel: '12', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 50, name: 'CONTROLLERS_SEQ13', displayLabel: '13', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 51, name: 'CONTROLLERS_SEQ14', displayLabel: '14', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 52, name: 'CONTROLLERS_SEQ15', displayLabel: '15', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 53, name: 'CONTROLLERS_SEQ16', displayLabel: '16', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 54, name: 'CONTROLLERS_SEQ17', displayLabel: '17', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 55, name: 'CONTROLLERS_SEQ18', displayLabel: '18', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 56, name: 'CONTROLLERS_SEQ19', displayLabel: '19', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 57, name: 'CONTROLLERS_SEQ20', displayLabel: '20', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 58, name: 'CONTROLLERS_SEQ21', displayLabel: '21', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 59, name: 'CONTROLLERS_SEQ22', displayLabel: '22', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 60, name: 'CONTROLLERS_SEQ23', displayLabel: '23', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 61, name: 'CONTROLLERS_SEQ24', displayLabel: '24', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 62, name: 'CONTROLLERS_SEQ25', displayLabel: '25', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 63, name: 'CONTROLLERS_SEQ26', displayLabel: '26', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 64, name: 'CONTROLLERS_SEQ27', displayLabel: '27', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 65, name: 'CONTROLLERS_SEQ28', displayLabel: '28', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 66, name: 'CONTROLLERS_SEQ29', displayLabel: '29', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 67, name: 'CONTROLLERS_SEQ30', displayLabel: '30', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 68, name: 'CONTROLLERS_SEQ31', displayLabel: '31', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 69, name: 'CONTROLLERS_SEQ32', displayLabel: '32', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CONTROLLERS', paramId: 38, name: 'CONTROLLERS_SEQ1', displayLabel: '1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 39, name: 'CONTROLLERS_SEQ2', displayLabel: '2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 40, name: 'CONTROLLERS_SEQ3', displayLabel: '3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 41, name: 'CONTROLLERS_SEQ4', displayLabel: '4', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 42, name: 'CONTROLLERS_SEQ5', displayLabel: '5', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 43, name: 'CONTROLLERS_SEQ6', displayLabel: '6', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 44, name: 'CONTROLLERS_SEQ7', displayLabel: '7', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 45, name: 'CONTROLLERS_SEQ8', displayLabel: '8', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 46, name: 'CONTROLLERS_SEQ9', displayLabel: '9', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 47, name: 'CONTROLLERS_SEQ10', displayLabel: '10', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 48, name: 'CONTROLLERS_SEQ11', displayLabel: '11', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 49, name: 'CONTROLLERS_SEQ12', displayLabel: '12', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 50, name: 'CONTROLLERS_SEQ13', displayLabel: '13', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 51, name: 'CONTROLLERS_SEQ14', displayLabel: '14', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 52, name: 'CONTROLLERS_SEQ15', displayLabel: '15', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 53, name: 'CONTROLLERS_SEQ16', displayLabel: '16', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 54, name: 'CONTROLLERS_SEQ17', displayLabel: '17', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 55, name: 'CONTROLLERS_SEQ18', displayLabel: '18', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 56, name: 'CONTROLLERS_SEQ19', displayLabel: '19', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 57, name: 'CONTROLLERS_SEQ20', displayLabel: '20', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 58, name: 'CONTROLLERS_SEQ21', displayLabel: '21', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 59, name: 'CONTROLLERS_SEQ22', displayLabel: '22', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 60, name: 'CONTROLLERS_SEQ23', displayLabel: '23', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 61, name: 'CONTROLLERS_SEQ24', displayLabel: '24', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 62, name: 'CONTROLLERS_SEQ25', displayLabel: '25', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 63, name: 'CONTROLLERS_SEQ26', displayLabel: '26', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 64, name: 'CONTROLLERS_SEQ27', displayLabel: '27', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 65, name: 'CONTROLLERS_SEQ28', displayLabel: '28', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 66, name: 'CONTROLLERS_SEQ29', displayLabel: '29', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 67, name: 'CONTROLLERS_SEQ30', displayLabel: '30', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 68, name: 'CONTROLLERS_SEQ31', displayLabel: '31', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 69, name: 'CONTROLLERS_SEQ32', displayLabel: '32', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'CONTROLLERS', paramId: 70, name: 'CONTROLLERS_LFO1RUN', displayLabel: 'Run/Stop', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 71, name: 'CONTROLLERS_LFO2RUN', displayLabel: 'Run/Stop', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 72, name: 'CONTROLLERS_SCENE1_VAL1', displayLabel: 'Scene 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 73, name: 'CONTROLLERS_SCENE1_VAL2', displayLabel: 'Scene 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 74, name: 'CONTROLLERS_SCENE1_VAL3', displayLabel: 'Scene 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 75, name: 'CONTROLLERS_SCENE1_VAL4', displayLabel: 'Scene 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 76, name: 'CONTROLLERS_SCENE1_VAL5', displayLabel: 'Scene 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 77, name: 'CONTROLLERS_SCENE1_VAL6', displayLabel: 'Scene 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 78, name: 'CONTROLLERS_SCENE1_VAL7', displayLabel: 'Scene 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 79, name: 'CONTROLLERS_SCENE1_VAL8', displayLabel: 'Scene 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 80, name: 'CONTROLLERS_SCENE2_VAL1', displayLabel: 'Scene 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 81, name: 'CONTROLLERS_SCENE2_VAL2', displayLabel: 'Scene 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 82, name: 'CONTROLLERS_SCENE2_VAL3', displayLabel: 'Scene 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 83, name: 'CONTROLLERS_SCENE2_VAL4', displayLabel: 'Scene 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 84, name: 'CONTROLLERS_SCENE2_VAL5', displayLabel: 'Scene 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 85, name: 'CONTROLLERS_SCENE2_VAL6', displayLabel: 'Scene 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 86, name: 'CONTROLLERS_SCENE2_VAL7', displayLabel: 'Scene 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 87, name: 'CONTROLLERS_SCENE2_VAL8', displayLabel: 'Scene 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 88, name: 'CONTROLLERS_SCENE3_VAL1', displayLabel: 'Scene 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 89, name: 'CONTROLLERS_SCENE3_VAL2', displayLabel: 'Scene 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 90, name: 'CONTROLLERS_SCENE3_VAL3', displayLabel: 'Scene 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 91, name: 'CONTROLLERS_SCENE3_VAL4', displayLabel: 'Scene 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 92, name: 'CONTROLLERS_SCENE3_VAL5', displayLabel: 'Scene 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 93, name: 'CONTROLLERS_SCENE3_VAL6', displayLabel: 'Scene 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 94, name: 'CONTROLLERS_SCENE3_VAL7', displayLabel: 'Scene 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 95, name: 'CONTROLLERS_SCENE3_VAL8', displayLabel: 'Scene 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 96, name: 'CONTROLLERS_SCENE4_VAL1', displayLabel: 'Scene 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 97, name: 'CONTROLLERS_SCENE4_VAL2', displayLabel: 'Scene 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 98, name: 'CONTROLLERS_SCENE4_VAL3', displayLabel: 'Scene 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 99, name: 'CONTROLLERS_SCENE4_VAL4', displayLabel: 'Scene 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 100, name: 'CONTROLLERS_SCENE4_VAL5', displayLabel: 'Scene 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 101, name: 'CONTROLLERS_SCENE4_VAL6', displayLabel: 'Scene 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 102, name: 'CONTROLLERS_SCENE4_VAL7', displayLabel: 'Scene 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'CONTROLLERS', paramId: 103, name: 'CONTROLLERS_SCENE4_VAL8', displayLabel: 'Scene 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'CONTROLLERS', paramId: 72, name: 'CONTROLLERS_SCENE1_VAL1', displayLabel: 'Scene 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 73, name: 'CONTROLLERS_SCENE1_VAL2', displayLabel: 'Scene 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 74, name: 'CONTROLLERS_SCENE1_VAL3', displayLabel: 'Scene 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 75, name: 'CONTROLLERS_SCENE1_VAL4', displayLabel: 'Scene 4', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 76, name: 'CONTROLLERS_SCENE1_VAL5', displayLabel: 'Scene 5', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 77, name: 'CONTROLLERS_SCENE1_VAL6', displayLabel: 'Scene 6', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 78, name: 'CONTROLLERS_SCENE1_VAL7', displayLabel: 'Scene 7', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 79, name: 'CONTROLLERS_SCENE1_VAL8', displayLabel: 'Scene 8', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 80, name: 'CONTROLLERS_SCENE2_VAL1', displayLabel: 'Scene 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 81, name: 'CONTROLLERS_SCENE2_VAL2', displayLabel: 'Scene 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 82, name: 'CONTROLLERS_SCENE2_VAL3', displayLabel: 'Scene 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 83, name: 'CONTROLLERS_SCENE2_VAL4', displayLabel: 'Scene 4', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 84, name: 'CONTROLLERS_SCENE2_VAL5', displayLabel: 'Scene 5', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 85, name: 'CONTROLLERS_SCENE2_VAL6', displayLabel: 'Scene 6', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 86, name: 'CONTROLLERS_SCENE2_VAL7', displayLabel: 'Scene 7', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 87, name: 'CONTROLLERS_SCENE2_VAL8', displayLabel: 'Scene 8', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 88, name: 'CONTROLLERS_SCENE3_VAL1', displayLabel: 'Scene 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 89, name: 'CONTROLLERS_SCENE3_VAL2', displayLabel: 'Scene 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 90, name: 'CONTROLLERS_SCENE3_VAL3', displayLabel: 'Scene 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 91, name: 'CONTROLLERS_SCENE3_VAL4', displayLabel: 'Scene 4', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 92, name: 'CONTROLLERS_SCENE3_VAL5', displayLabel: 'Scene 5', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 93, name: 'CONTROLLERS_SCENE3_VAL6', displayLabel: 'Scene 6', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 94, name: 'CONTROLLERS_SCENE3_VAL7', displayLabel: 'Scene 7', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 95, name: 'CONTROLLERS_SCENE3_VAL8', displayLabel: 'Scene 8', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 96, name: 'CONTROLLERS_SCENE4_VAL1', displayLabel: 'Scene 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 97, name: 'CONTROLLERS_SCENE4_VAL2', displayLabel: 'Scene 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 98, name: 'CONTROLLERS_SCENE4_VAL3', displayLabel: 'Scene 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 99, name: 'CONTROLLERS_SCENE4_VAL4', displayLabel: 'Scene 4', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 100, name: 'CONTROLLERS_SCENE4_VAL5', displayLabel: 'Scene 5', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 101, name: 'CONTROLLERS_SCENE4_VAL6', displayLabel: 'Scene 6', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 102, name: 'CONTROLLERS_SCENE4_VAL7', displayLabel: 'Scene 7', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'CONTROLLERS', paramId: 103, name: 'CONTROLLERS_SCENE4_VAL8', displayLabel: 'Scene 8', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'CONTROLLERS', paramId: 104, name: 'CONTROLLERS_LFO1QUANTIZE', displayLabel: 'Quantize', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 105, name: 'CONTROLLERS_LFO2QUANTIZE', displayLabel: 'Quantize', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 106, name: 'CONTROLLERS_ADSR1SOURCE', displayLabel: 'Input Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -305,18 +305,18 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'CONTROLLERS', paramId: 108, name: 'CONTROLLERS_ENVSOURCE', displayLabel: 'Input Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'CONTROLLERS', paramId: 109, name: 'CONTROLLERS_ENV_GAINMONITOR', unit: 'unverified' },
   { family: 'CONTROLLERS', paramId: 110, name: 'CONTROLLERS_PITCH_SOURCE', displayLabel: 'Input Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 110 (III 158 would mis-address)
-  { family: 'CONTROLLERS', paramId: 111, name: 'CONTROLLERS_SEQ_DAMPING', displayLabel: 'Damping Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 111 (III 159 would mis-address)
-  { family: 'CONTROLLERS', paramId: 112, name: 'CONTROLLERS_MANUAL1', displayLabel: 'Manual 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 112 (III 160 would mis-address)
-  { family: 'CONTROLLERS', paramId: 113, name: 'CONTROLLERS_MANUAL2', displayLabel: 'Manual 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 113 (III 161 would mis-address)
-  { family: 'CONTROLLERS', paramId: 114, name: 'CONTROLLERS_MANUAL3', displayLabel: 'Manual 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 114 (III 162 would mis-address)
-  { family: 'CONTROLLERS', paramId: 115, name: 'CONTROLLERS_MANUAL4', displayLabel: 'Manual 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 115 (III 163 would mis-address)
-  { family: 'CONTROLLERS', paramId: 116, name: 'CONTROLLERS_MANUAL5', displayLabel: 'Manual 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 116 (III 164 would mis-address)
-  { family: 'CONTROLLERS', paramId: 117, name: 'CONTROLLERS_ENVLOWCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 117 (III 165 would mis-address)
-  { family: 'CONTROLLERS', paramId: 118, name: 'CONTROLLERS_ENVHIGHCUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 118 (III 166 would mis-address)
-  { family: 'CONTROLLERS', paramId: 119, name: 'CONTROLLERS_LFO1BETA', displayLabel: 'Astable Beta', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 119 (III 167 would mis-address)
-  { family: 'CONTROLLERS', paramId: 120, name: 'CONTROLLERS_LFO2BETA', displayLabel: 'Astable Beta', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 120 (III 168 would mis-address)
-  { family: 'CONTROLLERS', paramId: 121, name: 'CONTROLLERS_LFO1HICUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 121 (III 169 would mis-address)
-  { family: 'CONTROLLERS', paramId: 122, name: 'CONTROLLERS_LFO2HICUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 122 (III 170 would mis-address)
+  { family: 'CONTROLLERS', paramId: 111, name: 'CONTROLLERS_SEQ_DAMPING', displayLabel: 'Damping Time', unit: 'ms' }, // unit from typecode class 0x4; device-true 111 (III 159 would mis-address)
+  { family: 'CONTROLLERS', paramId: 112, name: 'CONTROLLERS_MANUAL1', displayLabel: 'Manual 1', unit: 'percent' }, // unit from typecode class 0x5; device-true 112 (III 160 would mis-address)
+  { family: 'CONTROLLERS', paramId: 113, name: 'CONTROLLERS_MANUAL2', displayLabel: 'Manual 2', unit: 'percent' }, // unit from typecode class 0x5; device-true 113 (III 161 would mis-address)
+  { family: 'CONTROLLERS', paramId: 114, name: 'CONTROLLERS_MANUAL3', displayLabel: 'Manual 3', unit: 'percent' }, // unit from typecode class 0x5; device-true 114 (III 162 would mis-address)
+  { family: 'CONTROLLERS', paramId: 115, name: 'CONTROLLERS_MANUAL4', displayLabel: 'Manual 4', unit: 'percent' }, // unit from typecode class 0x5; device-true 115 (III 163 would mis-address)
+  { family: 'CONTROLLERS', paramId: 116, name: 'CONTROLLERS_MANUAL5', displayLabel: 'Manual 5', unit: 'percent' }, // unit from typecode class 0x5; device-true 116 (III 164 would mis-address)
+  { family: 'CONTROLLERS', paramId: 117, name: 'CONTROLLERS_ENVLOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2; device-true 117 (III 165 would mis-address)
+  { family: 'CONTROLLERS', paramId: 118, name: 'CONTROLLERS_ENVHIGHCUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2; device-true 118 (III 166 would mis-address)
+  { family: 'CONTROLLERS', paramId: 119, name: 'CONTROLLERS_LFO1BETA', displayLabel: 'Astable Beta', unit: 'percent' }, // unit from typecode class 0x5; device-true 119 (III 167 would mis-address)
+  { family: 'CONTROLLERS', paramId: 120, name: 'CONTROLLERS_LFO2BETA', displayLabel: 'Astable Beta', unit: 'percent' }, // unit from typecode class 0x5; device-true 120 (III 168 would mis-address)
+  { family: 'CONTROLLERS', paramId: 121, name: 'CONTROLLERS_LFO1HICUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2; device-true 121 (III 169 would mis-address)
+  { family: 'CONTROLLERS', paramId: 122, name: 'CONTROLLERS_LFO2HICUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2; device-true 122 (III 170 would mis-address)
   { family: 'CONTROLLERS', paramId: 123, name: 'CONTROLLERS_ADSR1_XMARK', unit: 'unverified' }, // device-true 123 (III 171 would mis-address)
   { family: 'CONTROLLERS', paramId: 124, name: 'CONTROLLERS_ADSR1_YMARK', unit: 'unverified' }, // device-true 124 (III 172 would mis-address)
   { family: 'CONTROLLERS', paramId: 125, name: 'CONTROLLERS_ADSR2_XMARK', unit: 'unverified' }, // device-true 125 (III 173 would mis-address)
@@ -359,42 +359,42 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DELAY', paramId: 6, name: 'DELAY_MODEL', unit: 'unverified' }, // device-true 6 (III 0 would mis-address)
   { family: 'DELAY', paramId: 7, name: 'DELAY_TYPE', unit: 'enum' }, // inferred from AM4; device-true 7 (III 1 would mis-address)
   { family: 'DELAY', paramId: 8, name: 'DELAY_TIME', displayLabel: 'Time', unit: 'ms', displayMin: 0, displayMax: 8000 }, // inferred from AM4; device-true 8 (III 2 would mis-address)
-  { family: 'DELAY', paramId: 9, name: 'DELAY_RATIO', displayLabel: 'L/R Time Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 9 (III 3 would mis-address)
-  { family: 'DELAY', paramId: 10, name: 'DELAY_FEED', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 10 (III 4 would mis-address)
-  { family: 'DELAY', paramId: 11, name: 'DELAY_FEEDL', unit: 'unverified' }, // device-true 11 (III 5 would mis-address)
-  { family: 'DELAY', paramId: 12, name: 'DELAY_FEEDR', displayLabel: 'Feedback R', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 12 (III 6 would mis-address)
+  { family: 'DELAY', paramId: 9, name: 'DELAY_RATIO', displayLabel: 'L/R Time Ratio', unit: 'percent' }, // unit from typecode class 0x5; device-true 9 (III 3 would mis-address)
+  { family: 'DELAY', paramId: 10, name: 'DELAY_FEED', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5; device-true 10 (III 4 would mis-address)
+  { family: 'DELAY', paramId: 11, name: 'DELAY_FEEDL', unit: 'percent' }, // device-true 11 (III 5 would mis-address) // unit from typecode class 0x5
+  { family: 'DELAY', paramId: 12, name: 'DELAY_FEEDR', displayLabel: 'Feedback R', unit: 'percent' }, // unit from typecode class 0x5; device-true 12 (III 6 would mis-address)
   { family: 'DELAY', paramId: 13, name: 'DELAY_DELAYPAN', displayLabel: 'Echo Pan', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 13 (III 7 would mis-address)
-  { family: 'DELAY', paramId: 14, name: 'DELAY_SPREAD', displayLabel: 'Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 14 (III 8 would mis-address)
+  { family: 'DELAY', paramId: 14, name: 'DELAY_SPREAD', displayLabel: 'Spread', unit: 'percent' }, // unit from typecode class 0x5; device-true 14 (III 8 would mis-address)
   { family: 'DELAY', paramId: 15, name: 'DELAY_TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AM4; device-true 15 (III 9 would mis-address)
   { family: 'DELAY', paramId: 16, name: 'DELAY_LOCUT', displayLabel: 'Low Cut', unit: 'hz', displayMin: 20, displayMax: 2000 }, // inferred from AM4; device-true 16 (III 10 would mis-address)
   { family: 'DELAY', paramId: 17, name: 'DELAY_HICUT', displayLabel: 'High Cut', unit: 'hz', displayMin: 200, displayMax: 20000 }, // inferred from AM4; device-true 17 (III 11 would mis-address)
-  { family: 'DELAY', paramId: 18, name: 'DELAY_RATE1', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 18 (III 12 would mis-address)
-  { family: 'DELAY', paramId: 19, name: 'DELAY_RATE2', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 19 (III 13 would mis-address)
-  { family: 'DELAY', paramId: 20, name: 'DELAY_DEPTH1', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 20 (III 14 would mis-address)
-  { family: 'DELAY', paramId: 21, name: 'DELAY_DEPTH2', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 21 (III 15 would mis-address)
+  { family: 'DELAY', paramId: 18, name: 'DELAY_RATE1', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2; device-true 18 (III 12 would mis-address)
+  { family: 'DELAY', paramId: 19, name: 'DELAY_RATE2', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2; device-true 19 (III 13 would mis-address)
+  { family: 'DELAY', paramId: 20, name: 'DELAY_DEPTH1', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5; device-true 20 (III 14 would mis-address)
+  { family: 'DELAY', paramId: 21, name: 'DELAY_DEPTH2', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5; device-true 21 (III 15 would mis-address)
   { family: 'DELAY', paramId: 22, name: 'DELAY_DRIVE', displayLabel: 'Drive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 22 (III 16 would mis-address)
-  { family: 'DELAY', paramId: 23, name: 'DELAY_GAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 23, name: 'DELAY_GAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'DELAY', paramId: 24, name: 'DELAY_LFO1TYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 25, name: 'DELAY_LFO2TYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 26, name: 'DELAY_TIMER', displayLabel: 'Time R', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 26, name: 'DELAY_TIMER', displayLabel: 'Time R', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'DELAY', paramId: 27, name: 'DELAY_HOLD', displayLabel: 'Repeat Stack/Hold', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 28, name: 'DELAY_MSTRFDBK', displayLabel: 'Master Feedback', unit: 'percent', displayMin: 0, displayMax: 200 }, // inferred from AM4
   { family: 'DELAY', paramId: 29, name: 'DELAY_TEMPOR', displayLabel: 'Tempo R', unit: 'enum' }, // inferred from AM4
-  { family: 'DELAY', paramId: 30, name: 'DELAY_FEEDLR', displayLabel: 'Rotation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 31, name: 'DELAY_FEEDRL', unit: 'unverified' },
+  { family: 'DELAY', paramId: 30, name: 'DELAY_FEEDLR', displayLabel: 'Rotation', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'DELAY', paramId: 31, name: 'DELAY_FEEDRL', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'DELAY', paramId: 32, name: 'DELAY_LEVELL', displayLabel: 'Level', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'DELAY', paramId: 33, name: 'DELAY_LEVELR', displayLabel: 'Level', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'DELAY', paramId: 34, name: 'DELAY_PANL', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from AM4
   { family: 'DELAY', paramId: 35, name: 'DELAY_PANR', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from AM4
-  { family: 'DELAY', paramId: 36, name: 'DELAY_LFO1PHASE', displayLabel: 'Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 37, name: 'DELAY_LFO2PHASE', displayLabel: 'Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 38, name: 'DELAY_SPLICETIME', displayLabel: 'Crossfade Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 36, name: 'DELAY_LFO1PHASE', displayLabel: 'Phase', unit: 'degrees' }, // unit from typecode class 0x6
+  { family: 'DELAY', paramId: 37, name: 'DELAY_LFO2PHASE', displayLabel: 'Phase', unit: 'degrees' }, // unit from typecode class 0x6
+  { family: 'DELAY', paramId: 38, name: 'DELAY_SPLICETIME', displayLabel: 'Crossfade Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'DELAY', paramId: 39, name: 'DELAY_RUN', displayLabel: 'Run', unit: 'enum' }, // inferred from AM4
   { family: 'DELAY', paramId: 40, name: 'DELAY_MODE', displayLabel: 'Trigger Restart', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 41, name: 'DELAY_LPF_ORDER', displayLabel: 'High Cut Slope', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 42, name: 'DELAY_ATTEN', displayLabel: 'Attenuation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 43, name: 'DELAY_THRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 44, name: 'DELAY_RELEASE', displayLabel: 'Release Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 42, name: 'DELAY_ATTEN', displayLabel: 'Attenuation', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'DELAY', paramId: 43, name: 'DELAY_THRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'DELAY', paramId: 44, name: 'DELAY_RELEASE', displayLabel: 'Release Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'DELAY', paramId: 45, name: 'DELAY_DIFFUSE', displayLabel: 'Diffusion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 46, name: 'DELAY_DIFFTIME', displayLabel: 'Diffusion Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 47, name: 'DELAY_PHASEREV', displayLabel: 'Phase Reverse', unit: 'enum' }, // inferred from AM4
@@ -402,36 +402,36 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DELAY', paramId: 49, name: 'DELAY_LFO2TARGET', displayLabel: 'Target', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 50, name: 'DELAY_LFO1TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 51, name: 'DELAY_LFO2TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 52, name: 'DELAY_RATE3', displayLabel: 'Sweep Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 52, name: 'DELAY_RATE3', displayLabel: 'Sweep Rate', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'DELAY', paramId: 53, name: 'DELAY_LFO3TYPE', displayLabel: 'Sweep Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 54, name: 'DELAY_LFO3PHASE', displayLabel: 'Sweep Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 54, name: 'DELAY_LFO3PHASE', displayLabel: 'Sweep Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'DELAY', paramId: 55, name: 'DELAY_LFO3TEMPO', displayLabel: 'Sweep Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 56, name: 'DELAY_FSTART', displayLabel: 'Start Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 57, name: 'DELAY_FSTOP', displayLabel: 'Stop Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 56, name: 'DELAY_FSTART', displayLabel: 'Start Frequency', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'DELAY', paramId: 57, name: 'DELAY_FSTOP', displayLabel: 'Stop Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'DELAY', paramId: 58, name: 'DELAY_Q', displayLabel: 'Resonance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 59, name: 'DELAY_FILTERQ', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 60, name: 'DELAY_BITREDUCE', displayLabel: 'Bit Reduction', unit: 'count', displayMin: 0, displayMax: 24 }, // inferred from AM4
-  { family: 'DELAY', paramId: 61, name: 'DELAY_FREQ1', displayLabel: 'Freq 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 62, name: 'DELAY_FREQ2', displayLabel: 'Freq 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 61, name: 'DELAY_FREQ1', displayLabel: 'Freq 1', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'DELAY', paramId: 62, name: 'DELAY_FREQ2', displayLabel: 'Freq 2', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'DELAY', paramId: 63, name: 'DELAY_Q1', displayLabel: 'Q 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 64, name: 'DELAY_Q2', displayLabel: 'Q 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 65, name: 'DELAY_GAIN1', displayLabel: 'Gain 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 66, name: 'DELAY_GAIN2', displayLabel: 'Gain 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 65, name: 'DELAY_GAIN1', displayLabel: 'Gain 1', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'DELAY', paramId: 66, name: 'DELAY_GAIN2', displayLabel: 'Gain 2', unit: 'db' }, // unit from typecode class 0x1
   { family: 'DELAY', paramId: 67, name: 'DELAY_MAXDEPTH', displayLabel: 'LFO Depth Range', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 68, name: 'DELAY_SPEED', displayLabel: 'Motor Speed', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 69, name: 'DELAY_OFFSET', displayLabel: 'Right Post Delay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 69, name: 'DELAY_OFFSET', displayLabel: 'Right Post Delay', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'DELAY', paramId: 70, name: 'DELAY_HPF_ORDER', displayLabel: 'Low Cut Slope', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 71, name: 'DELAY_COMPANDER', displayLabel: 'Compander', unit: 'enum' }, // inferred from AM4
-  { family: 'DELAY', paramId: 72, name: 'DELAY_COMPTIME', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 73, name: 'DELAY_COMPTHRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 72, name: 'DELAY_COMPTIME', displayLabel: 'Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'DELAY', paramId: 73, name: 'DELAY_COMPTHRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'DELAY', paramId: 74, name: 'DELAY_MSTRTIME', displayLabel: 'Master Time', unit: 'percent', displayMin: 25, displayMax: 400 }, // inferred from AM4
   { family: 'DELAY', paramId: 75, name: 'DELAY_DIFFRATE', displayLabel: 'LFO Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 76, name: 'DELAY_DIFFDEPTH', displayLabel: 'LFO Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 77, name: 'DELAY_LFO4TYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 78, name: 'DELAY_RATE4', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 78, name: 'DELAY_RATE4', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'DELAY', paramId: 79, name: 'DELAY_LFO4TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 80, name: 'DELAY_DEPTH4', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'DELAY', paramId: 81, name: 'DELAY_LFO4PHASE', displayLabel: 'Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'DELAY', paramId: 80, name: 'DELAY_DEPTH4', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'DELAY', paramId: 81, name: 'DELAY_LFO4PHASE', displayLabel: 'Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'DELAY', paramId: 82, name: 'DELAY_LFO4TARGET', displayLabel: 'Target', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'DELAY', paramId: 83, name: 'DELAY_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'DELAY', paramId: 84, name: 'DELAY_STACKFDBK', displayLabel: 'Stack Feedback', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
@@ -448,14 +448,14 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 9, name: 'DISTORT_MID', displayLabel: 'Mid', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 9 (III 3 would mis-address)
   { family: 'DISTORT', paramId: 10, name: 'DISTORT_TREBLE', displayLabel: 'Treble', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 10 (III 4 would mis-address)
   { family: 'DISTORT', paramId: 11, name: 'DISTORT_MASTER', displayLabel: 'Master Volume', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 11 (III 5 would mis-address)
-  { family: 'DISTORT', paramId: 12, name: 'DISTORT_HPFREQ', displayLabel: 'Low Cut Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 12 (III 6 would mis-address)
-  { family: 'DISTORT', paramId: 13, name: 'DISTORT_LPFREQ', displayLabel: 'High Cut Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 13 (III 7 would mis-address)
-  { family: 'DISTORT', paramId: 14, name: 'DISTORT_TONEFREQ', displayLabel: 'Tonestack Freq', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 14 (III 8 would mis-address)
+  { family: 'DISTORT', paramId: 12, name: 'DISTORT_HPFREQ', displayLabel: 'Low Cut Frequency', unit: 'hz' }, // unit from typecode class 0x2; device-true 12 (III 6 would mis-address)
+  { family: 'DISTORT', paramId: 13, name: 'DISTORT_LPFREQ', displayLabel: 'High Cut Frequency', unit: 'hz' }, // unit from typecode class 0x2; device-true 13 (III 7 would mis-address)
+  { family: 'DISTORT', paramId: 14, name: 'DISTORT_TONEFREQ', displayLabel: 'Tonestack Freq', unit: 'hz' }, // unit from typecode class 0x2; device-true 14 (III 8 would mis-address)
   { family: 'DISTORT', paramId: 15, name: 'DISTORT_XFLEAKAGE', unit: 'unverified' }, // device-true 15 (III 9 would mis-address)
   { family: 'DISTORT', paramId: 16, name: 'DISTORT_BRIGHTCAP', displayLabel: 'Bright Cap', unit: 'pf', displayMin: 10, displayMax: 10000, scaling: 'log10' }, // inferred from AM4; device-true 16 (III 10 would mis-address)
-  { family: 'DISTORT', paramId: 17, name: 'DISTORT_WSLPF', unit: 'unverified' }, // device-true 17 (III 11 would mis-address)
-  { family: 'DISTORT', paramId: 18, name: 'DISTORT_XFHPF', displayLabel: 'XFormer Low Freq', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 18 (III 12 would mis-address)
-  { family: 'DISTORT', paramId: 19, name: 'DISTORT_XFLPF', displayLabel: 'XFormer Hi Freq', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 19 (III 13 would mis-address)
+  { family: 'DISTORT', paramId: 17, name: 'DISTORT_WSLPF', unit: 'hz' }, // device-true 17 (III 11 would mis-address) // unit from typecode class 0x2
+  { family: 'DISTORT', paramId: 18, name: 'DISTORT_XFHPF', displayLabel: 'XFormer Low Freq', unit: 'hz' }, // unit from typecode class 0x2; device-true 18 (III 12 would mis-address)
+  { family: 'DISTORT', paramId: 19, name: 'DISTORT_XFLPF', displayLabel: 'XFormer Hi Freq', unit: 'hz' }, // unit from typecode class 0x2; device-true 19 (III 13 would mis-address)
   { family: 'DISTORT', paramId: 20, name: 'DISTORT_TONELOC', displayLabel: 'Tonestack Location', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 20 (III 14 would mis-address)
   { family: 'DISTORT', paramId: 21, name: 'DISTORT_INPUTSELECT', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AM4; device-true 21 (III 15 would mis-address)
   { family: 'DISTORT', paramId: 22, name: 'DISTORT_DEPTH', displayLabel: 'Depth', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 22 (III 16 would mis-address)
@@ -465,15 +465,15 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 26, name: 'DISTORT_PRESENCE', displayLabel: 'Presence', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 26 (III 20 would mis-address)
   { family: 'DISTORT', paramId: 27, name: 'DISTORT_BETA', displayLabel: 'Negative Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 27 (III 24 would mis-address)
   { family: 'DISTORT', paramId: 28, name: 'DISTORT_PRESFREQ', displayLabel: 'Presence Frequency', unit: 'hz', displayMin: 0.1, displayMax: 10, scaling: 'log10' }, // inferred from AM4; device-true 28 (III 25 would mis-address)
-  { family: 'DISTORT', paramId: 29, name: 'DISTORT_SPKRLFREQ', displayLabel: 'Low Freq', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 29 (III 26 would mis-address)
+  { family: 'DISTORT', paramId: 29, name: 'DISTORT_SPKRLFREQ', displayLabel: 'Low Freq', unit: 'hz' }, // unit from typecode class 0x2; device-true 29 (III 26 would mis-address)
   { family: 'DISTORT', paramId: 30, name: 'DISTORT_SPKRLFGAIN', displayLabel: 'LF Reso', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 30 (III 27 would mis-address)
   { family: 'DISTORT', paramId: 31, name: 'DISTORT_DEPTHFREQ', displayLabel: 'Depth Frequency', unit: 'hz', displayMin: 50, displayMax: 500 }, // inferred from AM4; device-true 31 (III 29 would mis-address)
   { family: 'DISTORT', paramId: 32, name: 'DISTORT_DRIVETYPE', unit: 'unverified' }, // device-true 32 (III 30 would mis-address)
-  { family: 'DISTORT', paramId: 33, name: 'DISTORT_MVCAP', displayLabel: 'Master Vol Cap', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 33 (III 31 would mis-address)
-  { family: 'DISTORT', paramId: 34, name: 'DISTORT_WSHPF', unit: 'unverified' }, // device-true 34 (III 32 would mis-address)
+  { family: 'DISTORT', paramId: 33, name: 'DISTORT_MVCAP', displayLabel: 'Master Vol Cap', unit: 'pf' }, // unit from typecode class 0x8; device-true 33 (III 31 would mis-address)
+  { family: 'DISTORT', paramId: 34, name: 'DISTORT_WSHPF', unit: 'hz' }, // device-true 34 (III 32 would mis-address) // unit from typecode class 0x2
   { family: 'DISTORT', paramId: 35, name: 'DISTORT_CFCLIP', displayLabel: 'Harmonics', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 35 (III 33 would mis-address)
   { family: 'DISTORT', paramId: 36, name: 'DISTORT_TONETYPE', displayLabel: 'Tonestack Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 36 (III 34 would mis-address)
-  { family: 'DISTORT', paramId: 37, name: 'DISTORT_TIMECONST', displayLabel: 'B+ Time Constant', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 37 (III 35 would mis-address)
+  { family: 'DISTORT', paramId: 37, name: 'DISTORT_TIMECONST', displayLabel: 'B+ Time Constant', unit: 'ms' }, // unit from typecode class 0x4; device-true 37 (III 35 would mis-address)
   { family: 'DISTORT', paramId: 38, name: 'DISTORT_BIAS', displayLabel: 'Grid Bias', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 38 (III 36 would mis-address)
   { family: 'DISTORT', paramId: 39, name: 'DISTORT_FBTYPE', unit: 'unverified' }, // device-true 39 (III 37 would mis-address)
   { family: 'DISTORT', paramId: 40, name: 'DISTORT_PI_RATIO', unit: 'unverified' }, // device-true 40 (III 38 would mis-address)
@@ -481,7 +481,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 42, name: 'DISTORT_BOOST', displayLabel: 'Boost', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 42 (III 40 would mis-address)
   { family: 'DISTORT', paramId: 43, name: 'DISTORT_SPKRLFQ', displayLabel: 'LF Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 43 (III 41 would mis-address)
   { family: 'DISTORT', paramId: 44, name: 'DISTORT_OFFSET2', displayLabel: 'Preamp Bias', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 44 (III 42 would mis-address)
-  { family: 'DISTORT', paramId: 45, name: 'DISTORT_SPKRHFREQ', displayLabel: 'High Freq', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 45 (III 43 would mis-address)
+  { family: 'DISTORT', paramId: 45, name: 'DISTORT_SPKRHFREQ', displayLabel: 'High Freq', unit: 'hz' }, // unit from typecode class 0x2; device-true 45 (III 43 would mis-address)
   { family: 'DISTORT', paramId: 46, name: 'DISTORT_SPKRHFGAIN', displayLabel: 'HF Reso', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 46 (III 44 would mis-address)
   { family: 'DISTORT', paramId: 47, name: 'DISTORT_CUT', displayLabel: 'Cut', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 47 (III 45 would mis-address)
   { family: 'DISTORT', paramId: 48, name: 'DISTORT_XDRIVE', displayLabel: 'XFormer Drive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 48 (III 46 would mis-address)
@@ -501,41 +501,41 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 62, name: 'DISTORT_EQ6', displayLabel: '2K', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 62 (III 60 would mis-address)
   { family: 'DISTORT', paramId: 63, name: 'DISTORT_EQ7', displayLabel: '4K', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 63 (III 61 would mis-address)
   { family: 'DISTORT', paramId: 64, name: 'DISTORT_EQ8', displayLabel: '8K', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 64 (III 62 would mis-address)
-  { family: 'DISTORT', paramId: 65, name: 'DISTORT_BIASEXCURSION', displayLabel: 'Bias Excursion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 65 (III 63 would mis-address)
-  { family: 'DISTORT', paramId: 66, name: 'DISTORT_EXCURSIONTIME', displayLabel: 'Excursion Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 66 (III 64 would mis-address)
-  { family: 'DISTORT', paramId: 67, name: 'DISTORT_RECOVERYTIME', displayLabel: 'Recovery Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 67 (III 65 would mis-address)
-  { family: 'DISTORT', paramId: 68, name: 'DISTORT_FEEDFWDFREQ2', displayLabel: 'Triode 2 Plate Freq', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 68 (III 66 would mis-address)
-  { family: 'DISTORT', paramId: 69, name: 'DISTORT_FEEDFWDFREQ1', displayLabel: 'Triode 1 Plate Freq', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 69 (III 67 would mis-address)
+  { family: 'DISTORT', paramId: 65, name: 'DISTORT_BIASEXCURSION', displayLabel: 'Bias Excursion', unit: 'percent' }, // unit from typecode class 0x5; device-true 65 (III 63 would mis-address)
+  { family: 'DISTORT', paramId: 66, name: 'DISTORT_EXCURSIONTIME', displayLabel: 'Excursion Time', unit: 'ms' }, // unit from typecode class 0x4; device-true 66 (III 64 would mis-address)
+  { family: 'DISTORT', paramId: 67, name: 'DISTORT_RECOVERYTIME', displayLabel: 'Recovery Time', unit: 'ms' }, // unit from typecode class 0x4; device-true 67 (III 65 would mis-address)
+  { family: 'DISTORT', paramId: 68, name: 'DISTORT_FEEDFWDFREQ2', displayLabel: 'Triode 2 Plate Freq', unit: 'hz' }, // unit from typecode class 0x2; device-true 68 (III 66 would mis-address)
+  { family: 'DISTORT', paramId: 69, name: 'DISTORT_FEEDFWDFREQ1', displayLabel: 'Triode 1 Plate Freq', unit: 'hz' }, // unit from typecode class 0x2; device-true 69 (III 67 would mis-address)
   { family: 'DISTORT', paramId: 70, name: 'DISTORT_TUBETYPE', displayLabel: 'Power Tube Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 70 (III 68 would mis-address)
   { family: 'DISTORT', paramId: 71, name: 'DISTORT_PRETUBETYPE', displayLabel: 'Preamp Tube Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 71 (III 69 would mis-address)
   { family: 'DISTORT', paramId: 72, name: 'DISTORT_CLARITY', displayLabel: 'Out Comp Clarity', unit: 'knob_0_10', displayMin: 0, displayMax: 10, scaling: 'log10' }, // inferred from AM4; device-true 72 (III 70 would mis-address)
   { family: 'DISTORT', paramId: 73, name: 'DISTORT_INEQQ', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 73 (III 71 would mis-address)
-  { family: 'DISTORT', paramId: 74, name: 'DISTORT_INEQFREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 74 (III 72 would mis-address)
-  { family: 'DISTORT', paramId: 75, name: 'DISTORT_INEQGAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 75 (III 73 would mis-address)
+  { family: 'DISTORT', paramId: 74, name: 'DISTORT_INEQFREQ', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2; device-true 74 (III 72 would mis-address)
+  { family: 'DISTORT', paramId: 75, name: 'DISTORT_INEQGAIN', displayLabel: 'Gain', unit: 'db' }, // unit from typecode class 0x1; device-true 75 (III 73 would mis-address)
   { family: 'DISTORT', paramId: 76, name: 'DISTORT_DRIVE2', displayLabel: 'Overdrive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 76 (III 74 would mis-address)
   { family: 'DISTORT', paramId: 77, name: 'DISTORT_COMPRESSION', displayLabel: 'Out Compression', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 77 (III 75 would mis-address)
   { family: 'DISTORT', paramId: 78, name: 'DISTORT_THRESHOLD', displayLabel: 'Out Comp Threshold', unit: 'db', displayMin: -60, displayMax: 0 }, // inferred from AM4; device-true 78 (III 76 would mis-address)
   { family: 'DISTORT', paramId: 79, name: 'DISTORT_MVTRIM', displayLabel: 'Master Vol Trim', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 79 (III 77 would mis-address)
   { family: 'DISTORT', paramId: 80, name: 'DISTORT_FAT', displayLabel: 'Fat', unit: 'enum' }, // inferred from AM4; device-true 80 (III 78 would mis-address)
   { family: 'DISTORT', paramId: 81, name: 'DISTORT_DEFINITION', displayLabel: 'Definition', unit: 'count', displayMin: -10, displayMax: 10 }, // inferred from AM4; device-true 81 (III 79 would mis-address)
-  { family: 'DISTORT', paramId: 82, name: 'DISTORT_CFTHRESH', displayLabel: 'Compression', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 82 (III 80 would mis-address)
+  { family: 'DISTORT', paramId: 82, name: 'DISTORT_CFTHRESH', displayLabel: 'Compression', unit: 'percent' }, // unit from typecode class 0x5; device-true 82 (III 80 would mis-address)
   { family: 'DISTORT', paramId: 83, name: 'DISTORT_CFGRID', displayLabel: 'Grid Clipping', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4; device-true 83 (III 81 would mis-address)
   { family: 'DISTORT', paramId: 84, name: 'DISTORT_VERSION', unit: 'unverified' }, // device-true 84 (III 82 would mis-address)
   { family: 'DISTORT', paramId: 85, name: 'DISTORT_HICUT', displayLabel: 'High Cut', unit: 'hz', displayMin: 200, displayMax: 20000 }, // inferred from AM4; device-true 85 (III 83 would mis-address)
   { family: 'DISTORT', paramId: 86, name: 'DISTORT_DYNPRES', displayLabel: 'Dynamic Presence', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 86 (III 84 would mis-address)
   { family: 'DISTORT', paramId: 87, name: 'DISTORT_DYNDEPTH', displayLabel: 'Dynamic Depth', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 87 (III 85 would mis-address)
   { family: 'DISTORT', paramId: 88, name: 'DISTORT_SUPPLYTYPE', displayLabel: 'Power Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 88 (III 86 would mis-address)
-  { family: 'DISTORT', paramId: 89, name: 'DISTORT_LINEFREQ', displayLabel: 'AC Line Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 89 (III 87 would mis-address)
+  { family: 'DISTORT', paramId: 89, name: 'DISTORT_LINEFREQ', displayLabel: 'AC Line Frequency', unit: 'hz' }, // unit from typecode class 0x2; device-true 89 (III 87 would mis-address)
   { family: 'DISTORT', paramId: 90, name: 'DISTORT_PAHARDNESS', displayLabel: 'Hardness', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 90 (III 88 would mis-address)
   { family: 'DISTORT', paramId: 91, name: 'DISTORT_TREMFREQ', displayLabel: 'Frequency', unit: 'db', displayMin: 0.20000000298023224, displayMax: 20 }, // inferred from AM4; device-true 91 (III 89 would mis-address)
   { family: 'DISTORT', paramId: 92, name: 'DISTORT_TREMDEPTH', displayLabel: 'Depth', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4; device-true 92 (III 90 would mis-address)
   { family: 'DISTORT', paramId: 93, name: 'DISTORT_BIASTYPE', displayLabel: 'Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 93 (III 91 would mis-address)
   { family: 'DISTORT', paramId: 94, name: 'DISTORT_EQTYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 94 (III 92 would mis-address)
-  { family: 'DISTORT', paramId: 95, name: 'DISTORT_CBRATIO', displayLabel: 'Cathode Resistance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 95 (III 93 would mis-address)
-  { family: 'DISTORT', paramId: 96, name: 'DISTORT_CBTIME', displayLabel: 'Cathode Time Const', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 96 (III 94 would mis-address)
+  { family: 'DISTORT', paramId: 95, name: 'DISTORT_CBRATIO', displayLabel: 'Cathode Resistance', unit: 'percent' }, // unit from typecode class 0x5; device-true 95 (III 93 would mis-address)
+  { family: 'DISTORT', paramId: 96, name: 'DISTORT_CBTIME', displayLabel: 'Cathode Time Const', unit: 'ms' }, // unit from typecode class 0x4; device-true 96 (III 94 would mis-address)
   { family: 'DISTORT', paramId: 97, name: 'DISTORT_DYNIMP', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 97 (III 95 would mis-address)
   { family: 'DISTORT', paramId: 98, name: 'DISTORT_PRESAG', displayLabel: 'Preamp Sag', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 98 (III 96 would mis-address)
-  { family: 'DISTORT', paramId: 99, name: 'DISTORT_HITREBLE', displayLabel: 'High Treble', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 99 (III 97 would mis-address)
+  { family: 'DISTORT', paramId: 99, name: 'DISTORT_HITREBLE', displayLabel: 'High Treble', unit: 'db' }, // unit from typecode class 0x1; device-true 99 (III 97 would mis-address)
   { family: 'DISTORT', paramId: 100, name: 'DISTORT_PAOFFSET', displayLabel: 'Mismatch', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 100 (III 98 would mis-address)
   { family: 'DISTORT', paramId: 101, name: 'DISTORT_INDYNAMICS', displayLabel: 'Input Dynamics', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 101 (III 99 would mis-address)
   { family: 'DISTORT', paramId: 102, name: 'DISTORT_SPKRHFQ', displayLabel: 'HF Slope', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 102 (III 100 would mis-address)
@@ -544,7 +544,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 105, name: 'DISTORT_GRIDHARDNESS', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4; device-true 105 (III 103 would mis-address)
   { family: 'DISTORT', paramId: 106, name: 'DISTORT_PRESSHIFT', displayLabel: 'Pres. Shift', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 106 (III 104 would mis-address)
   { family: 'DISTORT', paramId: 107, name: 'DISTORT_SATDRIVE', displayLabel: 'Saturation Drive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 107 (III 105 would mis-address)
-  { family: 'DISTORT', paramId: 108, name: 'DISTORT_TRIODE2RATIO', displayLabel: 'Preamp Bias Excursion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 108 (III 106 would mis-address)
+  { family: 'DISTORT', paramId: 108, name: 'DISTORT_TRIODE2RATIO', displayLabel: 'Preamp Bias Excursion', unit: 'percent' }, // unit from typecode class 0x5; device-true 108 (III 106 would mis-address)
   { family: 'DISTORT', paramId: 109, name: 'DISTORT_TRIODE2EXTIME', unit: 'ms', displayMin: 0, displayMax: 100, scaling: 'log10' }, // inferred from AM4; device-true 109 (III 107 would mis-address)
   { family: 'DISTORT', paramId: 110, name: 'DISTORT_TRIODE2RECTIME', unit: 'ms', displayMin: 0, displayMax: 200, scaling: 'log10' }, // inferred from AM4; device-true 110 (III 108 would mis-address)
   { family: 'DISTORT', paramId: 111, name: 'DISTORT_COMPTYPE', displayLabel: 'Out Comp Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 111 (III 109 would mis-address)
@@ -552,25 +552,25 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'DISTORT', paramId: 113, name: 'DISTORT_PRECOMPTYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 113 (III 111 would mis-address)
   { family: 'DISTORT', paramId: 114, name: 'DISTORT_TRIODE1RATIO', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4; device-true 114 (III 112 would mis-address)
   { family: 'DISTORT', paramId: 115, name: 'DISTORT_CFHARDNESS', displayLabel: 'Hardness', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4; device-true 115 (III 113 would mis-address)
-  { family: 'DISTORT', paramId: 116, name: 'DISTORT_PIEXCURSION', displayLabel: 'PI Bias Excursion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 116 (III 114 would mis-address)
+  { family: 'DISTORT', paramId: 116, name: 'DISTORT_PIEXCURSION', displayLabel: 'PI Bias Excursion', unit: 'percent' }, // unit from typecode class 0x5; device-true 116 (III 114 would mis-address)
   { family: 'DISTORT', paramId: 117, name: 'DISTORT_MOTORDRIVE', displayLabel: 'Speaker Compress.', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 117 (III 115 would mis-address)
-  { family: 'DISTORT', paramId: 118, name: 'DISTORT_MDTIME', displayLabel: 'Speaker Time Const', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 118 (III 116 would mis-address)
+  { family: 'DISTORT', paramId: 118, name: 'DISTORT_MDTIME', displayLabel: 'Speaker Time Const', unit: 'ms' }, // unit from typecode class 0x4; device-true 118 (III 116 would mis-address)
   { family: 'DISTORT', paramId: 119, name: 'DISTORT_RESOLUTION', unit: 'db', displayMin: 0, displayMax: 1 }, // inferred from AM4; device-true 119 (III 117 would mis-address)
   { family: 'DISTORT', paramId: 120, name: 'DISTORT_VCCMON', displayLabel: 'B+', unit: 'db' }, // inferred from AxeEdit III XML controlType; device-true 120 (III 118 would mis-address)
   { family: 'DISTORT', paramId: 121, name: 'DISTORT_GAINMON', displayLabel: 'Gain', unit: 'db' }, // inferred from AxeEdit III XML controlType; device-true 121 (III 119 would mis-address)
   { family: 'DISTORT', paramId: 122, name: 'DISTORT_MDMON', displayLabel: 'Gain', unit: 'db', displayMin: 0, displayMax: 1 }, // inferred from AM4; device-true 122 (III 120 would mis-address)
   { family: 'DISTORT', paramId: 123, name: 'DISTORT_INDYNMON', displayLabel: 'Gain', unit: 'db', displayMin: 0, displayMax: 1 }, // inferred from AM4; device-true 123 (III 121 would mis-address)
-  { family: 'DISTORT', paramId: 124, name: 'DISTORT_BOOSTLVL', displayLabel: 'Boost Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 124 (III 122 would mis-address)
+  { family: 'DISTORT', paramId: 124, name: 'DISTORT_BOOSTLVL', displayLabel: 'Boost Level', unit: 'db' }, // unit from typecode class 0x1; device-true 124 (III 122 would mis-address)
   { family: 'DISTORT', paramId: 125, name: 'DISTORT_BOOSTTYPE', displayLabel: 'Boost Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 125 (III 123 would mis-address)
   { family: 'DISTORT', paramId: 126, name: 'DISTORT_OUTPUTTYPE', displayLabel: 'Output Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 126 (III 124 would mis-address)
-  { family: 'DISTORT', paramId: 127, name: 'DISTORT_SPKRDYNAMICS', displayLabel: 'Speaker Compliance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 127 (III 125 would mis-address)
+  { family: 'DISTORT', paramId: 127, name: 'DISTORT_SPKRDYNAMICS', displayLabel: 'Speaker Compliance', unit: 'percent' }, // unit from typecode class 0x5; device-true 127 (III 125 would mis-address)
   { family: 'DISTORT', paramId: 128, name: 'DISTORT_EQONOFF', displayLabel: 'Off / On', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 128 (III 126 would mis-address)
   { family: 'DISTORT', paramId: 129, name: 'DISTORT_SPKRDCR', displayLabel: 'Speaker Impedance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 129 (III 127 would mis-address)
   { family: 'DISTORT', paramId: 130, name: 'DISTORT_SPKRMODEL', displayLabel: 'Speaker Imp. Curve', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 130 (III 128 would mis-address)
-  { family: 'DISTORT', paramId: 131, name: 'DISTORT_CABRESONANCE', displayLabel: 'Cab Resonance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 131 (III 129 would mis-address)
+  { family: 'DISTORT', paramId: 131, name: 'DISTORT_CABRESONANCE', displayLabel: 'Cab Resonance', unit: 'percent' }, // unit from typecode class 0x5; device-true 131 (III 129 would mis-address)
   { family: 'DISTORT', paramId: 132, name: 'DISTORT_VPLATEMON', displayLabel: 'HEADROOM', unit: 'db' }, // inferred from AxeEdit III XML controlType; device-true 132 (III 130 would mis-address)
   { family: 'DISTORT', paramId: 133, name: 'DISTORT_PREPRESENCE', displayLabel: 'Preamp Presence', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 133 (III 131 would mis-address)
-  { family: 'DISTORT', paramId: 134, name: 'DISTORT_BIASX', displayLabel: 'Master Bias Excursion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 134 (III 132 would mis-address)
+  { family: 'DISTORT', paramId: 134, name: 'DISTORT_BIASX', displayLabel: 'Master Bias Excursion', unit: 'percent' }, // unit from typecode class 0x5; device-true 134 (III 132 would mis-address)
   { family: 'DISTORT', paramId: 135, name: 'DISTORT_PAHICUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 135 (III 133 would mis-address)
   { family: 'DISTORT', paramId: 136, name: 'DISTORT_PAONOFF', displayLabel: 'Power Amp Modeling', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 136 (III 134 would mis-address)
   { family: 'DISTORT', paramId: 137, name: 'DISTORT_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention; device-true 137 (III 135 would mis-address)
@@ -621,14 +621,14 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'FC', paramId: 65525, name: 'FC_PARAM_EDIT_LAYOUT6', unit: 'unverified' },
   { family: 'FC', paramId: 65526, name: 'FC_PARAM_EDIT_LAYOUT7', unit: 'unverified' },
   { family: 'FC', paramId: 65527, name: 'FC_PARAM_EDIT_LAYOUT8', unit: 'unverified' },
-  { family: 'FDBKRET', paramId: 0, name: 'FDBKRET_RETLEVEL', displayLabel: 'Return Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FDBKRET', paramId: 1, name: 'FDBKRET_LEVEL', displayLabel: 'Output Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FDBKRET', paramId: 0, name: 'FDBKRET_RETLEVEL', displayLabel: 'Return Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'FDBKRET', paramId: 1, name: 'FDBKRET_LEVEL', displayLabel: 'Output Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'FDBKRET', paramId: 2, name: 'FDBKRET_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'FDBKRET', paramId: 3, name: 'FDBKRET_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'FDBKRET', paramId: 4, name: 'FDBKRET_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
   { family: 'FDBKRET', paramId: 5, name: 'FDBKRET_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'FDBKSEND', paramId: 0, name: 'FDBKSEND_SENDLEVEL', unit: 'unverified' },
-  { family: 'FDBKSEND', paramId: 1, name: 'FDBKSEND_OUTLEVEL', unit: 'unverified' },
+  { family: 'FDBKSEND', paramId: 0, name: 'FDBKSEND_SENDLEVEL', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'FDBKSEND', paramId: 1, name: 'FDBKSEND_OUTLEVEL', unit: 'db' }, // unit from typecode class 0x1
   { family: 'FILTER', paramId: 0, name: 'FILTER_TYPE', unit: 'enum' }, // inferred from AM4
   { family: 'FILTER', paramId: 1, name: 'FILTER_FREQ', displayLabel: 'Frequency', unit: 'hz', displayMin: 20, displayMax: 20000 }, // inferred from AM4
   { family: 'FILTER', paramId: 2, name: 'FILTER_Q', displayLabel: 'Q', unit: 'count', displayMin: 0.1, displayMax: 10, scaling: 'log10' }, // inferred from AM4
@@ -643,23 +643,23 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'FILTER', paramId: 11, name: 'FILTER_PHASE', displayLabel: 'Phase Invert', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FILTER', paramId: 12, name: 'FILTER_LOWCUT', displayLabel: 'Low Cut', unit: 'hz', displayMin: 20, displayMax: 2000 }, // inferred from AM4
   { family: 'FILTER', paramId: 13, name: 'FILTER_HICUT', displayLabel: 'High Cut', unit: 'hz', displayMin: 200, displayMax: 20000 }, // inferred from AM4
-  { family: 'FILTER', paramId: 14, name: 'FILTER_COMBTIME', displayLabel: 'Delay Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FILTER', paramId: 14, name: 'FILTER_COMBTIME', displayLabel: 'Delay Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'FILTER', paramId: 15, name: 'FILTER_FEEDBACK', displayLabel: 'Depth', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from AM4
   { family: 'FILTER', paramId: 16, name: 'FILTER_LFOENABLE', displayLabel: 'Enable', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FILTER', paramId: 17, name: 'FILTER_LFOTYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AM4
-  { family: 'FILTER', paramId: 18, name: 'FILTER_LFOFREQ', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FILTER', paramId: 19, name: 'FILTER_LFODUTY', displayLabel: 'Duty', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FILTER', paramId: 20, name: 'FILTER_MODFREQ', displayLabel: 'Mod Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FILTER', paramId: 18, name: 'FILTER_LFOFREQ', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'FILTER', paramId: 19, name: 'FILTER_LFODUTY', displayLabel: 'Duty', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'FILTER', paramId: 20, name: 'FILTER_MODFREQ', displayLabel: 'Mod Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FILTER', paramId: 21, name: 'FILTER_QUANTIZE', displayLabel: 'Quantize', unit: 'enum' }, // inferred from AM4
   { family: 'FILTER', paramId: 22, name: 'FILTER_APORDER', displayLabel: 'Order', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FILTER', paramId: 23, name: 'FILTER_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'FILTER', paramId: 24, name: 'FILTER_EVFTYPE', displayLabel: 'Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FILTER', paramId: 25, name: 'FILTER_EVFQ', displayLabel: 'Peak', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FILTER', paramId: 26, name: 'FILTER_START', displayLabel: 'Start Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FILTER', paramId: 27, name: 'FILTER_STOP', displayLabel: 'Stop Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FILTER', paramId: 26, name: 'FILTER_START', displayLabel: 'Start Frequency', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'FILTER', paramId: 27, name: 'FILTER_STOP', displayLabel: 'Stop Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FILTER', paramId: 28, name: 'FILTER_SENS', displayLabel: 'Sensitivity', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FILTER', paramId: 29, name: 'FILTER_ATTACK', displayLabel: 'Attack Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FILTER', paramId: 30, name: 'FILTER_RELEASE', displayLabel: 'Release Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FILTER', paramId: 29, name: 'FILTER_ATTACK', displayLabel: 'Attack Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'FILTER', paramId: 30, name: 'FILTER_RELEASE', displayLabel: 'Release Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'FILTER', paramId: 31, name: 'FILTER_BETA', displayLabel: 'Sweep Shape', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FILTER', paramId: 32, name: 'FILTER_SOURCE', displayLabel: 'Detector Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FILTER', paramId: 33, name: 'FILTER_DETMON', displayLabel: 'Detect', unit: 'db' }, // inferred from AxeEdit III XML controlType
@@ -668,29 +668,29 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'FILTER', paramId: 36, name: 'FILTER_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'FLANGER', paramId: 0, name: 'FLANGER_TYPE', unit: 'enum' }, // inferred from AM4
   { family: 'FLANGER', paramId: 1, name: 'FLANGER_RATE', displayLabel: 'Rate', unit: 'hz', displayMin: 0.05, displayMax: 10 }, // inferred from AM4
-  { family: 'FLANGER', paramId: 1, name: 'OLD_FLANGER_RATE', displayLabel: 'Rate', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 1, name: 'OLD_FLANGER_RATE', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FLANGER', paramId: 2, name: 'FLANGER_TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AM4
   { family: 'FLANGER', paramId: 2, name: 'OLD_FLANGER_TEMPO', displayLabel: 'Tempo', unit: 'unverified' },
   { family: 'FLANGER', paramId: 3, name: 'FLANGER_DEPTH', displayLabel: 'Depth', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
-  { family: 'FLANGER', paramId: 3, name: 'OLD_FLANGER_DEPTH', displayLabel: 'Depth', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 3, name: 'OLD_FLANGER_DEPTH', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'FLANGER', paramId: 4, name: 'FLANGER_FEEDBACK', displayLabel: 'Feedback', unit: 'bipolar_percent', displayMin: -99, displayMax: 99 }, // inferred from AM4
-  { family: 'FLANGER', paramId: 4, name: 'OLD_FLANGER_FEEDBACK', displayLabel: 'Feedback', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 4, name: 'OLD_FLANGER_FEEDBACK', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'FLANGER', paramId: 5, name: 'FLANGER_MANUAL', displayLabel: 'Manual', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'FLANGER', paramId: 5, name: 'OLD_FLANGER_DELAYTIME', displayLabel: 'Delay', unit: 'unverified' },
   { family: 'FLANGER', paramId: 6, name: 'FLANGER_DRYDELAY', displayLabel: 'Dry Delay', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
-  { family: 'FLANGER', paramId: 6, name: 'OLD_FLANGER_MANUAL', displayLabel: 'Dry Delay', unit: 'unverified' },
-  { family: 'FLANGER', paramId: 7, name: 'FLANGER_LFOPHASE', displayLabel: 'Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FLANGER', paramId: 7, name: 'OLD_FLANGER_LFOPHASE', displayLabel: 'LFO Phase', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 6, name: 'OLD_FLANGER_MANUAL', displayLabel: 'Dry Delay', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'FLANGER', paramId: 7, name: 'FLANGER_LFOPHASE', displayLabel: 'Phase', unit: 'degrees' }, // unit from typecode class 0x6
+  { family: 'FLANGER', paramId: 7, name: 'OLD_FLANGER_LFOPHASE', displayLabel: 'LFO Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'FLANGER', paramId: 8, name: 'FLANGER_LFOTYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AM4
   { family: 'FLANGER', paramId: 8, name: 'OLD_FLANGER_LFOTYPE', displayLabel: 'LFO Type', unit: 'unverified' },
-  { family: 'FLANGER', paramId: 9, name: 'FLANGER_LFOFILTER', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FLANGER', paramId: 9, name: 'OLD_FLANGER_LFOFILTER', displayLabel: 'LFO Hicut', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 9, name: 'FLANGER_LFOFILTER', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'FLANGER', paramId: 9, name: 'OLD_FLANGER_LFOFILTER', displayLabel: 'LFO Hicut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FLANGER', paramId: 10, name: 'FLANGER_AUTO', displayLabel: 'Auto Depth', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FLANGER', paramId: 10, name: 'OLD_FLANGER_AUTO', displayLabel: 'Auto depth', unit: 'unverified' },
   { family: 'FLANGER', paramId: 11, name: 'FLANGER_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
-  { family: 'FLANGER', paramId: 11, name: 'OLD_FLANGER_MIX', displayLabel: 'Mix', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 11, name: 'OLD_FLANGER_MIX', displayLabel: 'Mix', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'FLANGER', paramId: 12, name: 'FLANGER_LEVEL', displayLabel: 'Level', unit: 'db', displayMin: -80, displayMax: 20 }, // inferred from AM4
-  { family: 'FLANGER', paramId: 12, name: 'OLD_FLANGER_LEVEL', displayLabel: 'Level', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 12, name: 'OLD_FLANGER_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'FLANGER', paramId: 13, name: 'FLANGER_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'FLANGER', paramId: 13, name: 'OLD_FLANGER_PAN', displayLabel: 'Balance', unit: 'unverified' },
   { family: 'FLANGER', paramId: 14, name: 'FLANGER_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
@@ -702,14 +702,14 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'FLANGER', paramId: 17, name: 'OLD_FLANGER_PHASEREV', displayLabel: 'Phase Reverse', unit: 'unverified' },
   { family: 'FLANGER', paramId: 18, name: 'FLANGER_THRUZERO', displayLabel: 'Thru-Zero', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FLANGER', paramId: 18, name: 'OLD_FLANGER_THRUZERO', displayLabel: 'Thru-Zero', unit: 'unverified' },
-  { family: 'FLANGER', paramId: 19, name: 'FLANGER_LPFREQ', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FLANGER', paramId: 19, name: 'OLD_FLANGER_HICUT', displayLabel: 'High Cut', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 19, name: 'FLANGER_LPFREQ', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'FLANGER', paramId: 19, name: 'OLD_FLANGER_HICUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FLANGER', paramId: 20, name: 'FLANGER_DRIVE', displayLabel: 'Drive', unit: 'knob_0_10', displayMin: 0, displayMax: 10, scaling: 'log10' }, // inferred from AM4
   { family: 'FLANGER', paramId: 20, name: 'OLD_FLANGER_DRIVE', displayLabel: 'Drive', unit: 'unverified' },
-  { family: 'FLANGER', paramId: 21, name: 'FLANGER_HPFREQ', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FLANGER', paramId: 21, name: 'OLD_FLANGER_LOWCUT', displayLabel: 'Low Cut', unit: 'unverified' },
-  { family: 'FLANGER', paramId: 22, name: 'FLANGER_SPREAD', displayLabel: 'Stereo Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FLANGER', paramId: 22, name: 'OLD_FLANGER_SPREAD', displayLabel: 'Stereo Spread', unit: 'unverified' },
+  { family: 'FLANGER', paramId: 21, name: 'FLANGER_HPFREQ', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'FLANGER', paramId: 21, name: 'OLD_FLANGER_LOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'FLANGER', paramId: 22, name: 'FLANGER_SPREAD', displayLabel: 'Stereo Spread', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'FLANGER', paramId: 22, name: 'OLD_FLANGER_SPREAD', displayLabel: 'Stereo Spread', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'FLANGER', paramId: 23, name: 'FLANGER_LFORESET', displayLabel: 'Bypass Reset', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FLANGER', paramId: 23, name: 'OLD_FLANGER_LFORESET', displayLabel: 'LFO Bypass Reset', unit: 'unverified' },
   { family: 'FLANGER', paramId: 24, name: 'FLANGER_LPF_ORDER', displayLabel: 'High Cut Order', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -725,9 +725,9 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'FORMANT', paramId: 1, name: 'FORMANT_F2', displayLabel: 'Mid', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FORMANT', paramId: 2, name: 'FORMANT_F3', displayLabel: 'End', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FORMANT', paramId: 3, name: 'FORMANT_Q', displayLabel: 'Resonance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FORMANT', paramId: 4, name: 'FORMANT_CTRL', displayLabel: 'Control', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FORMANT', paramId: 4, name: 'FORMANT_CTRL', displayLabel: 'Control', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'FORMANT', paramId: 5, name: 'FORMANT_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'FORMANT', paramId: 6, name: 'FORMANT_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FORMANT', paramId: 6, name: 'FORMANT_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'FORMANT', paramId: 7, name: 'FORMANT_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'FORMANT', paramId: 8, name: 'FORMANT_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'FORMANT', paramId: 9, name: 'FORMANT_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
@@ -741,18 +741,18 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'FUZZ', paramId: 5, name: 'FUZZ_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'FUZZ', paramId: 6, name: 'FUZZ_SLEW', displayLabel: 'Slew Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 7, name: 'FUZZ_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'FUZZ', paramId: 8, name: 'FUZZ_LOCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FUZZ', paramId: 9, name: 'FUZZ_HICUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FUZZ', paramId: 8, name: 'FUZZ_LOCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'FUZZ', paramId: 9, name: 'FUZZ_HICUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FUZZ', paramId: 10, name: 'FUZZ_CLIPTYPE', displayLabel: 'Clip Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 11, name: 'FUZZ_BIAS', displayLabel: 'Bias', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 12, name: 'FUZZ_LOW', displayLabel: 'Bass', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 13, name: 'FUZZ_MID', displayLabel: 'Mid', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'FUZZ', paramId: 14, name: 'FUZZ_MIDFREQ', displayLabel: 'Mid Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FUZZ', paramId: 14, name: 'FUZZ_MIDFREQ', displayLabel: 'Mid Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FUZZ', paramId: 15, name: 'FUZZ_TREBLE', displayLabel: 'Treble', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 16, name: 'FUZZ_BITREDUCE', displayLabel: 'Bit Reduce', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 17, name: 'FUZZ_INPUTSELECT', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 18, name: 'FUZZ_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'FUZZ', paramId: 19, name: 'FUZZ_RESAMPLE', displayLabel: 'Sample Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FUZZ', paramId: 19, name: 'FUZZ_RESAMPLE', displayLabel: 'Sample Rate', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'FUZZ', paramId: 20, name: 'FUZZ_CLIPSHAPE', displayLabel: 'Clip Shape', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 21, name: 'FUZZ_EQON', displayLabel: 'Graphic EQ', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 22, name: 'FUZZ_EQ1', displayLabel: '100', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -769,7 +769,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'FUZZ', paramId: 33, name: 'FUZZ_PDQTY', displayLabel: 'Diode+ Quantity', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 34, name: 'FUZZ_NDTYPE', displayLabel: 'Diode- Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 35, name: 'FUZZ_NDQTY', displayLabel: 'Diode- Quantity', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'FUZZ', paramId: 36, name: 'FUZZ_DRYGAIN', displayLabel: 'Dry Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'FUZZ', paramId: 36, name: 'FUZZ_DRYGAIN', displayLabel: 'Dry Level', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'FUZZ', paramId: 37, name: 'FUZZ_BASS', displayLabel: 'Bass Response', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 38, name: 'FUZZ_HIMID', displayLabel: 'High Mid', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'FUZZ', paramId: 39, name: 'FUZZ_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
@@ -782,8 +782,8 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GATE', paramId: 3, name: 'GATE_RELEASE', displayLabel: 'Release Time', unit: 'ms', displayMin: 0, displayMax: 1000, scaling: 'log10' }, // inferred from AM4
   { family: 'GATE', paramId: 4, name: 'GATE_RATIO', displayLabel: 'Ratio', unit: 'ratio', displayMin: 1, displayMax: 20, scaling: 'log10' }, // inferred from AM4
   { family: 'GATE', paramId: 5, name: 'GATE_KEY', displayLabel: 'Sidechain Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'GATE', paramId: 6, name: 'GATE_LOWCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GATE', paramId: 7, name: 'GATE_HICUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GATE', paramId: 6, name: 'GATE_LOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'GATE', paramId: 7, name: 'GATE_HICUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'GATE', paramId: 8, name: 'GATE_MIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'GATE', paramId: 9, name: 'GATE_LEVEL', displayLabel: 'Level', unit: 'db', displayMin: -80, displayMax: 20 }, // inferred from AM4
   { family: 'GATE', paramId: 10, name: 'GATE_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
@@ -791,7 +791,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GATE', paramId: 12, name: 'GATE_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'GATE', paramId: 13, name: 'GATE_GAINMONITOR', displayLabel: 'Gain', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'GATE', paramId: 14, name: 'GATE_TYPE', unit: 'enum' }, // inferred from AM4
-  { family: 'GATE', paramId: 15, name: 'GATE_RANGE', displayLabel: 'Attenuation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GATE', paramId: 15, name: 'GATE_RANGE', displayLabel: 'Attenuation', unit: 'db' }, // unit from typecode class 0x1
   { family: 'GATE', paramId: 16, name: 'GATE_PEAKRMS', displayLabel: 'Detector Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GATE', paramId: 17, name: 'GATE_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'GATE', paramId: 18, name: 'GATE_KNEE', displayLabel: 'Knee Type', unit: 'enum' }, // inferred from AM4
@@ -816,20 +816,20 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GEQ', paramId: 18, name: 'GEQ_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'GEQ', paramId: 19, name: 'GEQ_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'GEQ', paramId: 65520, name: 'GEQ_ZEROEQ', displayLabel: 'Zero All', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 1, name: 'GLOBAL_REVERBMIX', displayLabel: 'Reverb Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 2, name: 'GLOBAL_EFFECTSMIX', displayLabel: 'Effects Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GLOBAL', paramId: 1, name: 'GLOBAL_REVERBMIX', displayLabel: 'Reverb Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'GLOBAL', paramId: 2, name: 'GLOBAL_EFFECTSMIX', displayLabel: 'Effects Mix', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'GLOBAL', paramId: 3, name: 'GLOBAL_CABINETBYP', displayLabel: 'Cabinet Modeling', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 4, name: 'GLOBAL_PWRAMPBYP', displayLabel: 'Power Amp Modeling', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 5, name: 'GLOBAL_TUNINGREF', displayLabel: 'Calibration', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GLOBAL', paramId: 5, name: 'GLOBAL_TUNINGREF', displayLabel: 'Calibration', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'GLOBAL', paramId: 6, name: 'GLOBAL_TUNERMUTE', displayLabel: 'Mute', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 7, name: 'GLOBAL_DELAYSPILL', displayLabel: 'Spillover', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 8, name: 'GLOBAL_USETUNEOFFSETS', displayLabel: 'Use Offsets', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 9, name: 'GLOBAL_OFFSET1', displayLabel: 'E 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 10, name: 'GLOBAL_OFFSET2', displayLabel: 'B 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 11, name: 'GLOBAL_OFFSET3', displayLabel: 'G 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 12, name: 'GLOBAL_OFFSET4', displayLabel: 'D 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 13, name: 'GLOBAL_OFFSET5', displayLabel: 'A 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 14, name: 'GLOBAL_OFFSET6', displayLabel: 'E 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GLOBAL', paramId: 9, name: 'GLOBAL_OFFSET1', displayLabel: 'E 1', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'GLOBAL', paramId: 10, name: 'GLOBAL_OFFSET2', displayLabel: 'B 2', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'GLOBAL', paramId: 11, name: 'GLOBAL_OFFSET3', displayLabel: 'G 3', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'GLOBAL', paramId: 12, name: 'GLOBAL_OFFSET4', displayLabel: 'D 4', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'GLOBAL', paramId: 13, name: 'GLOBAL_OFFSET5', displayLabel: 'A 5', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'GLOBAL', paramId: 14, name: 'GLOBAL_OFFSET6', displayLabel: 'E 6', unit: 'cents' }, // unit from typecode class 0x7
   { family: 'GLOBAL', paramId: 15, name: 'GLOBAL_OUT1EQ1', displayLabel: '31', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 16, name: 'GLOBAL_OUT1EQ2', displayLabel: '63', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 17, name: 'GLOBAL_OUT1EQ3', displayLabel: '125', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -852,7 +852,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GLOBAL', paramId: 34, name: 'GLOBAL_OUT2EQ9', displayLabel: '8k', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 35, name: 'GLOBAL_OUT2EQ10', displayLabel: '16k', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 36, name: 'GLOBAL_LEVEL2', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 39, name: 'GLOBAL_GATE_OFFSET', displayLabel: 'Noisegate Offset', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GLOBAL', paramId: 39, name: 'GLOBAL_GATE_OFFSET', displayLabel: 'Noisegate Offset', unit: 'db' }, // unit from typecode class 0x1
   { family: 'GLOBAL', paramId: 40, name: 'GLOBAL_TAP_TEMPO_MODE', displayLabel: 'Tap Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 41, name: 'GLOBAL_IN2_CONFIG', displayLabel: 'Input 2 Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 44, name: 'GLOBAL_IN1_TRIM', displayLabel: 'Input 1 Pad', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -885,19 +885,19 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GLOBAL', paramId: 107, name: 'GLOBAL_VALUE_PUSH_FUNC', displayLabel: 'Value Knob Push', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 108, name: 'GLOBAL_FC_SHOW_PRESET_NUM', displayLabel: 'Preset Num', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 109, name: 'GLOBAL_FC_SHOW_SCENE_NUM', displayLabel: 'Scene Num', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 110, name: 'GLOBAL_FC_RING_BRIGHT_LEVEL', displayLabel: 'Bright', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 111, name: 'GLOBAL_FC_RING_DIM_LEVEL', displayLabel: 'Dim', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GLOBAL', paramId: 110, name: 'GLOBAL_FC_RING_BRIGHT_LEVEL', displayLabel: 'Bright', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'GLOBAL', paramId: 111, name: 'GLOBAL_FC_RING_DIM_LEVEL', displayLabel: 'Dim', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'GLOBAL', paramId: 112, name: 'GLOBAL_LINEFREQ', displayLabel: 'AC Line Frequency', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 113, name: 'GLOBAL_SEND_REALTIME_SYSEX', displayLabel: 'Send RT. Sysex', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 114, name: 'GLOBAL_REMOTE_MUTE', unit: 'unverified' },
-  { family: 'GLOBAL', paramId: 119, name: 'GLOBAL_METLEVEL1', displayLabel: 'Output 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 120, name: 'GLOBAL_METLEVEL2', displayLabel: 'Output 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 121, name: 'GLOBAL_METLEVEL3', displayLabel: 'USB / Digital', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 123, name: 'GLOBAL_USBLEVEL1', displayLabel: 'USB 1/2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 124, name: 'GLOBAL_USBLEVEL2', displayLabel: 'USB 3/4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 125, name: 'GLOBAL_USBLEVEL3', displayLabel: 'USB 5/6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 126, name: 'GLOBAL_USBLEVEL4', displayLabel: 'USB 7/8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 131, name: 'GLOBAL_AESLEVEL', displayLabel: 'AES/SPDIF', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'GLOBAL', paramId: 119, name: 'GLOBAL_METLEVEL1', displayLabel: 'Output 1', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'GLOBAL', paramId: 120, name: 'GLOBAL_METLEVEL2', displayLabel: 'Output 2', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'GLOBAL', paramId: 121, name: 'GLOBAL_METLEVEL3', displayLabel: 'USB / Digital', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'GLOBAL', paramId: 123, name: 'GLOBAL_USBLEVEL1', displayLabel: 'USB 1/2', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'GLOBAL', paramId: 124, name: 'GLOBAL_USBLEVEL2', displayLabel: 'USB 3/4', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'GLOBAL', paramId: 125, name: 'GLOBAL_USBLEVEL3', displayLabel: 'USB 5/6', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'GLOBAL', paramId: 126, name: 'GLOBAL_USBLEVEL4', displayLabel: 'USB 7/8', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'GLOBAL', paramId: 131, name: 'GLOBAL_AESLEVEL', displayLabel: 'AES/SPDIF', unit: 'db' }, // unit from typecode class 0x1
   { family: 'GLOBAL', paramId: 902, name: 'GLOBAL_CUSTOM_SHIFT_BEGIN', displayLabel: 'A', unit: 'unverified' },
   { family: 'GLOBAL', paramId: 1334, name: 'GLOBAL_DEVICE_NAME_BEGIN', displayLabel: 'Device Name', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 3598, name: 'GLOBAL_FC_TYPE_PFC1', unit: 'unverified' },
@@ -928,8 +928,8 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GLOBAL', paramId: 7110, name: 'GLOBAL_CS4_EXCLUSIVE', displayLabel: 'CS4 Exclusive', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 7111, name: 'GLOBAL_CS5_EXCLUSIVE', displayLabel: 'CS5 Exclusive', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 7112, name: 'GLOBAL_CS6_EXCLUSIVE', displayLabel: 'CS6 Exclusive', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'GLOBAL', paramId: 7115, name: 'GLOBAL_FS_BRIGHTNESS', displayLabel: 'Bright', unit: 'unverified' },
-  { family: 'GLOBAL', paramId: 7116, name: 'GLOBAL_FS_LCD_CONTRAST', displayLabel: 'Contrast', unit: 'unverified' },
+  { family: 'GLOBAL', paramId: 7115, name: 'GLOBAL_FS_BRIGHTNESS', displayLabel: 'Bright', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'GLOBAL', paramId: 7116, name: 'GLOBAL_FS_LCD_CONTRAST', displayLabel: 'Contrast', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'GLOBAL', paramId: 7389, name: 'GLOBAL_FC_MAINLCD_NOTIF_TIMEOUT', displayLabel: 'Main LCD Notification Hold', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 7389 (III 7115 would mis-address)
   { family: 'GLOBAL', paramId: 7422, name: 'GLOBAL_FC_HOLD_FUNCTION_MODE', displayLabel: 'Hold Function Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 7422 (III 7498 would mis-address)
   { family: 'GLOBAL', paramId: 7423, name: 'GLOBAL_USB_RECORD', displayLabel: 'USB 3,4 Record Source', unit: 'unverified' },
@@ -941,36 +941,36 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GLOBAL', paramId: 8646, name: 'GLOBAL_TUNERACCIDENTALS', displayLabel: 'Display Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 8646 (III 7500 would mis-address)
   { family: 'GLOBAL', paramId: 8647, name: 'GLOBAL_EQ1_TYPE', displayLabel: 'Output 1', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 8647 (III 8370 would mis-address)
   { family: 'GLOBAL', paramId: 8648, name: 'GLOBAL_EQ2_TYPE', displayLabel: 'Output 2', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 8648 (III 8371 would mis-address)
-  { family: 'GLOBAL', paramId: 8649, name: 'GLOBAL_EQ1_FREQ1', displayLabel: 'Frequency 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8649 (III 8396 would mis-address)
-  { family: 'GLOBAL', paramId: 8650, name: 'GLOBAL_EQ1_FREQ2', displayLabel: 'Frequency 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8650 (III 8397 would mis-address)
-  { family: 'GLOBAL', paramId: 8651, name: 'GLOBAL_EQ1_FREQ3', displayLabel: 'Frequency 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8651 (III 8398 would mis-address)
-  { family: 'GLOBAL', paramId: 8652, name: 'GLOBAL_EQ1_FREQ4', displayLabel: 'Frequency 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8652 (III 8399 would mis-address)
-  { family: 'GLOBAL', paramId: 8653, name: 'GLOBAL_EQ1_FREQ5', displayLabel: 'Frequency 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8653 (III 8400 would mis-address)
+  { family: 'GLOBAL', paramId: 8649, name: 'GLOBAL_EQ1_FREQ1', displayLabel: 'Frequency 1', unit: 'hz' }, // unit from typecode class 0x2; device-true 8649 (III 8396 would mis-address)
+  { family: 'GLOBAL', paramId: 8650, name: 'GLOBAL_EQ1_FREQ2', displayLabel: 'Frequency 2', unit: 'hz' }, // unit from typecode class 0x2; device-true 8650 (III 8397 would mis-address)
+  { family: 'GLOBAL', paramId: 8651, name: 'GLOBAL_EQ1_FREQ3', displayLabel: 'Frequency 3', unit: 'hz' }, // unit from typecode class 0x2; device-true 8651 (III 8398 would mis-address)
+  { family: 'GLOBAL', paramId: 8652, name: 'GLOBAL_EQ1_FREQ4', displayLabel: 'Frequency 4', unit: 'hz' }, // unit from typecode class 0x2; device-true 8652 (III 8399 would mis-address)
+  { family: 'GLOBAL', paramId: 8653, name: 'GLOBAL_EQ1_FREQ5', displayLabel: 'Frequency 5', unit: 'hz' }, // unit from typecode class 0x2; device-true 8653 (III 8400 would mis-address)
   { family: 'GLOBAL', paramId: 8654, name: 'GLOBAL_EQ1_Q1', displayLabel: 'Q1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8654 (III 8401 would mis-address)
   { family: 'GLOBAL', paramId: 8655, name: 'GLOBAL_EQ1_Q2', displayLabel: 'Q2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8655 (III 8402 would mis-address)
   { family: 'GLOBAL', paramId: 8656, name: 'GLOBAL_EQ1_Q3', displayLabel: 'Q3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8656 (III 8403 would mis-address)
   { family: 'GLOBAL', paramId: 8657, name: 'GLOBAL_EQ1_Q4', displayLabel: 'Q4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8657 (III 8404 would mis-address)
   { family: 'GLOBAL', paramId: 8658, name: 'GLOBAL_EQ1_Q5', displayLabel: 'Q5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8658 (III 8405 would mis-address)
-  { family: 'GLOBAL', paramId: 8659, name: 'GLOBAL_EQ1_GAIN1', displayLabel: 'Gain 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8659 (III 8406 would mis-address)
-  { family: 'GLOBAL', paramId: 8660, name: 'GLOBAL_EQ1_GAIN2', displayLabel: 'Gain 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8660 (III 8407 would mis-address)
-  { family: 'GLOBAL', paramId: 8661, name: 'GLOBAL_EQ1_GAIN3', displayLabel: 'Gain 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8661 (III 8408 would mis-address)
-  { family: 'GLOBAL', paramId: 8662, name: 'GLOBAL_EQ1_GAIN4', displayLabel: 'Gain 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8662 (III 8409 would mis-address)
-  { family: 'GLOBAL', paramId: 8663, name: 'GLOBAL_EQ1_GAIN5', displayLabel: 'Gain 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8663 (III 8410 would mis-address)
-  { family: 'GLOBAL', paramId: 8664, name: 'GLOBAL_EQ2_FREQ1', displayLabel: 'Frequency 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8664 (III 8411 would mis-address)
-  { family: 'GLOBAL', paramId: 8665, name: 'GLOBAL_EQ2_FREQ2', displayLabel: 'Frequency 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8665 (III 8412 would mis-address)
-  { family: 'GLOBAL', paramId: 8666, name: 'GLOBAL_EQ2_FREQ3', displayLabel: 'Frequency 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8666 (III 8413 would mis-address)
-  { family: 'GLOBAL', paramId: 8667, name: 'GLOBAL_EQ2_FREQ4', displayLabel: 'Frequency 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8667 (III 8414 would mis-address)
-  { family: 'GLOBAL', paramId: 8668, name: 'GLOBAL_EQ2_FREQ5', displayLabel: 'Frequency 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8668 (III 8415 would mis-address)
+  { family: 'GLOBAL', paramId: 8659, name: 'GLOBAL_EQ1_GAIN1', displayLabel: 'Gain 1', unit: 'db' }, // unit from typecode class 0x1; device-true 8659 (III 8406 would mis-address)
+  { family: 'GLOBAL', paramId: 8660, name: 'GLOBAL_EQ1_GAIN2', displayLabel: 'Gain 2', unit: 'db' }, // unit from typecode class 0x1; device-true 8660 (III 8407 would mis-address)
+  { family: 'GLOBAL', paramId: 8661, name: 'GLOBAL_EQ1_GAIN3', displayLabel: 'Gain 3', unit: 'db' }, // unit from typecode class 0x1; device-true 8661 (III 8408 would mis-address)
+  { family: 'GLOBAL', paramId: 8662, name: 'GLOBAL_EQ1_GAIN4', displayLabel: 'Gain 4', unit: 'db' }, // unit from typecode class 0x1; device-true 8662 (III 8409 would mis-address)
+  { family: 'GLOBAL', paramId: 8663, name: 'GLOBAL_EQ1_GAIN5', displayLabel: 'Gain 5', unit: 'db' }, // unit from typecode class 0x1; device-true 8663 (III 8410 would mis-address)
+  { family: 'GLOBAL', paramId: 8664, name: 'GLOBAL_EQ2_FREQ1', displayLabel: 'Frequency 1', unit: 'hz' }, // unit from typecode class 0x2; device-true 8664 (III 8411 would mis-address)
+  { family: 'GLOBAL', paramId: 8665, name: 'GLOBAL_EQ2_FREQ2', displayLabel: 'Frequency 2', unit: 'hz' }, // unit from typecode class 0x2; device-true 8665 (III 8412 would mis-address)
+  { family: 'GLOBAL', paramId: 8666, name: 'GLOBAL_EQ2_FREQ3', displayLabel: 'Frequency 3', unit: 'hz' }, // unit from typecode class 0x2; device-true 8666 (III 8413 would mis-address)
+  { family: 'GLOBAL', paramId: 8667, name: 'GLOBAL_EQ2_FREQ4', displayLabel: 'Frequency 4', unit: 'hz' }, // unit from typecode class 0x2; device-true 8667 (III 8414 would mis-address)
+  { family: 'GLOBAL', paramId: 8668, name: 'GLOBAL_EQ2_FREQ5', displayLabel: 'Frequency 5', unit: 'hz' }, // unit from typecode class 0x2; device-true 8668 (III 8415 would mis-address)
   { family: 'GLOBAL', paramId: 8669, name: 'GLOBAL_EQ2_Q1', displayLabel: 'Q1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8669 (III 8416 would mis-address)
   { family: 'GLOBAL', paramId: 8670, name: 'GLOBAL_EQ2_Q2', displayLabel: 'Q2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8670 (III 8417 would mis-address)
   { family: 'GLOBAL', paramId: 8671, name: 'GLOBAL_EQ2_Q3', displayLabel: 'Q3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8671 (III 8418 would mis-address)
   { family: 'GLOBAL', paramId: 8672, name: 'GLOBAL_EQ2_Q4', displayLabel: 'Q4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8672 (III 8419 would mis-address)
   { family: 'GLOBAL', paramId: 8673, name: 'GLOBAL_EQ2_Q5', displayLabel: 'Q5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8673 (III 8420 would mis-address)
-  { family: 'GLOBAL', paramId: 8674, name: 'GLOBAL_EQ2_GAIN1', displayLabel: 'Gain 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8674 (III 8421 would mis-address)
-  { family: 'GLOBAL', paramId: 8675, name: 'GLOBAL_EQ2_GAIN2', displayLabel: 'Gain 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8675 (III 8422 would mis-address)
-  { family: 'GLOBAL', paramId: 8676, name: 'GLOBAL_EQ2_GAIN3', displayLabel: 'Gain 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8676 (III 8423 would mis-address)
-  { family: 'GLOBAL', paramId: 8677, name: 'GLOBAL_EQ2_GAIN4', displayLabel: 'Gain 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8677 (III 8424 would mis-address)
-  { family: 'GLOBAL', paramId: 8678, name: 'GLOBAL_EQ2_GAIN5', displayLabel: 'Gain 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 8678 (III 8425 would mis-address)
+  { family: 'GLOBAL', paramId: 8674, name: 'GLOBAL_EQ2_GAIN1', displayLabel: 'Gain 1', unit: 'db' }, // unit from typecode class 0x1; device-true 8674 (III 8421 would mis-address)
+  { family: 'GLOBAL', paramId: 8675, name: 'GLOBAL_EQ2_GAIN2', displayLabel: 'Gain 2', unit: 'db' }, // unit from typecode class 0x1; device-true 8675 (III 8422 would mis-address)
+  { family: 'GLOBAL', paramId: 8676, name: 'GLOBAL_EQ2_GAIN3', displayLabel: 'Gain 3', unit: 'db' }, // unit from typecode class 0x1; device-true 8676 (III 8423 would mis-address)
+  { family: 'GLOBAL', paramId: 8677, name: 'GLOBAL_EQ2_GAIN4', displayLabel: 'Gain 4', unit: 'db' }, // unit from typecode class 0x1; device-true 8677 (III 8424 would mis-address)
+  { family: 'GLOBAL', paramId: 8678, name: 'GLOBAL_EQ2_GAIN5', displayLabel: 'Gain 5', unit: 'db' }, // unit from typecode class 0x1; device-true 8678 (III 8425 would mis-address)
   { family: 'GLOBAL', paramId: 8679, name: 'GLOBAL_OUT2_LINE', displayLabel: 'Output Level', unit: 'unverified' },
   { family: 'GLOBAL', paramId: 8680, name: 'GLOBAL_OUT2_TYPE', displayLabel: 'Output Type', unit: 'unverified' },
   { family: 'GLOBAL', paramId: 8681, name: 'GLOBAL_EDIT_ON_SCENE_CHANGE', displayLabel: 'Edit on Scn Change', unit: 'enum' }, // inferred from AxeEdit III XML controlType; device-true 8681 (III 8461 would mis-address)
@@ -989,12 +989,12 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'GLOBAL', paramId: 65520, name: 'GLOBAL_SCALE_SET_ALL', displayLabel: 'Set All', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 65521, name: 'GLOBAL_SCALE_VAL_ALL', displayLabel: '0', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'GLOBAL', paramId: 65522, name: 'GLOBAL_SCALE_CONTEXT_MENU', displayLabel: 'Context Menu', unit: 'unverified' },
-  { family: 'INPUT', paramId: 0, name: 'INPUT_THRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'INPUT', paramId: 0, name: 'INPUT_THRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'INPUT', paramId: 1, name: 'INPUT_RATIO', displayLabel: 'Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'INPUT', paramId: 2, name: 'INPUT_RELEASE', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'INPUT', paramId: 3, name: 'INPUT_ATTACK', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'INPUT', paramId: 2, name: 'INPUT_RELEASE', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'INPUT', paramId: 3, name: 'INPUT_ATTACK', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'INPUT', paramId: 4, name: 'INPUT_Z', displayLabel: 'Input1/Instr Impedance', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'INPUT', paramId: 5, name: 'INPUT_LEVEL', displayLabel: 'Output Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'INPUT', paramId: 5, name: 'INPUT_LEVEL', displayLabel: 'Output Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'INPUT', paramId: 6, name: 'INPUT_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'INPUT', paramId: 7, name: 'INPUT_TYPE', displayLabel: 'Gate Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'INPUT', paramId: 8, name: 'INPUT_GAINMONITOR', displayLabel: 'Gain', unit: 'db' }, // inferred from AxeEdit III XML controlType
@@ -1015,63 +1015,63 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'IRPLAYER', paramId: 10, name: 'IRPLAYER_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'IRPLAYER', paramId: 21, name: 'IRPLAYER_PICKER1', displayLabel: 'Picker', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'IRPLAYER', paramId: 23, name: 'IRPLAYER_NAME1', displayLabel: 'Name', unit: 'unverified' },
-  { family: 'LOOPER', paramId: 0, name: 'LOOPER_PLAYLEVEL', displayLabel: 'Playback Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'LOOPER', paramId: 1, name: 'LOOPER_DUBLEVEL', displayLabel: 'Overdub Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'LOOPER', paramId: 0, name: 'LOOPER_PLAYLEVEL', displayLabel: 'Playback Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'LOOPER', paramId: 1, name: 'LOOPER_DUBLEVEL', displayLabel: 'Overdub Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'LOOPER', paramId: 2, name: 'LOOPER_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'LOOPER', paramId: 3, name: 'LOOPER_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'LOOPER', paramId: 4, name: 'LOOPER_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'LOOPER', paramId: 5, name: 'LOOPER_LOWCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'LOOPER', paramId: 6, name: 'LOOPER_HICUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'LOOPER', paramId: 5, name: 'LOOPER_LOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'LOOPER', paramId: 6, name: 'LOOPER_HICUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'LOOPER', paramId: 7, name: 'LOOPER_REVERSE', displayLabel: 'Reverse', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 8, name: 'LOOPER_RECORD', displayLabel: 'Record', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 9, name: 'LOOPER_PLAY', displayLabel: 'Play', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 10, name: 'LOOPER_UNDO', displayLabel: 'Undo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 11, name: 'LOOPER_ONCE', displayLabel: 'Once', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 12, name: 'LOOPER_DUB', unit: 'unverified' },
-  { family: 'LOOPER', paramId: 13, name: 'LOOPER_DRYLEVEL', displayLabel: 'Dry Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'LOOPER', paramId: 13, name: 'LOOPER_DRYLEVEL', displayLabel: 'Dry Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'LOOPER', paramId: 14, name: 'LOOPER_STOP', unit: 'unverified' },
-  { family: 'LOOPER', paramId: 15, name: 'LOOPER_THRESH', displayLabel: 'Record Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'LOOPER', paramId: 16, name: 'LOOPER_START_TRIM', displayLabel: 'Trim Start', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'LOOPER', paramId: 17, name: 'LOOPER_END_TRIM', displayLabel: 'Trim End', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'LOOPER', paramId: 15, name: 'LOOPER_THRESH', displayLabel: 'Record Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'LOOPER', paramId: 16, name: 'LOOPER_START_TRIM', displayLabel: 'Trim Start', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'LOOPER', paramId: 17, name: 'LOOPER_END_TRIM', displayLabel: 'Trim End', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'LOOPER', paramId: 18, name: 'LOOPER_QUANTIZE', displayLabel: 'Loop Quantize', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 19, name: 'LOOPER_RECORDMODE', displayLabel: 'Record 2nd Press', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 20, name: 'LOOPER_HALF', displayLabel: 'Speed', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 21, name: 'LOOPER_XFADE', displayLabel: 'Crossfade', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'LOOPER', paramId: 22, name: 'LOOPER_LEVEL', displayLabel: 'Level', unit: 'db' }, // inferred from AxeEdit III XML controlType
-  { family: 'LOOPER', paramId: 23, name: 'LOOPER_MAXTIME', displayLabel: 'Max. Loop Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 0, name: 'MEGATAP_INGAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 1, name: 'MEGATAP_MASTERLVL', displayLabel: 'Master level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 2, name: 'MEGATAP_TIME', displayLabel: 'Delay Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'LOOPER', paramId: 23, name: 'LOOPER_MAXTIME', displayLabel: 'Max. Loop Time', unit: 'seconds' }, // unit from typecode class 0x3
+  { family: 'MEGATAP', paramId: 0, name: 'MEGATAP_INGAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 1, name: 'MEGATAP_MASTERLVL', displayLabel: 'Master level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 2, name: 'MEGATAP_TIME', displayLabel: 'Delay Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'MEGATAP', paramId: 3, name: 'MEGATAP_NUMTAPS', displayLabel: 'Number of Taps', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 4, name: 'MEGATAP_PREDELAY', displayLabel: 'Predelay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 4, name: 'MEGATAP_PREDELAY', displayLabel: 'Predelay', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'MEGATAP', paramId: 5, name: 'MEGATAP_TIMESHAPE', displayLabel: 'Shape', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 6, name: 'MEGATAP_TIMEALPHA', displayLabel: 'Alpha', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 6, name: 'MEGATAP_TIMEALPHA', displayLabel: 'Alpha', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MEGATAP', paramId: 7, name: 'MEGATAP_AMPSHAPE', displayLabel: 'Amplitude Shape', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 8, name: 'MEGATAP_AMPALPHA', displayLabel: 'Alpha', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 8, name: 'MEGATAP_AMPALPHA', displayLabel: 'Alpha', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MEGATAP', paramId: 9, name: 'MEGATAP_PANSHAPE', displayLabel: 'Pan Shape', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 10, name: 'MEGATAP_PANALPHA', displayLabel: 'Alpha', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 11, name: 'MEGATAP_RANDOM', displayLabel: 'Randomize', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 12, name: 'MEGATAP_DIFFMIX', displayLabel: 'Diffusion Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 13, name: 'MEGATAP_DIFFTIME', displayLabel: 'Diffusion Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 14, name: 'MEGATAP_ENVTHRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 15, name: 'MEGATAP_ENVATTACK', displayLabel: 'Attack Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 16, name: 'MEGATAP_ENVRELEASE', displayLabel: 'Release Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 10, name: 'MEGATAP_PANALPHA', displayLabel: 'Alpha', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 11, name: 'MEGATAP_RANDOM', displayLabel: 'Randomize', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 12, name: 'MEGATAP_DIFFMIX', displayLabel: 'Diffusion Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 13, name: 'MEGATAP_DIFFTIME', displayLabel: 'Diffusion Time', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 14, name: 'MEGATAP_ENVTHRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'MEGATAP', paramId: 15, name: 'MEGATAP_ENVATTACK', displayLabel: 'Attack Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MEGATAP', paramId: 16, name: 'MEGATAP_ENVRELEASE', displayLabel: 'Release Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'MEGATAP', paramId: 17, name: 'MEGATAP_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'MEGATAP', paramId: 18, name: 'MEGATAP_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 18, name: 'MEGATAP_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MEGATAP', paramId: 19, name: 'MEGATAP_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MEGATAP', paramId: 20, name: 'MEGATAP_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MEGATAP', paramId: 21, name: 'MEGATAP_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MEGATAP', paramId: 22, name: 'MEGATAP_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MEGATAP', paramId: 23, name: 'MEGATAP_INPUTSELECT', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 24, name: 'MEGATAP_FEEDBACK', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 24, name: 'MEGATAP_FEEDBACK', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MEGATAP', paramId: 25, name: 'MEGATAP_FDBKTAP', displayLabel: 'Feedback Tap', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 26, name: 'MEGATAP_LOWCUT', displayLabel: 'Low Cut Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 27, name: 'MEGATAP_HICUT', displayLabel: 'High Cut Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 26, name: 'MEGATAP_LOWCUT', displayLabel: 'Low Cut Frequency', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MEGATAP', paramId: 27, name: 'MEGATAP_HICUT', displayLabel: 'High Cut Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'MEGATAP', paramId: 28, name: 'MEGATAP_TYPE', unit: 'unverified' },
-  { family: 'MEGATAP', paramId: 29, name: 'MEGATAP_SPREAD', displayLabel: 'Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 30, name: 'MEGATAP_AMPRAND', displayLabel: 'Randomize', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 31, name: 'MEGATAP_DIFFRATE', displayLabel: 'LFO Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MEGATAP', paramId: 32, name: 'MEGATAP_DIFFDEPTH', displayLabel: 'LFO Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MEGATAP', paramId: 29, name: 'MEGATAP_SPREAD', displayLabel: 'Spread', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 30, name: 'MEGATAP_AMPRAND', displayLabel: 'Randomize', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MEGATAP', paramId: 31, name: 'MEGATAP_DIFFRATE', displayLabel: 'LFO Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MEGATAP', paramId: 32, name: 'MEGATAP_DIFFDEPTH', displayLabel: 'LFO Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MEGATAP', paramId: 33, name: 'MEGATAP_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MEGATAP', paramId: 34, name: 'MEGATAP_KILLDRY', displayLabel: 'Kill Dry', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MIDIBLOCK', paramId: 0, name: 'MIDIBLOCK_CMD_TYPE_BEGIN', displayLabel: '1', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -1087,19 +1087,19 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'MIDIBLOCK', paramId: 263, name: 'MIDIBLOCK_TEST_ROW6', displayLabel: 'Test', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MIDIBLOCK', paramId: 264, name: 'MIDIBLOCK_TEST_ROW7', displayLabel: 'Test', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MIDIBLOCK', paramId: 265, name: 'MIDIBLOCK_TEST_ROW8', displayLabel: 'Test', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MIXER', paramId: 0, name: 'MIXER_GAIN1', displayLabel: 'Row 1 Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MIXER', paramId: 1, name: 'MIXER_GAIN2', displayLabel: 'Row 2 Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MIXER', paramId: 2, name: 'MIXER_GAIN3', displayLabel: 'Row 3 Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MIXER', paramId: 3, name: 'MIXER_GAIN4', displayLabel: 'Row 4 Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MIXER', paramId: 4, name: 'MIXER_GAIN5', displayLabel: 'Row 5 Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MIXER', paramId: 5, name: 'MIXER_GAIN6', displayLabel: 'Row 6 Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MIXER', paramId: 0, name: 'MIXER_GAIN1', displayLabel: 'Row 1 Gain', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MIXER', paramId: 1, name: 'MIXER_GAIN2', displayLabel: 'Row 2 Gain', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MIXER', paramId: 2, name: 'MIXER_GAIN3', displayLabel: 'Row 3 Gain', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MIXER', paramId: 3, name: 'MIXER_GAIN4', displayLabel: 'Row 4 Gain', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MIXER', paramId: 4, name: 'MIXER_GAIN5', displayLabel: 'Row 5 Gain', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MIXER', paramId: 5, name: 'MIXER_GAIN6', displayLabel: 'Row 6 Gain', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MIXER', paramId: 6, name: 'MIXER_PAN1', displayLabel: 'Row 1 Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MIXER', paramId: 7, name: 'MIXER_PAN2', displayLabel: 'Row 2 Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MIXER', paramId: 8, name: 'MIXER_PAN3', displayLabel: 'Row 3 Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MIXER', paramId: 9, name: 'MIXER_PAN4', displayLabel: 'Row 4 Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MIXER', paramId: 10, name: 'MIXER_PAN5', displayLabel: 'Row 5 Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MIXER', paramId: 11, name: 'MIXER_PAN6', displayLabel: 'Row 6 Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'MIXER', paramId: 12, name: 'MIXER_MASTER', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MIXER', paramId: 12, name: 'MIXER_MASTER', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MIXER', paramId: 13, name: 'MIXER_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MIXER', paramId: 14, name: 'MIXER_MODE', displayLabel: 'Mono/Stereo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MIXER', paramId: 15, name: 'MIXER_BYPASSMODE', unit: 'enum' }, // inferred from Fractal convention
@@ -1107,19 +1107,19 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'MOD', paramId: 0, name: 'MOD_CTRLID', displayLabel: 'Modifier 1', unit: 'unverified' },
   { family: 'MOD', paramId: 1, name: 'MOD_MIN', displayLabel: 'Min', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MOD', paramId: 2, name: 'MOD_MAX', displayLabel: 'Max', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 3, name: 'MOD_STARTPT', displayLabel: 'Start', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 4, name: 'MOD_MIDPT', displayLabel: 'Mid', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 5, name: 'MOD_ENDPT', displayLabel: 'End', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 6, name: 'MOD_SLOPE', displayLabel: 'Slope', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 7, name: 'MOD_ATTACK', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MOD', paramId: 3, name: 'MOD_STARTPT', displayLabel: 'Start', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MOD', paramId: 4, name: 'MOD_MIDPT', displayLabel: 'Mid', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MOD', paramId: 5, name: 'MOD_ENDPT', displayLabel: 'End', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MOD', paramId: 6, name: 'MOD_SLOPE', displayLabel: 'Slope', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MOD', paramId: 7, name: 'MOD_ATTACK', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'MOD', paramId: 8, name: 'MOD_EFFECTID', unit: 'unverified' },
   { family: 'MOD', paramId: 9, name: 'MOD_PARAM', unit: 'unverified' },
   { family: 'MOD', paramId: 10, name: 'MOD_AUTOENGAGE', displayLabel: 'Auto Engage', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MOD', paramId: 11, name: 'MOD_PCRESET', displayLabel: 'PC Reset', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 12, name: 'MOD_OFFVAL', displayLabel: 'Off Value', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MOD', paramId: 12, name: 'MOD_OFFVAL', displayLabel: 'Off Value', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MOD', paramId: 13, name: 'MOD_SCALE', displayLabel: 'Scale', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 14, name: 'MOD_OFFSET', displayLabel: 'Offset', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MOD', paramId: 15, name: 'MOD_RELEASE', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MOD', paramId: 14, name: 'MOD_OFFSET', displayLabel: 'Offset', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MOD', paramId: 15, name: 'MOD_RELEASE', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'MOD', paramId: 16, name: 'MOD_RATE', displayLabel: 'Update Rate', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MOD', paramId: 17, name: 'MOD_CHANNEL', displayLabel: 'Channel', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MOD', paramId: 18, name: 'MOD_XMARK', unit: 'unverified' },
@@ -1129,31 +1129,31 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'MOD', paramId: 22, name: 'MOD_SCALE2', displayLabel: 'Scale 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MOD', paramId: 23, name: 'MOD_OPERATION', displayLabel: 'Operation', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MOD', paramId: 24, name: 'MOD_DAMPING', displayLabel: 'Damping', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 0, name: 'MULTICOMP_FREQ1', displayLabel: 'Crossover', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 1, name: 'MULTICOMP_FREQ2', displayLabel: 'Crossover', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 2, name: 'MULTICOMP_THRESH1', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTICOMP', paramId: 0, name: 'MULTICOMP_FREQ1', displayLabel: 'Crossover', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTICOMP', paramId: 1, name: 'MULTICOMP_FREQ2', displayLabel: 'Crossover', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTICOMP', paramId: 2, name: 'MULTICOMP_THRESH1', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTICOMP', paramId: 3, name: 'MULTICOMP_RATIO1', displayLabel: 'Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 4, name: 'MULTICOMP_ATTACK1', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 5, name: 'MULTICOMP_RELEASE1', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 6, name: 'MULTICOMP_LEVEL1', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTICOMP', paramId: 4, name: 'MULTICOMP_ATTACK1', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTICOMP', paramId: 5, name: 'MULTICOMP_RELEASE1', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTICOMP', paramId: 6, name: 'MULTICOMP_LEVEL1', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTICOMP', paramId: 7, name: 'MULTICOMP_DETECT1', displayLabel: 'Detector', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTICOMP', paramId: 8, name: 'MULTICOMP_MUTE1', displayLabel: 'Mute', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 9, name: 'MULTICOMP_THRESH2', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTICOMP', paramId: 9, name: 'MULTICOMP_THRESH2', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTICOMP', paramId: 10, name: 'MULTICOMP_RATIO2', displayLabel: 'Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 11, name: 'MULTICOMP_ATTACK2', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 12, name: 'MULTICOMP_RELEASE2', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 13, name: 'MULTICOMP_LEVEL2', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTICOMP', paramId: 11, name: 'MULTICOMP_ATTACK2', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTICOMP', paramId: 12, name: 'MULTICOMP_RELEASE2', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTICOMP', paramId: 13, name: 'MULTICOMP_LEVEL2', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTICOMP', paramId: 14, name: 'MULTICOMP_DETECT2', displayLabel: 'Detector', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTICOMP', paramId: 15, name: 'MULTICOMP_MUTE2', displayLabel: 'Mute', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 16, name: 'MULTICOMP_THRESH3', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTICOMP', paramId: 16, name: 'MULTICOMP_THRESH3', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTICOMP', paramId: 17, name: 'MULTICOMP_RATIO3', displayLabel: 'Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 18, name: 'MULTICOMP_ATTACK3', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 19, name: 'MULTICOMP_RELEASE3', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTICOMP', paramId: 20, name: 'MULTICOMP_LEVEL3', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTICOMP', paramId: 18, name: 'MULTICOMP_ATTACK3', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTICOMP', paramId: 19, name: 'MULTICOMP_RELEASE3', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTICOMP', paramId: 20, name: 'MULTICOMP_LEVEL3', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTICOMP', paramId: 21, name: 'MULTICOMP_DETECT3', displayLabel: 'Detector', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTICOMP', paramId: 22, name: 'MULTICOMP_MUTE3', displayLabel: 'Mute', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTICOMP', paramId: 23, name: 'MULTICOMP_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'MULTICOMP', paramId: 24, name: 'MULTICOMP_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTICOMP', paramId: 24, name: 'MULTICOMP_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTICOMP', paramId: 25, name: 'MULTICOMP_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MULTICOMP', paramId: 26, name: 'MULTICOMP_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MULTICOMP', paramId: 27, name: 'MULTICOMP_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
@@ -1168,179 +1168,179 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'MULTICOMP', paramId: 36, name: 'MULTICOMP_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MULTIPLEXER', paramId: 0, name: 'MULTIPLEXER_INPUTSEL', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTIPLEXER', paramId: 1, name: 'MULTIPLEXER_INPUTMODE', displayLabel: 'Input Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTIPLEXER', paramId: 2, name: 'MULTIPLEXER_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTIPLEXER', paramId: 2, name: 'MULTIPLEXER_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTIPLEXER', paramId: 3, name: 'MULTIPLEXER_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MULTIPLEXER', paramId: 4, name: 'MULTIPLEXER_BYPASSMODE', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MULTIPLEXER', paramId: 5, name: 'MULTIPLEXER_BYPASS', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MULTIPLEXER', paramId: 6, name: 'MULTIPLEXER_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MULTITAP', paramId: 0, name: 'MULTITAP_BASETYPE', displayLabel: 'Algorithm', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 1, name: 'MULTITAP_TIME1', displayLabel: 'Delay 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 2, name: 'MULTITAP_TIME2', displayLabel: 'Delay 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 3, name: 'MULTITAP_TIME3', displayLabel: 'Delay 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 4, name: 'MULTITAP_TIME4', displayLabel: 'Delay 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 1, name: 'MULTITAP_TIME1', displayLabel: 'Delay 1', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 2, name: 'MULTITAP_TIME2', displayLabel: 'Delay 2', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 3, name: 'MULTITAP_TIME3', displayLabel: 'Delay 3', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 4, name: 'MULTITAP_TIME4', displayLabel: 'Delay 4', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'MULTITAP', paramId: 5, name: 'MULTITAP_TEMPO1', displayLabel: 'Tempo 1', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 6, name: 'MULTITAP_TEMPO2', displayLabel: 'Tempo 2', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 7, name: 'MULTITAP_TEMPO3', displayLabel: 'Tempo 3', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 8, name: 'MULTITAP_TEMPO4', displayLabel: 'Tempo 4', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 9, name: 'MULTITAP_LEVEL1', displayLabel: 'Level 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 10, name: 'MULTITAP_LEVEL2', displayLabel: 'Level 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 11, name: 'MULTITAP_LEVEL3', displayLabel: 'Level 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 12, name: 'MULTITAP_LEVEL4', displayLabel: 'Level 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 13, name: 'MULTITAP_FEEDBACK1', displayLabel: 'Feedback 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 14, name: 'MULTITAP_FEEDBACK2', displayLabel: 'Feedback 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 15, name: 'MULTITAP_FEEDBACK3', displayLabel: 'Feedback 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 16, name: 'MULTITAP_FEEDBACK4', displayLabel: 'Feedback 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 9, name: 'MULTITAP_LEVEL1', displayLabel: 'Level 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 10, name: 'MULTITAP_LEVEL2', displayLabel: 'Level 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 11, name: 'MULTITAP_LEVEL3', displayLabel: 'Level 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 12, name: 'MULTITAP_LEVEL4', displayLabel: 'Level 4', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 13, name: 'MULTITAP_FEEDBACK1', displayLabel: 'Feedback 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 14, name: 'MULTITAP_FEEDBACK2', displayLabel: 'Feedback 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 15, name: 'MULTITAP_FEEDBACK3', displayLabel: 'Feedback 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 16, name: 'MULTITAP_FEEDBACK4', displayLabel: 'Feedback 4', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 17, name: 'MULTITAP_PAN1', displayLabel: 'Pan 1', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MULTITAP', paramId: 18, name: 'MULTITAP_PAN2', displayLabel: 'Pan 2', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MULTITAP', paramId: 19, name: 'MULTITAP_PAN3', displayLabel: 'Pan 3', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MULTITAP', paramId: 20, name: 'MULTITAP_PAN4', displayLabel: 'Pan 4', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'MULTITAP', paramId: 21, name: 'MULTITAP_RATE1', displayLabel: 'LFO 1 Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 22, name: 'MULTITAP_RATE2', displayLabel: 'LFO 2 Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 23, name: 'MULTITAP_DEPTH1', displayLabel: 'LFO 1 Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 24, name: 'MULTITAP_DEPTH2', displayLabel: 'LFO 2 Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 21, name: 'MULTITAP_RATE1', displayLabel: 'LFO 1 Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 22, name: 'MULTITAP_RATE2', displayLabel: 'LFO 2 Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 23, name: 'MULTITAP_DEPTH1', displayLabel: 'LFO 1 Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 24, name: 'MULTITAP_DEPTH2', displayLabel: 'LFO 2 Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 25, name: 'MULTITAP_LFOTYPE1', displayLabel: 'LFO 1 Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 26, name: 'MULTITAP_LFOTYPE2', displayLabel: 'LFO 2 Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 27, name: 'MULTITAP_LFOTEMPO1', displayLabel: 'LFO 1 Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 28, name: 'MULTITAP_LFOTEMPO2', displayLabel: 'LFO 2 Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 29, name: 'MULTITAP_LFOPHASE1', displayLabel: 'LFO 1 Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 30, name: 'MULTITAP_LFOPHASE2', displayLabel: 'LFO 2 Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 29, name: 'MULTITAP_LFOPHASE1', displayLabel: 'LFO 1 Phase', unit: 'degrees' }, // unit from typecode class 0x6
+  { family: 'MULTITAP', paramId: 30, name: 'MULTITAP_LFOPHASE2', displayLabel: 'LFO 2 Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'MULTITAP', paramId: 31, name: 'MULTITAP_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'MULTITAP', paramId: 32, name: 'MULTITAP_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 32, name: 'MULTITAP_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTITAP', paramId: 33, name: 'MULTITAP_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'MULTITAP', paramId: 34, name: 'MULTITAP_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'MULTITAP', paramId: 35, name: 'MULTITAP_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'MULTITAP', paramId: 36, name: 'MULTITAP_INGAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 36, name: 'MULTITAP_INGAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 37, name: 'MULTITAP_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'MULTITAP', paramId: 38, name: 'MULTITAP_DIFFMIX', displayLabel: 'Diffusion Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 39, name: 'MULTITAP_DIFFTIME', displayLabel: 'Diffusion Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 40, name: 'MULTITAP_THRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 41, name: 'MULTITAP_MSTRTIME', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 42, name: 'MULTITAP_MSTRLVL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 43, name: 'MULTITAP_MSTRPAN', displayLabel: 'Pan', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 38, name: 'MULTITAP_DIFFMIX', displayLabel: 'Diffusion Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 39, name: 'MULTITAP_DIFFTIME', displayLabel: 'Diffusion Time', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 40, name: 'MULTITAP_THRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'MULTITAP', paramId: 41, name: 'MULTITAP_MSTRTIME', displayLabel: 'Time', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 42, name: 'MULTITAP_MSTRLVL', displayLabel: 'Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 43, name: 'MULTITAP_MSTRPAN', displayLabel: 'Pan', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 44, name: 'MULTITAP_MSTRFREQ', displayLabel: 'Filter Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 45, name: 'MULTITAP_MSTRQ', displayLabel: 'Filter Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 46, name: 'MULTITAP_MSTRFDBK', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 47, name: 'MULTITAP_MSTRRATE', displayLabel: 'LFO Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 48, name: 'MULTITAP_MSTRDEPTH', displayLabel: 'LFO Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 49, name: 'MULTITAP_FREQ1', displayLabel: 'Frequency 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 50, name: 'MULTITAP_FREQ2', displayLabel: 'Frequency 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 51, name: 'MULTITAP_FREQ3', displayLabel: 'Frequency 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 52, name: 'MULTITAP_FREQ4', displayLabel: 'Frequency 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 46, name: 'MULTITAP_MSTRFDBK', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 47, name: 'MULTITAP_MSTRRATE', displayLabel: 'LFO Rate', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 48, name: 'MULTITAP_MSTRDEPTH', displayLabel: 'LFO Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 49, name: 'MULTITAP_FREQ1', displayLabel: 'Frequency 1', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 50, name: 'MULTITAP_FREQ2', displayLabel: 'Frequency 2', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 51, name: 'MULTITAP_FREQ3', displayLabel: 'Frequency 3', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 52, name: 'MULTITAP_FREQ4', displayLabel: 'Frequency 4', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'MULTITAP', paramId: 53, name: 'MULTITAP_Q1', displayLabel: 'Q 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 54, name: 'MULTITAP_Q2', displayLabel: 'Q 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 55, name: 'MULTITAP_Q3', displayLabel: 'Q 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 56, name: 'MULTITAP_Q4', displayLabel: 'Q 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 57, name: 'MULTITAP_ATTEN', displayLabel: 'Attenuation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 57, name: 'MULTITAP_ATTEN', displayLabel: 'Attenuation', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTITAP', paramId: 58, name: 'MULTITAP_SPEED', displayLabel: 'Motor Speed', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 59, name: 'MULTITAP_FBKSEND', displayLabel: 'Feedback Send', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 60, name: 'MULTITAP_FBKRET', displayLabel: 'Feedback Return', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 61, name: 'MULTITAP_LOWCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 62, name: 'MULTITAP_HIGHCUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 63, name: 'MULTITAP_FEEDBACK', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 64, name: 'MULTITAP_RELEASE', displayLabel: 'Release Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 61, name: 'MULTITAP_LOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 62, name: 'MULTITAP_HIGHCUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 63, name: 'MULTITAP_FEEDBACK', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 64, name: 'MULTITAP_RELEASE', displayLabel: 'Release Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'MULTITAP', paramId: 65, name: 'MULTITAP_DRIVE', displayLabel: 'Drive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 66, name: 'MULTITAP_FLTRATE', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 67, name: 'MULTITAP_FLTDEPTH', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 66, name: 'MULTITAP_FLTRATE', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 67, name: 'MULTITAP_FLTDEPTH', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 68, name: 'MULTITAP_FLTTYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 69, name: 'MULTITAP_FLTTEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 70, name: 'MULTITAP_FLTPHASE', displayLabel: 'Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 71, name: 'MULTITAP_ENVTHRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 72, name: 'MULTITAP_ENVATTACK', displayLabel: 'Attack Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 73, name: 'MULTITAP_ENVRELEASE', displayLabel: 'Release Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 74, name: 'MULTITAP_MSTRCOMBTIME', displayLabel: 'Comb Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 75, name: 'MULTITAP_MSTRCOMBGAIN', displayLabel: 'Comb Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 70, name: 'MULTITAP_FLTPHASE', displayLabel: 'Phase', unit: 'degrees' }, // unit from typecode class 0x6
+  { family: 'MULTITAP', paramId: 71, name: 'MULTITAP_ENVTHRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'MULTITAP', paramId: 72, name: 'MULTITAP_ENVATTACK', displayLabel: 'Attack Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 73, name: 'MULTITAP_ENVRELEASE', displayLabel: 'Release Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 74, name: 'MULTITAP_MSTRCOMBTIME', displayLabel: 'Comb Time', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 75, name: 'MULTITAP_MSTRCOMBGAIN', displayLabel: 'Comb Feedback', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 76, name: 'MULTITAP_COMBTYPE', displayLabel: 'Filter Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 77, name: 'MULTITAP_COMBTIME1', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 78, name: 'MULTITAP_COMBTIME2', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 79, name: 'MULTITAP_COMBTIME3', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 80, name: 'MULTITAP_COMBTIME4', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 81, name: 'MULTITAP_COMBGAIN1', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 82, name: 'MULTITAP_COMBGAIN2', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 83, name: 'MULTITAP_COMBGAIN3', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 84, name: 'MULTITAP_COMBGAIN4', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 85, name: 'MULTITAP_MSTRRINGFREQ', displayLabel: 'Ring Mod Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 86, name: 'MULTITAP_MSTRRINGMIX', displayLabel: 'Ring Mod Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 77, name: 'MULTITAP_COMBTIME1', displayLabel: 'Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 78, name: 'MULTITAP_COMBTIME2', displayLabel: 'Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 79, name: 'MULTITAP_COMBTIME3', displayLabel: 'Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 80, name: 'MULTITAP_COMBTIME4', displayLabel: 'Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'MULTITAP', paramId: 81, name: 'MULTITAP_COMBGAIN1', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 82, name: 'MULTITAP_COMBGAIN2', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 83, name: 'MULTITAP_COMBGAIN3', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 84, name: 'MULTITAP_COMBGAIN4', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 85, name: 'MULTITAP_MSTRRINGFREQ', displayLabel: 'Ring Mod Frequency', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 86, name: 'MULTITAP_MSTRRINGMIX', displayLabel: 'Ring Mod Mix', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 87, name: 'MULTITAP_RINGFREQ1', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 88, name: 'MULTITAP_RINGFREQ2', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 89, name: 'MULTITAP_RINGFREQ3', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 90, name: 'MULTITAP_RINGFREQ4', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 91, name: 'MULTITAP_RINGMIX1', displayLabel: 'Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 92, name: 'MULTITAP_RINGMIX2', displayLabel: 'Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 93, name: 'MULTITAP_RINGMIX3', displayLabel: 'Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 94, name: 'MULTITAP_RINGMIX4', displayLabel: 'Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 95, name: 'MULTITAP_DRATE1', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 96, name: 'MULTITAP_DRATE2', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 97, name: 'MULTITAP_DRATE3', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 98, name: 'MULTITAP_DRATE4', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 99, name: 'MULTITAP_DDEPTH1', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 100, name: 'MULTITAP_DDEPTH2', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 101, name: 'MULTITAP_DDEPTH3', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 102, name: 'MULTITAP_DDEPTH4', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 91, name: 'MULTITAP_RINGMIX1', displayLabel: 'Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 92, name: 'MULTITAP_RINGMIX2', displayLabel: 'Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 93, name: 'MULTITAP_RINGMIX3', displayLabel: 'Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 94, name: 'MULTITAP_RINGMIX4', displayLabel: 'Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 95, name: 'MULTITAP_DRATE1', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 96, name: 'MULTITAP_DRATE2', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 97, name: 'MULTITAP_DRATE3', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 98, name: 'MULTITAP_DRATE4', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 99, name: 'MULTITAP_DDEPTH1', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 100, name: 'MULTITAP_DDEPTH2', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 101, name: 'MULTITAP_DDEPTH3', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 102, name: 'MULTITAP_DDEPTH4', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 103, name: 'MULTITAP_INPUTSELECT', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 104, name: 'MULTITAP_MSTRDRATE', displayLabel: 'Chorus Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 105, name: 'MULTITAP_MSTRDDEPTH', displayLabel: 'Chorus Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 104, name: 'MULTITAP_MSTRDRATE', displayLabel: 'Chorus Rate', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 105, name: 'MULTITAP_MSTRDDEPTH', displayLabel: 'Chorus Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 106, name: 'MULTITAP_FILTER_TYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 107, name: 'MULTITAP_FREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 107, name: 'MULTITAP_FREQ', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'MULTITAP', paramId: 108, name: 'MULTITAP_Q', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 109, name: 'MULTITAP_GAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 109, name: 'MULTITAP_GAIN', displayLabel: 'Gain', unit: 'db' }, // unit from typecode class 0x1
   { family: 'MULTITAP', paramId: 110, name: 'MULTITAP_LOWSLOPE', displayLabel: 'Low Cut Slope', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'MULTITAP', paramId: 111, name: 'MULTITAP_HIGHSLOPE', displayLabel: 'High Cut Slope', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 112, name: 'MULTITAP_DIFFRATE', displayLabel: 'LFO Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'MULTITAP', paramId: 113, name: 'MULTITAP_DIFFDEPTH', displayLabel: 'LFO Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'MULTITAP', paramId: 112, name: 'MULTITAP_DIFFRATE', displayLabel: 'LFO Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'MULTITAP', paramId: 113, name: 'MULTITAP_DIFFDEPTH', displayLabel: 'LFO Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 114, name: 'MULTITAP_PRESETS', unit: 'unverified' },
   { family: 'MULTITAP', paramId: 115, name: 'MULTITAP_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'MULTITAP', paramId: 116, name: 'MULTITAP_FEEDBACK12', unit: 'unverified' },
-  { family: 'MULTITAP', paramId: 117, name: 'MULTITAP_FEEDBACK23', unit: 'unverified' },
-  { family: 'MULTITAP', paramId: 118, name: 'MULTITAP_FEEDBACK34', unit: 'unverified' },
-  { family: 'MULTITAP', paramId: 119, name: 'MULTITAP_FEEDBACK41', unit: 'unverified' },
+  { family: 'MULTITAP', paramId: 116, name: 'MULTITAP_FEEDBACK12', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 117, name: 'MULTITAP_FEEDBACK23', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 118, name: 'MULTITAP_FEEDBACK34', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'MULTITAP', paramId: 119, name: 'MULTITAP_FEEDBACK41', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'MULTITAP', paramId: 120, name: 'MULTITAP_KILLDRY', displayLabel: 'Kill Dry', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 0, name: 'OUTPUT_LEVEL1', displayLabel: 'Row 1 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 1, name: 'OUTPUT_LEVEL2', displayLabel: 'Row 2 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 2, name: 'OUTPUT_LEVEL3', displayLabel: 'Row 3 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 3, name: 'OUTPUT_LEVEL4', displayLabel: 'Row 4 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 4, name: 'OUTPUT_LEVEL5', displayLabel: 'Row 5 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 5, name: 'OUTPUT_LEVEL6', displayLabel: 'Row 6 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'OUTPUT', paramId: 0, name: 'OUTPUT_LEVEL1', displayLabel: 'Row 1 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 1, name: 'OUTPUT_LEVEL2', displayLabel: 'Row 2 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 2, name: 'OUTPUT_LEVEL3', displayLabel: 'Row 3 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 3, name: 'OUTPUT_LEVEL4', displayLabel: 'Row 4 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 4, name: 'OUTPUT_LEVEL5', displayLabel: 'Row 5 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 5, name: 'OUTPUT_LEVEL6', displayLabel: 'Row 6 Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'OUTPUT', paramId: 6, name: 'OUTPUT_PAN1', displayLabel: 'Row 1 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 7, name: 'OUTPUT_PAN2', displayLabel: 'Row 2 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 8, name: 'OUTPUT_PAN3', displayLabel: 'Row 3 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 9, name: 'OUTPUT_PAN4', displayLabel: 'Row 4 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 10, name: 'OUTPUT_PAN5', displayLabel: 'Row 5 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 11, name: 'OUTPUT_PAN6', displayLabel: 'Row 6 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'OUTPUT', paramId: 12, name: 'OUTPUT_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'OUTPUT', paramId: 12, name: 'OUTPUT_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'OUTPUT', paramId: 13, name: 'OUTPUT_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 14, name: 'OUTPUT_BYPASSMODE', unit: 'enum' }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 15, name: 'OUTPUT_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'OUTPUT', paramId: 16, name: 'OUTPUT_VUL', displayLabel: 'Left', unit: 'db' }, // inferred from AxeEdit III XML controlType
   { family: 'OUTPUT', paramId: 17, name: 'OUTPUT_VUR', displayLabel: 'Right', unit: 'db' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 18, name: 'OUTPUT_SCENE1', displayLabel: 'Scene 1 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 19, name: 'OUTPUT_SCENE2', displayLabel: 'Scene 2 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 20, name: 'OUTPUT_SCENE3', displayLabel: 'Scene 3 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 21, name: 'OUTPUT_SCENE4', displayLabel: 'Scene 4 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 22, name: 'OUTPUT_SCENE5', displayLabel: 'Scene 5 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 23, name: 'OUTPUT_SCENE6', displayLabel: 'Scene 6 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 24, name: 'OUTPUT_SCENE7', displayLabel: 'Scene 7 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'OUTPUT', paramId: 25, name: 'OUTPUT_SCENE8', displayLabel: 'Scene 8 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 0, name: 'PEQ_FREQ1', displayLabel: 'Frequency 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 1, name: 'PEQ_FREQ2', displayLabel: 'Frequency 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 2, name: 'PEQ_FREQ3', displayLabel: 'Frequency 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 3, name: 'PEQ_FREQ4', displayLabel: 'Frequency 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 4, name: 'PEQ_FREQ5', displayLabel: 'Frequency 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'OUTPUT', paramId: 18, name: 'OUTPUT_SCENE1', displayLabel: 'Scene 1 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 19, name: 'OUTPUT_SCENE2', displayLabel: 'Scene 2 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 20, name: 'OUTPUT_SCENE3', displayLabel: 'Scene 3 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 21, name: 'OUTPUT_SCENE4', displayLabel: 'Scene 4 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 22, name: 'OUTPUT_SCENE5', displayLabel: 'Scene 5 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 23, name: 'OUTPUT_SCENE6', displayLabel: 'Scene 6 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 24, name: 'OUTPUT_SCENE7', displayLabel: 'Scene 7 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'OUTPUT', paramId: 25, name: 'OUTPUT_SCENE8', displayLabel: 'Scene 8 Level', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PEQ', paramId: 0, name: 'PEQ_FREQ1', displayLabel: 'Frequency 1', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PEQ', paramId: 1, name: 'PEQ_FREQ2', displayLabel: 'Frequency 2', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PEQ', paramId: 2, name: 'PEQ_FREQ3', displayLabel: 'Frequency 3', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PEQ', paramId: 3, name: 'PEQ_FREQ4', displayLabel: 'Frequency 4', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PEQ', paramId: 4, name: 'PEQ_FREQ5', displayLabel: 'Frequency 5', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'PEQ', paramId: 5, name: 'PEQ_Q1', displayLabel: 'Q1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 6, name: 'PEQ_Q2', displayLabel: 'Q2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 7, name: 'PEQ_Q3', displayLabel: 'Q3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 8, name: 'PEQ_Q4', displayLabel: 'Q4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 9, name: 'PEQ_Q5', displayLabel: 'Q5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 10, name: 'PEQ_GAIN1', displayLabel: 'Gain 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 11, name: 'PEQ_GAIN2', displayLabel: 'Gain 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 12, name: 'PEQ_GAIN3', displayLabel: 'Gain 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 13, name: 'PEQ_GAIN4', displayLabel: 'Gain 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 14, name: 'PEQ_GAIN5', displayLabel: 'Gain 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PEQ', paramId: 10, name: 'PEQ_GAIN1', displayLabel: 'Gain 1', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PEQ', paramId: 11, name: 'PEQ_GAIN2', displayLabel: 'Gain 2', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PEQ', paramId: 12, name: 'PEQ_GAIN3', displayLabel: 'Gain 3', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PEQ', paramId: 13, name: 'PEQ_GAIN4', displayLabel: 'Gain 4', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PEQ', paramId: 14, name: 'PEQ_GAIN5', displayLabel: 'Gain 5', unit: 'db' }, // unit from typecode class 0x1
   { family: 'PEQ', paramId: 15, name: 'PEQ_TYPE1', displayLabel: 'Type 1', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 16, name: 'PEQ_TYPE2', displayLabel: 'Type 2', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 17, name: 'PEQ_TYPE3', displayLabel: 'Type 3', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 18, name: 'PEQ_TYPE4', displayLabel: 'Type 4', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PEQ', paramId: 19, name: 'PEQ_TYPE5', displayLabel: 'Type 5', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PEQ', paramId: 20, name: 'PEQ_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PEQ', paramId: 20, name: 'PEQ_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'PEQ', paramId: 21, name: 'PEQ_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PEQ', paramId: 22, name: 'PEQ_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from AM4
   { family: 'PEQ', paramId: 23, name: 'PEQ_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
@@ -1360,9 +1360,9 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PHASER', paramId: 4, name: 'PHASER_TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AM4
   { family: 'PHASER', paramId: 5, name: 'PHASER_DEPTH', displayLabel: 'Depth', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'PHASER', paramId: 6, name: 'PHASER_FEEDBACK', displayLabel: 'Feedback', unit: 'bipolar_percent', displayMin: -90, displayMax: 90 }, // inferred from AM4
-  { family: 'PHASER', paramId: 7, name: 'PHASER_FMIN', displayLabel: 'Min Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PHASER', paramId: 8, name: 'PHASER_FMAX', displayLabel: 'Max Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PHASER', paramId: 9, name: 'PHASER_LFOPHASE', displayLabel: 'LFO Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PHASER', paramId: 7, name: 'PHASER_FMIN', displayLabel: 'Min Frequency', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PHASER', paramId: 8, name: 'PHASER_FMAX', displayLabel: 'Max Frequency', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PHASER', paramId: 9, name: 'PHASER_LFOPHASE', displayLabel: 'LFO Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'PHASER', paramId: 10, name: 'PHASER_BIAS', displayLabel: 'Bias', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from AM4
   { family: 'PHASER', paramId: 11, name: 'PHASER_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'PHASER', paramId: 12, name: 'PHASER_LEVEL', displayLabel: 'Level', unit: 'db', displayMin: -80, displayMax: 20 }, // inferred from AM4
@@ -1380,18 +1380,18 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PHASER', paramId: 24, name: 'PHASER_VCR_CURVE', displayLabel: 'Type', unit: 'count', displayMin: 0, displayMax: 3 }, // inferred from AM4
   { family: 'PHASER', paramId: 25, name: 'PHASER_VCRK', displayLabel: 'Exponent', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PHASER', paramId: 26, name: 'PHASER_LFOBETA', displayLabel: 'Shape', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PHASER', paramId: 27, name: 'PHASER_LFOLPF', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PHASER', paramId: 27, name: 'PHASER_LFOLPF', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'PHASER', paramId: 28, name: 'PHASER_ATTACK', displayLabel: 'Attack', unit: 'ms', displayMin: 0, displayMax: 1000, scaling: 'log10' }, // inferred from AM4
   { family: 'PHASER', paramId: 29, name: 'PHASER_RELEASE', displayLabel: 'Release', unit: 'ms', displayMin: 0, displayMax: 100, scaling: 'log10' }, // inferred from AM4
   { family: 'PHASER', paramId: 30, name: 'PHASER_MANUAL', displayLabel: 'Manual', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'PHASER', paramId: 31, name: 'PHASER_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'PHASER', paramId: 32, name: 'PHASER_HPF', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PHASER', paramId: 33, name: 'PHASER_LPF', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PHASER', paramId: 32, name: 'PHASER_HPF', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PHASER', paramId: 33, name: 'PHASER_LPF', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'PHASER', paramId: 34, name: 'PHASER_LFOMODE', displayLabel: 'Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 0, name: 'PITCH_TYPE', unit: 'unverified' },
   { family: 'PITCH', paramId: 1, name: 'PITCH_PITCHMODE', displayLabel: 'Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 2, name: 'PITCH_CTRL', displayLabel: 'Master Pitch', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 3, name: 'PITCH_UCTRL', displayLabel: 'Control', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 2, name: 'PITCH_CTRL', displayLabel: 'Master Pitch', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 3, name: 'PITCH_UCTRL', displayLabel: 'Control', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 4, name: 'PITCH_HARM1', displayLabel: 'Harmony 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 5, name: 'PITCH_HARM2', displayLabel: 'Harmony 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 6, name: 'PITCH_HARM3', displayLabel: 'Harmony 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -1399,44 +1399,44 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PITCH', paramId: 8, name: 'PITCH_KEY', displayLabel: 'Key', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 9, name: 'PITCH_SCALE', displayLabel: 'Scale', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 10, name: 'PITCH_QUANTIZE', displayLabel: 'Pitch Quantize', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 11, name: 'PITCH_DETUNE1', displayLabel: 'Detune 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 12, name: 'PITCH_DETUNE2', displayLabel: 'Detune 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 13, name: 'PITCH_DETUNE3', displayLabel: 'Detune 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 14, name: 'PITCH_DETUNE4', displayLabel: 'Detune 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 11, name: 'PITCH_DETUNE1', displayLabel: 'Detune 1', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PITCH', paramId: 12, name: 'PITCH_DETUNE2', displayLabel: 'Detune 2', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PITCH', paramId: 13, name: 'PITCH_DETUNE3', displayLabel: 'Detune 3', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PITCH', paramId: 14, name: 'PITCH_DETUNE4', displayLabel: 'Detune 4', unit: 'cents' }, // unit from typecode class 0x7
   { family: 'PITCH', paramId: 15, name: 'PITCH_SHIFT1', displayLabel: 'Shift 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 16, name: 'PITCH_SHIFT2', displayLabel: 'Shift 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 17, name: 'PITCH_SHIFT3', displayLabel: 'Shift 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 18, name: 'PITCH_SHIFT4', displayLabel: 'Shift 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 19, name: 'PITCH_LEVEL1', displayLabel: 'Level 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 20, name: 'PITCH_LEVEL2', displayLabel: 'Level 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 21, name: 'PITCH_LEVEL3', displayLabel: 'Level 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 22, name: 'PITCH_LEVEL4', displayLabel: 'Level 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 19, name: 'PITCH_LEVEL1', displayLabel: 'Level 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 20, name: 'PITCH_LEVEL2', displayLabel: 'Level 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 21, name: 'PITCH_LEVEL3', displayLabel: 'Level 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 22, name: 'PITCH_LEVEL4', displayLabel: 'Level 4', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 23, name: 'PITCH_PAN1', displayLabel: 'Pan 1', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PITCH', paramId: 24, name: 'PITCH_PAN2', displayLabel: 'Pan 2', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PITCH', paramId: 25, name: 'PITCH_PAN3', displayLabel: 'Pan 3', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PITCH', paramId: 26, name: 'PITCH_PAN4', displayLabel: 'Pan 4', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'PITCH', paramId: 27, name: 'PITCH_DELAY1', displayLabel: 'Delay 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 28, name: 'PITCH_DELAY2', displayLabel: 'Delay 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 29, name: 'PITCH_DELAY3', displayLabel: 'Delay 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 30, name: 'PITCH_DELAY4', displayLabel: 'Delay 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 31, name: 'PITCH_FEEDBACK1', displayLabel: 'Feedback 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 32, name: 'PITCH_FEEDBACK2', displayLabel: 'Feedback 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 33, name: 'PITCH_FEEDBACK3', displayLabel: 'Feedback 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 34, name: 'PITCH_FEEDBACK4', displayLabel: 'Feedback 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 27, name: 'PITCH_DELAY1', displayLabel: 'Delay 1', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PITCH', paramId: 28, name: 'PITCH_DELAY2', displayLabel: 'Delay 2', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PITCH', paramId: 29, name: 'PITCH_DELAY3', displayLabel: 'Delay 3', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PITCH', paramId: 30, name: 'PITCH_DELAY4', displayLabel: 'Delay 4', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PITCH', paramId: 31, name: 'PITCH_FEEDBACK1', displayLabel: 'Feedback 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 32, name: 'PITCH_FEEDBACK2', displayLabel: 'Feedback 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 33, name: 'PITCH_FEEDBACK3', displayLabel: 'Feedback 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 34, name: 'PITCH_FEEDBACK4', displayLabel: 'Feedback 4', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 35, name: 'PITCH_TRACKMODE', displayLabel: 'Pitch Tracking', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 36, name: 'PITCH_TRACKING', displayLabel: 'Tracking Adjust', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 37, name: 'PITCH_FORMCORRECT', unit: 'unverified' },
   { family: 'PITCH', paramId: 38, name: 'PITCH_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'PITCH', paramId: 39, name: 'PITCH_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 39, name: 'PITCH_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'PITCH', paramId: 40, name: 'PITCH_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PITCH', paramId: 41, name: 'PITCH_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'PITCH', paramId: 42, name: 'PITCH_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'PITCH', paramId: 43, name: 'PITCH_GAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 43, name: 'PITCH_GAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 44, name: 'PITCH_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'PITCH', paramId: 45, name: 'PITCH_XFADE', displayLabel: 'Crossfade Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 45, name: 'PITCH_XFADE', displayLabel: 'Crossfade Time', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 46, name: 'PITCH_XFADETYPE', displayLabel: 'Crossfade Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 47, name: 'PITCH_SPLICE1', displayLabel: 'Time 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 48, name: 'PITCH_SPLICE2', displayLabel: 'Time 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 47, name: 'PITCH_SPLICE1', displayLabel: 'Time 1', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PITCH', paramId: 48, name: 'PITCH_SPLICE2', displayLabel: 'Time 2', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'PITCH', paramId: 49, name: 'PITCH_DTEMPO1', displayLabel: 'Tempo 1', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 50, name: 'PITCH_DTEMPO2', displayLabel: 'Tempo 2', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 51, name: 'PITCH_DTEMPO3', displayLabel: 'Tempo 3', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -1445,12 +1445,12 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PITCH', paramId: 54, name: 'PITCH_STEMPO2', displayLabel: 'Tempo 2', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 55, name: 'PITCH_FBTYPE', displayLabel: 'Feedback Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 56, name: 'PITCH_DIRECTION', displayLabel: 'Direction', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 57, name: 'PITCH_LPFREQ', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 58, name: 'PITCH_GLIDE', displayLabel: 'Glide Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 59, name: 'PITCH_MDELAY', displayLabel: 'Master Delay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 60, name: 'PITCH_MFDBK', displayLabel: 'Master Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 61, name: 'PITCH_MPAN', displayLabel: 'Master Pan', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 62, name: 'PITCH_MLEVEL', displayLabel: 'Master Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 57, name: 'PITCH_LPFREQ', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PITCH', paramId: 58, name: 'PITCH_GLIDE', displayLabel: 'Glide Time', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PITCH', paramId: 59, name: 'PITCH_MDELAY', displayLabel: 'Master Delay', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 60, name: 'PITCH_MFDBK', displayLabel: 'Master Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 61, name: 'PITCH_MPAN', displayLabel: 'Master Pan', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 62, name: 'PITCH_MLEVEL', displayLabel: 'Master Level', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 63, name: 'PITCH_CUSTOMNOTES', displayLabel: '# of Notes', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 64, name: 'PITCH_NOTE2', displayLabel: 'Note 2', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 65, name: 'PITCH_NOTE3', displayLabel: 'Note 3', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -1482,26 +1482,26 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PITCH', paramId: 91, name: 'PITCH_STEP15', displayLabel: 'Step 15 Shift', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 92, name: 'PITCH_STEP16', displayLabel: 'Step 16 Shift', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 93, name: 'PITCH_AMPSHAPE', displayLabel: 'Amplitude Shape', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 94, name: 'PITCH_AMPALPHA', displayLabel: 'Amplitude Alpha', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 94, name: 'PITCH_AMPALPHA', displayLabel: 'Amplitude Alpha', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 95, name: 'PITCH_PANSHAPE', displayLabel: 'Pan Shape', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 96, name: 'PITCH_PANALPHA', displayLabel: 'Pan Alpha', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 97, name: 'PITCH_TIME1', displayLabel: 'Delay Time 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 98, name: 'PITCH_TIME2', displayLabel: 'Delay Time 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 96, name: 'PITCH_PANALPHA', displayLabel: 'Pan Alpha', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 97, name: 'PITCH_TIME1', displayLabel: 'Delay Time 1', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PITCH', paramId: 98, name: 'PITCH_TIME2', displayLabel: 'Delay Time 2', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'PITCH', paramId: 99, name: 'PITCH_SOURCE', displayLabel: 'Detector Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 100, name: 'PITCH_INMODE', displayLabel: 'Input Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 101, name: 'PITCH_LEARN', displayLabel: 'Learn', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 102, name: 'PITCH_HPFREQ', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 102, name: 'PITCH_HPFREQ', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'PITCH', paramId: 103, name: 'PITCH_FDBKMODE', displayLabel: 'Feedback Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 104, name: 'PITCH_LFORATE', displayLabel: 'LFO Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 104, name: 'PITCH_LFORATE', displayLabel: 'LFO Rate', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'PITCH', paramId: 105, name: 'PITCH_LFOTEMPO', displayLabel: 'LFO Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 106, name: 'PITCH_LFODEPTH', displayLabel: 'LFO Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 106, name: 'PITCH_LFODEPTH', displayLabel: 'LFO Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 107, name: 'PITCH_TONIC', displayLabel: 'Tonic', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PITCH', paramId: 108, name: 'PITCH_TEMPERAMENT', displayLabel: 'Temperament', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 109, name: 'PITCH_DIFFMIX', displayLabel: 'Diffusion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 110, name: 'PITCH_DIFFTIME', displayLabel: 'Diffusion Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 109, name: 'PITCH_DIFFMIX', displayLabel: 'Diffusion', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PITCH', paramId: 110, name: 'PITCH_DIFFTIME', displayLabel: 'Diffusion Time', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PITCH', paramId: 111, name: 'PITCH_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'PITCH', paramId: 112, name: 'PITCH_KILLDRY', displayLabel: 'Kill Dry', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PITCH', paramId: 113, name: 'PITCH_THRESH', displayLabel: 'Trigger Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PITCH', paramId: 113, name: 'PITCH_THRESH', displayLabel: 'Trigger Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'PLEX', paramId: 0, name: 'PLEX_BASETYPE', unit: 'unverified' },
   { family: 'PLEX', paramId: 1, name: 'PLEX_NUMDLINES', displayLabel: 'Number of Delays', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 2, name: 'PLEX_SHIFT1', displayLabel: 'Shift 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -1512,22 +1512,22 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PLEX', paramId: 7, name: 'PLEX_SHIFT6', displayLabel: 'Shift 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 8, name: 'PLEX_SHIFT7', displayLabel: 'Shift 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 9, name: 'PLEX_SHIFT8', displayLabel: 'Shift 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 10, name: 'PLEX_DETUNE1', displayLabel: 'Detune 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 11, name: 'PLEX_DETUNE2', displayLabel: 'Detune 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 12, name: 'PLEX_DETUNE3', displayLabel: 'Detune 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 13, name: 'PLEX_DETUNE4', displayLabel: 'Detune 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 14, name: 'PLEX_DETUNE5', displayLabel: 'Detune 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 15, name: 'PLEX_DETUNE6', displayLabel: 'Detune 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 16, name: 'PLEX_DETUNE7', displayLabel: 'Detune 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 17, name: 'PLEX_DETUNE8', displayLabel: 'Detune 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 18, name: 'PLEX_TIME1', displayLabel: 'Time 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 19, name: 'PLEX_TIME2', displayLabel: 'Time 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 20, name: 'PLEX_TIME3', displayLabel: 'Time 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 21, name: 'PLEX_TIME4', displayLabel: 'Time 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 22, name: 'PLEX_TIME5', displayLabel: 'Time 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 23, name: 'PLEX_TIME6', displayLabel: 'Time 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 24, name: 'PLEX_TIME7', displayLabel: 'Time 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 25, name: 'PLEX_TIME8', displayLabel: 'Time 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 10, name: 'PLEX_DETUNE1', displayLabel: 'Detune 1', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 11, name: 'PLEX_DETUNE2', displayLabel: 'Detune 2', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 12, name: 'PLEX_DETUNE3', displayLabel: 'Detune 3', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 13, name: 'PLEX_DETUNE4', displayLabel: 'Detune 4', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 14, name: 'PLEX_DETUNE5', displayLabel: 'Detune 5', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 15, name: 'PLEX_DETUNE6', displayLabel: 'Detune 6', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 16, name: 'PLEX_DETUNE7', displayLabel: 'Detune 7', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 17, name: 'PLEX_DETUNE8', displayLabel: 'Detune 8', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'PLEX', paramId: 18, name: 'PLEX_TIME1', displayLabel: 'Time 1', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 19, name: 'PLEX_TIME2', displayLabel: 'Time 2', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 20, name: 'PLEX_TIME3', displayLabel: 'Time 3', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 21, name: 'PLEX_TIME4', displayLabel: 'Time 4', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 22, name: 'PLEX_TIME5', displayLabel: 'Time 5', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 23, name: 'PLEX_TIME6', displayLabel: 'Time 6', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 24, name: 'PLEX_TIME7', displayLabel: 'Time 7', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 25, name: 'PLEX_TIME8', displayLabel: 'Time 8', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'PLEX', paramId: 26, name: 'PLEX_TEMPO1', displayLabel: 'Tempo 1', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 27, name: 'PLEX_TEMPO2', displayLabel: 'Tempo 2', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 28, name: 'PLEX_TEMPO3', displayLabel: 'Tempo 3', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -1536,14 +1536,14 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PLEX', paramId: 31, name: 'PLEX_TEMPO6', displayLabel: 'Tempo 6', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 32, name: 'PLEX_TEMPO7', displayLabel: 'Tempo 7', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 33, name: 'PLEX_TEMPO8', displayLabel: 'Tempo 8', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 34, name: 'PLEX_LEVEL1', displayLabel: 'Level 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 35, name: 'PLEX_LEVEL2', displayLabel: 'Level 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 36, name: 'PLEX_LEVEL3', displayLabel: 'Level 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 37, name: 'PLEX_LEVEL4', displayLabel: 'Level 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 38, name: 'PLEX_LEVEL5', displayLabel: 'Level 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 39, name: 'PLEX_LEVEL6', displayLabel: 'Level 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 40, name: 'PLEX_LEVEL7', displayLabel: 'Level 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 41, name: 'PLEX_LEVEL8', displayLabel: 'Level 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 34, name: 'PLEX_LEVEL1', displayLabel: 'Level 1', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 35, name: 'PLEX_LEVEL2', displayLabel: 'Level 2', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 36, name: 'PLEX_LEVEL3', displayLabel: 'Level 3', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 37, name: 'PLEX_LEVEL4', displayLabel: 'Level 4', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 38, name: 'PLEX_LEVEL5', displayLabel: 'Level 5', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 39, name: 'PLEX_LEVEL6', displayLabel: 'Level 6', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 40, name: 'PLEX_LEVEL7', displayLabel: 'Level 7', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 41, name: 'PLEX_LEVEL8', displayLabel: 'Level 8', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PLEX', paramId: 42, name: 'PLEX_PAN1', displayLabel: 'Pan 1', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 43, name: 'PLEX_PAN2', displayLabel: 'Pan 2', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 44, name: 'PLEX_PAN3', displayLabel: 'Pan 3', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
@@ -1552,49 +1552,49 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PLEX', paramId: 47, name: 'PLEX_PAN6', displayLabel: 'Pan 6', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 48, name: 'PLEX_PAN7', displayLabel: 'Pan 7', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 49, name: 'PLEX_PAN8', displayLabel: 'Pan 8', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'PLEX', paramId: 50, name: 'PLEX_INGAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 51, name: 'PLEX_MSTRTIME', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 52, name: 'PLEX_MSTRLVL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 53, name: 'PLEX_MSTRPAN', displayLabel: 'Pan', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 54, name: 'PLEX_MSTRPITCH', displayLabel: 'Pitch', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 55, name: 'PLEX_MSTRDTN', displayLabel: 'Detune', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 56, name: 'PLEX_DECAY', displayLabel: 'Decay Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 57, name: 'PLEX_DIFFUSION', displayLabel: 'Diffusion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 50, name: 'PLEX_INGAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 51, name: 'PLEX_MSTRTIME', displayLabel: 'Time', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 52, name: 'PLEX_MSTRLVL', displayLabel: 'Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 53, name: 'PLEX_MSTRPAN', displayLabel: 'Pan', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 54, name: 'PLEX_MSTRPITCH', displayLabel: 'Pitch', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 55, name: 'PLEX_MSTRDTN', displayLabel: 'Detune', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 56, name: 'PLEX_DECAY', displayLabel: 'Decay Time', unit: 'seconds' }, // unit from typecode class 0x3
+  { family: 'PLEX', paramId: 57, name: 'PLEX_DIFFUSION', displayLabel: 'Diffusion', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PLEX', paramId: 58, name: 'PLEX_DIRECTION', displayLabel: 'Direction', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 59, name: 'PLEX_SPLICE', displayLabel: 'Cross-Fade', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 60, name: 'PLEX_LOWCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 61, name: 'PLEX_HIGHCUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 62, name: 'PLEX_ATTEN', displayLabel: 'Attenuation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 63, name: 'PLEX_THRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 64, name: 'PLEX_RELEASE', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 65, name: 'PLEX_DIFFMIX', displayLabel: 'Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 66, name: 'PLEX_DIFFTIME', displayLabel: 'Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 67, name: 'PLEX_LFORATE', displayLabel: 'Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 68, name: 'PLEX_LFODEPTH', displayLabel: 'Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 59, name: 'PLEX_SPLICE', displayLabel: 'Cross-Fade', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 60, name: 'PLEX_LOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PLEX', paramId: 61, name: 'PLEX_HIGHCUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PLEX', paramId: 62, name: 'PLEX_ATTEN', displayLabel: 'Attenuation', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PLEX', paramId: 63, name: 'PLEX_THRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PLEX', paramId: 64, name: 'PLEX_RELEASE', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 65, name: 'PLEX_DIFFMIX', displayLabel: 'Mix', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 66, name: 'PLEX_DIFFTIME', displayLabel: 'Time', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 67, name: 'PLEX_LFORATE', displayLabel: 'Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PLEX', paramId: 68, name: 'PLEX_LFODEPTH', displayLabel: 'Depth', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'PLEX', paramId: 69, name: 'PLEX_LFOTEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 70, name: 'PLEX_ENVTHRESH', displayLabel: 'Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 71, name: 'PLEX_ENVATTACK', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 72, name: 'PLEX_ENVRELEASE', displayLabel: 'Release', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 70, name: 'PLEX_ENVTHRESH', displayLabel: 'Threshold', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'PLEX', paramId: 71, name: 'PLEX_ENVATTACK', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'PLEX', paramId: 72, name: 'PLEX_ENVRELEASE', displayLabel: 'Release', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'PLEX', paramId: 73, name: 'PLEX_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'PLEX', paramId: 74, name: 'PLEX_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 74, name: 'PLEX_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'PLEX', paramId: 75, name: 'PLEX_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 76, name: 'PLEX_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 77, name: 'PLEX_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 78, name: 'PLEX_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'PLEX', paramId: 79, name: 'PLEX_SIZE', displayLabel: 'Reverb Size', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 80, name: 'PLEX_SPREAD', displayLabel: 'Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 81, name: 'PLEX_PREDELAY', displayLabel: 'Pre-Delay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 79, name: 'PLEX_SIZE', displayLabel: 'Reverb Size', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 80, name: 'PLEX_SPREAD', displayLabel: 'Spread', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'PLEX', paramId: 81, name: 'PLEX_PREDELAY', displayLabel: 'Pre-Delay', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'PLEX', paramId: 82, name: 'PLEX_FILTERTYPE', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 83, name: 'PLEX_FILTERFREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 83, name: 'PLEX_FILTERFREQ', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'PLEX', paramId: 84, name: 'PLEX_FILTERQ', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 85, name: 'PLEX_FILTERGAIN', displayLabel: 'Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 85, name: 'PLEX_FILTERGAIN', displayLabel: 'Gain', unit: 'db' }, // unit from typecode class 0x1
   { family: 'PLEX', paramId: 86, name: 'PLEX_SHIMMERINTENS', displayLabel: 'Shimmer Intensity', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 87, name: 'PLEX_INPUTSELECT', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 88, name: 'PLEX_HOLD', displayLabel: 'Stack/Hold', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PLEX', paramId: 90, name: 'PLEX_PRESETS', unit: 'unverified' },
   { family: 'PLEX', paramId: 91, name: 'PLEX_FLTLFOTYPE', displayLabel: 'LFO Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 92, name: 'PLEX_FLTLFOFREQ', displayLabel: 'LFO Rate', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'PLEX', paramId: 93, name: 'PLEX_FLTLFOMODFREQ', displayLabel: 'Mod Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'PLEX', paramId: 92, name: 'PLEX_FLTLFOFREQ', displayLabel: 'LFO Rate', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'PLEX', paramId: 93, name: 'PLEX_FLTLFOMODFREQ', displayLabel: 'Mod Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'PLEX', paramId: 94, name: 'PLEX_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'PLEX', paramId: 95, name: 'PLEX_KILLDRY', displayLabel: 'Kill Dry', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'PRESET', paramId: 1285, name: 'PRESET_FC_SCENE1_CS1_MODE', displayLabel: '1', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -1650,21 +1650,21 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'PRESET', paramId: 65522, name: 'PRESET_FC_SCENE_CS_ALL_OFF', displayLabel: 'Set all OFF', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 0, name: 'RESONATOR_MODE', unit: 'unverified' },
   { family: 'RESONATOR', paramId: 1, name: 'RESONATOR_CHORD', displayLabel: 'Chord Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 2, name: 'RESONATOR_INGAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RESONATOR', paramId: 2, name: 'RESONATOR_INGAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'RESONATOR', paramId: 3, name: 'RESONATOR_FREQ', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 4, name: 'RESONATOR_MASTERFREQ', displayLabel: 'Master Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 5, name: 'RESONATOR_MASTERLVL', displayLabel: 'Master Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 6, name: 'RESONATOR_MASTERPAN', displayLabel: 'Master Pan', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 7, name: 'RESONATOR_MASTERFDBK', displayLabel: 'Master Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RESONATOR', paramId: 5, name: 'RESONATOR_MASTERLVL', displayLabel: 'Master Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 6, name: 'RESONATOR_MASTERPAN', displayLabel: 'Master Pan', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 7, name: 'RESONATOR_MASTERFDBK', displayLabel: 'Master Feedback', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'RESONATOR', paramId: 8, name: 'RESONATOR_MASTERQ', displayLabel: 'Master Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 9, name: 'RESONATOR_FREQ1', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 10, name: 'RESONATOR_FREQ2', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 11, name: 'RESONATOR_FREQ3', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 12, name: 'RESONATOR_FREQ4', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 13, name: 'RESONATOR_FDBK1', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 14, name: 'RESONATOR_FDBK2', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 15, name: 'RESONATOR_FDBK3', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 16, name: 'RESONATOR_FDBK4', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RESONATOR', paramId: 13, name: 'RESONATOR_FDBK1', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 14, name: 'RESONATOR_FDBK2', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 15, name: 'RESONATOR_FDBK3', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 16, name: 'RESONATOR_FDBK4', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'RESONATOR', paramId: 17, name: 'RESONATOR_LOC1', displayLabel: 'Fltr Location', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 18, name: 'RESONATOR_LOC2', displayLabel: 'Fltr Location', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 19, name: 'RESONATOR_LOC3', displayLabel: 'Fltr Location', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -1673,16 +1673,16 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'RESONATOR', paramId: 22, name: 'RESONATOR_Q2', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 23, name: 'RESONATOR_Q3', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RESONATOR', paramId: 24, name: 'RESONATOR_Q4', displayLabel: 'Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 25, name: 'RESONATOR_LEVEL1', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 26, name: 'RESONATOR_LEVEL2', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 27, name: 'RESONATOR_LEVEL3', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RESONATOR', paramId: 28, name: 'RESONATOR_LEVEL4', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RESONATOR', paramId: 25, name: 'RESONATOR_LEVEL1', displayLabel: 'Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 26, name: 'RESONATOR_LEVEL2', displayLabel: 'Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 27, name: 'RESONATOR_LEVEL3', displayLabel: 'Level', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'RESONATOR', paramId: 28, name: 'RESONATOR_LEVEL4', displayLabel: 'Level', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'RESONATOR', paramId: 29, name: 'RESONATOR_PAN1', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'RESONATOR', paramId: 30, name: 'RESONATOR_PAN2', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'RESONATOR', paramId: 31, name: 'RESONATOR_PAN3', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'RESONATOR', paramId: 32, name: 'RESONATOR_PAN4', displayLabel: 'Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'RESONATOR', paramId: 33, name: 'RESONATOR_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'RESONATOR', paramId: 34, name: 'RESONATOR_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RESONATOR', paramId: 34, name: 'RESONATOR_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'RESONATOR', paramId: 35, name: 'RESONATOR_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'RESONATOR', paramId: 36, name: 'RESONATOR_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'RESONATOR', paramId: 37, name: 'RESONATOR_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
@@ -1696,20 +1696,20 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'REVERB', paramId: 5, name: 'REVERB_SIZE', displayLabel: 'Size', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'REVERB', paramId: 6, name: 'REVERB_REVERBDELAY', unit: 'ms', displayMin: 0, displayMax: 250 }, // inferred from AM4
   { family: 'REVERB', paramId: 7, name: 'REVERB_EARLYLEVEL', displayLabel: 'Early Level', unit: 'db', displayMin: -40, displayMax: 10 }, // inferred from AM4
-  { family: 'REVERB', paramId: 8, name: 'REVERB_REVERBLEVEL', displayLabel: 'Late Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 8, name: 'REVERB_REVERBLEVEL', displayLabel: 'Late Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'REVERB', paramId: 9, name: 'REVERB_PREDELAY', displayLabel: 'Pre-Delay', unit: 'ms', displayMin: 0, displayMax: 250 }, // inferred from AM4
   { family: 'REVERB', paramId: 10, name: 'REVERB_LOWCUT', displayLabel: 'Low Cut Frequency', unit: 'hz', displayMin: 20, displayMax: 2000 }, // inferred from AM4
   { family: 'REVERB', paramId: 11, name: 'REVERB_DEPTH', displayLabel: 'Depth', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'REVERB', paramId: 12, name: 'REVERB_RATE', displayLabel: 'Rate', unit: 'hz', displayMin: 0.01, displayMax: 1 }, // inferred from AM4
   { family: 'REVERB', paramId: 13, name: 'REVERB_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
-  { family: 'REVERB', paramId: 14, name: 'REVERB_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 14, name: 'REVERB_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'REVERB', paramId: 15, name: 'REVERB_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'REVERB', paramId: 16, name: 'REVERB_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'REVERB', paramId: 17, name: 'REVERB_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'REVERB', paramId: 18, name: 'REVERB_GAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 18, name: 'REVERB_GAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'REVERB', paramId: 19, name: 'REVERB_DENSITY', displayLabel: 'Echo Density', unit: 'count', displayMin: 4, displayMax: 8 }, // inferred from AM4
-  { family: 'REVERB', paramId: 20, name: 'REVERB_INPDIFF', displayLabel: 'Input Diffusion', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'REVERB', paramId: 21, name: 'REVERB_INDIFFTIME', displayLabel: 'Input Diff Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 20, name: 'REVERB_INPDIFF', displayLabel: 'Input Diffusion', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'REVERB', paramId: 21, name: 'REVERB_INDIFFTIME', displayLabel: 'Input Diff Time', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'REVERB', paramId: 22, name: 'REVERB_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'REVERB', paramId: 23, name: 'REVERB_NUMSPRINGS', displayLabel: 'No. of Springs', unit: 'count', displayMin: 2, displayMax: 6 }, // inferred from AM4
   { family: 'REVERB', paramId: 24, name: 'REVERB_TONE', displayLabel: 'Tone', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -1722,21 +1722,21 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'REVERB', paramId: 31, name: 'REVERB_GAIN2', displayLabel: 'Gain 2', unit: 'db', displayMin: -12, displayMax: 12 }, // inferred from AM4
   { family: 'REVERB', paramId: 32, name: 'REVERB_DRIVE', displayLabel: 'Drive', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'REVERB', paramId: 33, name: 'REVERB_LFTIME', displayLabel: 'Low Decay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'REVERB', paramId: 34, name: 'REVERB_LFXOVER', displayLabel: 'Crossover Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'REVERB', paramId: 35, name: 'REVERB_SPREAD', displayLabel: 'Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'REVERB', paramId: 36, name: 'REVERB_ATTEN', displayLabel: 'Attenuation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 34, name: 'REVERB_LFXOVER', displayLabel: 'Crossover Frequency', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'REVERB', paramId: 35, name: 'REVERB_SPREAD', displayLabel: 'Spread', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'REVERB', paramId: 36, name: 'REVERB_ATTEN', displayLabel: 'Attenuation', unit: 'db' }, // unit from typecode class 0x1
   { family: 'REVERB', paramId: 37, name: 'REVERB_THRESH', displayLabel: 'Threshold', unit: 'db', displayMin: -80, displayMax: 20 }, // inferred from AM4
-  { family: 'REVERB', paramId: 38, name: 'REVERB_RELEASE', displayLabel: 'Release Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 38, name: 'REVERB_RELEASE', displayLabel: 'Release Time', unit: 'ms' }, // unit from typecode class 0x4
   { family: 'REVERB', paramId: 39, name: 'REVERB_EARLYDIFF', displayLabel: 'Early Diffusion', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'REVERB', paramId: 40, name: 'REVERB_EARLYDIFFTIME', displayLabel: 'Early Diff Time', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'REVERB', paramId: 41, name: 'REVERB_EARLYDECAY', displayLabel: 'Early Decay', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
-  { family: 'REVERB', paramId: 42, name: 'REVERB_EARLYSEND', displayLabel: 'Late Input Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 42, name: 'REVERB_EARLYSEND', displayLabel: 'Late Input Mix', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'REVERB', paramId: 43, name: 'REVERB_QUALITY', displayLabel: 'Quality', unit: 'enum' }, // inferred from AM4
   { family: 'REVERB', paramId: 44, name: 'REVERB_HOLD', displayLabel: 'Stack/Hold', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'REVERB', paramId: 45, name: 'REVERB_BASETYPE', unit: 'count', displayMin: 0, displayMax: 8 }, // inferred from AM4
   { family: 'REVERB', paramId: 46, name: 'REVERB_LFOPHASE', displayLabel: 'LFO Phase', unit: 'degrees', displayMin: 0, displayMax: 180 }, // inferred from AM4
   { family: 'REVERB', paramId: 47, name: 'REVERB_INPUTSELECT', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AM4
-  { family: 'REVERB', paramId: 48, name: 'REVERB_DISPERSION', displayLabel: 'Boiiinnng!', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'REVERB', paramId: 48, name: 'REVERB_DISPERSION', displayLabel: 'Boiiinnng!', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'REVERB', paramId: 49, name: 'REVERB_LOWSLOPE', displayLabel: 'Low Cut Slope', unit: 'enum' }, // inferred from AM4
   { family: 'REVERB', paramId: 50, name: 'REVERB_HIGHSLOPE', displayLabel: 'High Cut Slope', unit: 'enum' }, // inferred from AM4
   { family: 'REVERB', paramId: 51, name: 'REVERB_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention; device-true 51 (III 60 would mis-address)
@@ -1744,27 +1744,27 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'REVERB', paramId: 53, name: 'REVERB_PITCHMIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4; device-true 53 (III 51 would mis-address)
   { family: 'REVERB', paramId: 54, name: 'REVERB_SHIFT1', displayLabel: 'Voice 1 Shift', unit: 'semitones', displayMin: -24, displayMax: 24 }, // inferred from AM4; device-true 54 (III 52 would mis-address)
   { family: 'REVERB', paramId: 55, name: 'REVERB_SHIFT2', displayLabel: 'Voice 2 Shift', unit: 'semitones', displayMin: -24, displayMax: 24 }, // inferred from AM4; device-true 55 (III 53 would mis-address)
-  { family: 'REVERB', paramId: 56, name: 'REVERB_PITCHFDBK', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 56 (III 54 would mis-address)
+  { family: 'REVERB', paramId: 56, name: 'REVERB_PITCHFDBK', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5; device-true 56 (III 54 would mis-address)
   { family: 'REVERB', paramId: 57, name: 'REVERB_PITCHDIR', displayLabel: 'Direction', unit: 'count', displayMin: 0, displayMax: 3 }, // inferred from AM4; device-true 57 (III 55 would mis-address)
-  { family: 'REVERB', paramId: 58, name: 'REVERB_PITCHTIME', displayLabel: 'Splice Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 58 (III 56 would mis-address)
+  { family: 'REVERB', paramId: 58, name: 'REVERB_PITCHTIME', displayLabel: 'Splice Time', unit: 'ms' }, // unit from typecode class 0x4; device-true 58 (III 56 would mis-address)
   { family: 'REVERB', paramId: 59, name: 'REVERB_PITCHPOS', displayLabel: 'Position', unit: 'count', displayMin: 0, displayMax: 2 }, // inferred from AM4; device-true 59 (III 57 would mis-address)
-  { family: 'REVERB', paramId: 60, name: 'REVERB_PITCHMOD', displayLabel: 'Modulation', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 60 (III 58 would mis-address)
-  { family: 'REVERB', paramId: 61, name: 'REVERB_PITCHBAL', displayLabel: 'Voice Balance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 61 (III 59 would mis-address)
+  { family: 'REVERB', paramId: 60, name: 'REVERB_PITCHMOD', displayLabel: 'Modulation', unit: 'percent' }, // unit from typecode class 0x5; device-true 60 (III 58 would mis-address)
+  { family: 'REVERB', paramId: 61, name: 'REVERB_PITCHBAL', displayLabel: 'Voice Balance', unit: 'percent' }, // unit from typecode class 0x5; device-true 61 (III 59 would mis-address)
   { family: 'REVERB', paramId: 62, name: 'REVERB_PREDLYTEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AM4; device-true 62 (III 61 would mis-address)
-  { family: 'REVERB', paramId: 63, name: 'REVERB_PREDLYFDBK', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 63 (III 62 would mis-address)
-  { family: 'REVERB', paramId: 64, name: 'REVERB_PREDLYMIX', displayLabel: 'Echo Mix', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 64 (III 63 would mis-address)
-  { family: 'REVERB', paramId: 65, name: 'REVERB_PITCHLPF', displayLabel: 'Pitch High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType; device-true 65 (III 64 would mis-address)
+  { family: 'REVERB', paramId: 63, name: 'REVERB_PREDLYFDBK', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5; device-true 63 (III 62 would mis-address)
+  { family: 'REVERB', paramId: 64, name: 'REVERB_PREDLYMIX', displayLabel: 'Echo Mix', unit: 'percent' }, // unit from typecode class 0x5; device-true 64 (III 63 would mis-address)
+  { family: 'REVERB', paramId: 65, name: 'REVERB_PITCHLPF', displayLabel: 'Pitch High Cut', unit: 'hz' }, // unit from typecode class 0x2; device-true 65 (III 64 would mis-address)
   { family: 'REVERB', paramId: 66, name: 'REVERB_SPRINGTYPE', displayLabel: 'Tank Type', unit: 'enum' }, // inferred from AM4; device-true 66 (III 65 would mis-address)
   { family: 'REVERB', paramId: 67, name: 'REVERB_TONETYPE', unit: 'db', displayMin: 0, displayMax: 3 }, // inferred from AM4; device-true 67 (III 66 would mis-address)
   { family: 'REVERB', paramId: 68, name: 'REVERB_PREDLYTAP', displayLabel: 'Tap', unit: 'enum' }, // inferred from AM4; device-true 68 (III 67 would mis-address)
   { family: 'REVERB', paramId: 69, name: 'REVERB_LOWQ', displayLabel: 'Low Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'REVERB', paramId: 70, name: 'REVERB_HIGHQ', displayLabel: 'High Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'RINGMOD', paramId: 0, name: 'RINGMOD_COARSE', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RINGMOD', paramId: 0, name: 'RINGMOD_COARSE', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'RINGMOD', paramId: 1, name: 'RINGMOD_FINE', displayLabel: 'Frequency Multiplier', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'RINGMOD', paramId: 2, name: 'RINGMOD_TRACK', displayLabel: 'Pitch Tracking', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'RINGMOD', paramId: 3, name: 'RINGMOD_HICUT', displayLabel: 'High Cut Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RINGMOD', paramId: 3, name: 'RINGMOD_HICUT', displayLabel: 'High Cut Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'RINGMOD', paramId: 4, name: 'RINGMOD_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'RINGMOD', paramId: 5, name: 'RINGMOD_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'RINGMOD', paramId: 5, name: 'RINGMOD_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'RINGMOD', paramId: 6, name: 'RINGMOD_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'RINGMOD', paramId: 7, name: 'RINGMOD_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'RINGMOD', paramId: 8, name: 'RINGMOD_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
@@ -1773,22 +1773,22 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'RINGMOD', paramId: 11, name: 'RINGMOD_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'RINGMOD', paramId: 12, name: 'RINGMOD_PD_RANGE', displayLabel: 'Tracking Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'ROTARY', paramId: 0, name: 'ROTARY_RATE', displayLabel: 'Rate', unit: 'hz', displayMin: 0, displayMax: 10 }, // inferred from AM4
-  { family: 'ROTARY', paramId: 1, name: 'ROTARY_LFDEPTH', displayLabel: 'Low Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'ROTARY', paramId: 2, name: 'ROTARY_HFDEPTH', displayLabel: 'Hi Depth', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'ROTARY', paramId: 3, name: 'ROTARY_HFLEVEL', displayLabel: 'High Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'ROTARY', paramId: 1, name: 'ROTARY_LFDEPTH', displayLabel: 'Low Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'ROTARY', paramId: 2, name: 'ROTARY_HFDEPTH', displayLabel: 'Hi Depth', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'ROTARY', paramId: 3, name: 'ROTARY_HFLEVEL', displayLabel: 'High Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'ROTARY', paramId: 4, name: 'ROTARY_TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AM4
   { family: 'ROTARY', paramId: 5, name: 'ROTARY_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'ROTARY', paramId: 6, name: 'ROTARY_LEVEL', displayLabel: 'Level', unit: 'db', displayMin: -80, displayMax: 20 }, // inferred from AM4
   { family: 'ROTARY', paramId: 7, name: 'ROTARY_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'ROTARY', paramId: 8, name: 'ROTARY_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from AM4
   { family: 'ROTARY', paramId: 9, name: 'ROTARY_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'ROTARY', paramId: 10, name: 'ROTARY_HFLENGTH', displayLabel: 'Rotor Length', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'ROTARY', paramId: 10, name: 'ROTARY_HFLENGTH', displayLabel: 'Rotor Length', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'ROTARY', paramId: 11, name: 'ROTARY_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'ROTARY', paramId: 12, name: 'ROTARY_WIDTH', displayLabel: 'Mic Spacing', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'ROTARY', paramId: 12, name: 'ROTARY_WIDTH', displayLabel: 'Mic Spacing', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'ROTARY', paramId: 13, name: 'ROTARY_LOWRATE', displayLabel: 'Low Rate Mult', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'ROTARY', paramId: 14, name: 'ROTARY_LOWTIME', displayLabel: 'Low Time Constant', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'ROTARY', paramId: 15, name: 'ROTARY_HIGHTIME', displayLabel: 'Hi Time Constant', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'ROTARY', paramId: 16, name: 'ROTARY_SPREAD', displayLabel: 'Stereo Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'ROTARY', paramId: 14, name: 'ROTARY_LOWTIME', displayLabel: 'Low Time Constant', unit: 'seconds' }, // unit from typecode class 0x3
+  { family: 'ROTARY', paramId: 15, name: 'ROTARY_HIGHTIME', displayLabel: 'Hi Time Constant', unit: 'seconds' }, // unit from typecode class 0x3
+  { family: 'ROTARY', paramId: 16, name: 'ROTARY_SPREAD', displayLabel: 'Stereo Spread', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'ROTARY', paramId: 17, name: 'ROTARY_DRIVE', displayLabel: 'Drive', unit: 'knob_0_10', displayMin: 0.5, displayMax: 500, scaling: 'log10' }, // inferred from AM4
   { family: 'ROTARY', paramId: 18, name: 'ROTARY_MICDIST', displayLabel: 'Mic Distance', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'ROTARY', paramId: 19, name: 'ROTARY_INPUTSELECT', displayLabel: 'Input Select', unit: 'enum' }, // inferred from AM4
@@ -1800,44 +1800,44 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'RTA', paramId: 4, name: 'RTA_BAND', unit: 'unverified' },
   { family: 'RTA', paramId: 5, name: 'RTA_FREQ', unit: 'unverified' },
   { family: 'SYNTH', paramId: 0, name: 'SYNTH_TYPE1', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 1, name: 'SYNTH_FREQ1', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 1, name: 'SYNTH_FREQ1', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'SYNTH', paramId: 2, name: 'SYNTH_TRACK1', displayLabel: 'Track', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'SYNTH', paramId: 3, name: 'SYNTH_SHIFT1', displayLabel: 'Shift', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 4, name: 'SYNTH_DETUNE1', displayLabel: 'Tune', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 5, name: 'SYNTH_DUTY1', displayLabel: 'Duty Cycle', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 6, name: 'SYNTH_LEVEL1', displayLabel: 'Voice 1 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 4, name: 'SYNTH_DETUNE1', displayLabel: 'Tune', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'SYNTH', paramId: 5, name: 'SYNTH_DUTY1', displayLabel: 'Duty Cycle', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'SYNTH', paramId: 6, name: 'SYNTH_LEVEL1', displayLabel: 'Voice 1 Level', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'SYNTH', paramId: 7, name: 'SYNTH_PAN1', displayLabel: 'Voice 1 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'SYNTH', paramId: 8, name: 'SYNTH_ATTACK1', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 9, name: 'SYNTH_HICUT1', displayLabel: 'Filter Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 8, name: 'SYNTH_ATTACK1', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'SYNTH', paramId: 9, name: 'SYNTH_HICUT1', displayLabel: 'Filter Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'SYNTH', paramId: 10, name: 'SYNTH_Q1', displayLabel: 'Filter Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'SYNTH', paramId: 11, name: 'SYNTH_TYPE2', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 12, name: 'SYNTH_FREQ2', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 12, name: 'SYNTH_FREQ2', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'SYNTH', paramId: 13, name: 'SYNTH_TRACK2', displayLabel: 'Track', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'SYNTH', paramId: 14, name: 'SYNTH_SHIFT2', displayLabel: 'Shift', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 15, name: 'SYNTH_DETUNE2', displayLabel: 'Tune', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 16, name: 'SYNTH_DUTY2', displayLabel: 'Duty Cycle', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 17, name: 'SYNTH_LEVEL2', displayLabel: 'Voice 2 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 15, name: 'SYNTH_DETUNE2', displayLabel: 'Tune', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'SYNTH', paramId: 16, name: 'SYNTH_DUTY2', displayLabel: 'Duty Cycle', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'SYNTH', paramId: 17, name: 'SYNTH_LEVEL2', displayLabel: 'Voice 2 Level', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'SYNTH', paramId: 18, name: 'SYNTH_PAN2', displayLabel: 'Voice 2 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'SYNTH', paramId: 19, name: 'SYNTH_ATTACK2', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 20, name: 'SYNTH_HICUT2', displayLabel: 'Filter Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 19, name: 'SYNTH_ATTACK2', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'SYNTH', paramId: 20, name: 'SYNTH_HICUT2', displayLabel: 'Filter Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'SYNTH', paramId: 21, name: 'SYNTH_Q2', displayLabel: 'Filter Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'SYNTH', paramId: 22, name: 'SYNTH_SPARE1', unit: 'unverified' },
   { family: 'SYNTH', paramId: 23, name: 'SYNTH_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'SYNTH', paramId: 24, name: 'SYNTH_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 24, name: 'SYNTH_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'SYNTH', paramId: 25, name: 'SYNTH_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'SYNTH', paramId: 26, name: 'SYNTH_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'SYNTH', paramId: 27, name: 'SYNTH_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
   { family: 'SYNTH', paramId: 28, name: 'SYNTH_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'SYNTH', paramId: 29, name: 'SYNTH_TYPE3', displayLabel: 'Type', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 30, name: 'SYNTH_FREQ3', displayLabel: 'Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 30, name: 'SYNTH_FREQ3', displayLabel: 'Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'SYNTH', paramId: 31, name: 'SYNTH_TRACK3', displayLabel: 'Track', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'SYNTH', paramId: 32, name: 'SYNTH_SHIFT3', displayLabel: 'Shift', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 33, name: 'SYNTH_DETUNE3', displayLabel: 'Tune', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 34, name: 'SYNTH_DUTY3', displayLabel: 'Duty Cycle', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 35, name: 'SYNTH_LEVEL3', displayLabel: 'Voice 3 Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 33, name: 'SYNTH_DETUNE3', displayLabel: 'Tune', unit: 'cents' }, // unit from typecode class 0x7
+  { family: 'SYNTH', paramId: 34, name: 'SYNTH_DUTY3', displayLabel: 'Duty Cycle', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'SYNTH', paramId: 35, name: 'SYNTH_LEVEL3', displayLabel: 'Voice 3 Level', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'SYNTH', paramId: 36, name: 'SYNTH_PAN3', displayLabel: 'Voice 3 Pan', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'SYNTH', paramId: 37, name: 'SYNTH_ATTACK3', displayLabel: 'Attack', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'SYNTH', paramId: 38, name: 'SYNTH_HICUT3', displayLabel: 'Filter Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'SYNTH', paramId: 37, name: 'SYNTH_ATTACK3', displayLabel: 'Attack', unit: 'ms' }, // unit from typecode class 0x4
+  { family: 'SYNTH', paramId: 38, name: 'SYNTH_HICUT3', displayLabel: 'Filter Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'SYNTH', paramId: 39, name: 'SYNTH_Q3', displayLabel: 'Filter Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'SYNTH', paramId: 40, name: 'SYNTH_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
   { family: 'SYNTH', paramId: 41, name: 'SYNTH_PD_RANGE', displayLabel: 'Tracking Mode', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -1846,18 +1846,18 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'TENTAP', paramId: 2, name: 'TENTAP_TIMEM', displayLabel: 'Delay Time', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'TENTAP', paramId: 3, name: 'TENTAP_SUBDIV', unit: 'unverified' },
   { family: 'TENTAP', paramId: 4, name: 'TENTAP_QUANTIZE', displayLabel: 'Quantize', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 5, name: 'TENTAP_RDECAY', displayLabel: 'Decay', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TENTAP', paramId: 5, name: 'TENTAP_RDECAY', displayLabel: 'Decay', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'TENTAP', paramId: 6, name: 'TENTAP_DECAYSTYLE', unit: 'unverified' },
   { family: 'TENTAP', paramId: 7, name: 'TENTAP_NUMTAPS', displayLabel: 'Number of Taps', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 8, name: 'TENTAP_SHUFFLE', displayLabel: 'Shuffle', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TENTAP', paramId: 8, name: 'TENTAP_SHUFFLE', displayLabel: 'Shuffle', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'TENTAP', paramId: 9, name: 'TENTAP_RTEMPO', displayLabel: 'Delay Tempo', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 10, name: 'TENTAP_SPREAD', displayLabel: 'Spread', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TENTAP', paramId: 10, name: 'TENTAP_SPREAD', displayLabel: 'Spread', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'TENTAP', paramId: 11, name: 'TENTAP_PANSHAPE', displayLabel: 'Pan Shape', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 12, name: 'TENTAP_PANALPHA', displayLabel: 'Pan Alpha', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 13, name: 'TENTAP_LOWCUT', displayLabel: 'Low Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 14, name: 'TENTAP_HIGHCUT', displayLabel: 'High Cut', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 15, name: 'TENTAP_OFFSET', displayLabel: 'Ratio', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 16, name: 'TENTAP_FEEDBACK', displayLabel: 'Feedback', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TENTAP', paramId: 12, name: 'TENTAP_PANALPHA', displayLabel: 'Pan Alpha', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'TENTAP', paramId: 13, name: 'TENTAP_LOWCUT', displayLabel: 'Low Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'TENTAP', paramId: 14, name: 'TENTAP_HIGHCUT', displayLabel: 'High Cut', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'TENTAP', paramId: 15, name: 'TENTAP_OFFSET', displayLabel: 'Ratio', unit: 'percent' }, // unit from typecode class 0x5
+  { family: 'TENTAP', paramId: 16, name: 'TENTAP_FEEDBACK', displayLabel: 'Feedback', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'TENTAP', paramId: 17, name: 'TENTAP_TIME1M', displayLabel: 'Time 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'TENTAP', paramId: 18, name: 'TENTAP_TIME2M', displayLabel: 'Time 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'TENTAP', paramId: 19, name: 'TENTAP_TIME3M', displayLabel: 'Time 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -1868,21 +1868,21 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'TENTAP', paramId: 24, name: 'TENTAP_TIME8M', displayLabel: 'Time 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'TENTAP', paramId: 25, name: 'TENTAP_TIME9M', displayLabel: 'Time 9', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'TENTAP', paramId: 26, name: 'TENTAP_TIME10M', displayLabel: 'Time 10', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 27, name: 'TENTAP_RLEVEL1', displayLabel: 'Level 1', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 28, name: 'TENTAP_RLEVEL2', displayLabel: 'Level 2', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 29, name: 'TENTAP_RLEVEL3', displayLabel: 'Level 3', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 30, name: 'TENTAP_RLEVEL4', displayLabel: 'Level 4', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 31, name: 'TENTAP_RLEVEL5', displayLabel: 'Level 5', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 32, name: 'TENTAP_RLEVEL6', displayLabel: 'Level 6', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 33, name: 'TENTAP_RLEVEL7', displayLabel: 'Level 7', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 34, name: 'TENTAP_RLEVEL8', displayLabel: 'Level 8', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 35, name: 'TENTAP_RLEVEL9', displayLabel: 'Level 9', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TENTAP', paramId: 36, name: 'TENTAP_RLEVEL10', displayLabel: 'Level 10', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TENTAP', paramId: 27, name: 'TENTAP_RLEVEL1', displayLabel: 'Level 1', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 28, name: 'TENTAP_RLEVEL2', displayLabel: 'Level 2', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 29, name: 'TENTAP_RLEVEL3', displayLabel: 'Level 3', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 30, name: 'TENTAP_RLEVEL4', displayLabel: 'Level 4', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 31, name: 'TENTAP_RLEVEL5', displayLabel: 'Level 5', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 32, name: 'TENTAP_RLEVEL6', displayLabel: 'Level 6', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 33, name: 'TENTAP_RLEVEL7', displayLabel: 'Level 7', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 34, name: 'TENTAP_RLEVEL8', displayLabel: 'Level 8', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 35, name: 'TENTAP_RLEVEL9', displayLabel: 'Level 9', unit: 'db' }, // unit from typecode class 0x1
+  { family: 'TENTAP', paramId: 36, name: 'TENTAP_RLEVEL10', displayLabel: 'Level 10', unit: 'db' }, // unit from typecode class 0x1
   { family: 'TENTAP', paramId: 37, name: 'TENTAP_REFTEMPO', unit: 'unverified' },
   { family: 'TENTAP', paramId: 38, name: 'TENTAP_TRACKTEMPO', unit: 'unverified' },
-  { family: 'TENTAP', paramId: 39, name: 'TENTAP_INGAIN', displayLabel: 'Input Gain', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TENTAP', paramId: 39, name: 'TENTAP_INGAIN', displayLabel: 'Input Gain', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'TENTAP', paramId: 40, name: 'TENTAP_MIX', displayLabel: 'Mix', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
-  { family: 'TENTAP', paramId: 41, name: 'TENTAP_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TENTAP', paramId: 41, name: 'TENTAP_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'TENTAP', paramId: 42, name: 'TENTAP_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'TENTAP', paramId: 43, name: 'TENTAP_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'TENTAP', paramId: 44, name: 'TENTAP_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
@@ -1922,7 +1922,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'TREMOLO', paramId: 4, name: 'TREMOLO_DUTY', displayLabel: 'LFO Duty Cycle', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'TREMOLO', paramId: 5, name: 'TREMOLO_TEMPO', displayLabel: 'Tempo', unit: 'enum' }, // inferred from AM4
   { family: 'TREMOLO', paramId: 6, name: 'TREMOLO_MIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
-  { family: 'TREMOLO', paramId: 7, name: 'TREMOLO_LEVEL', displayLabel: 'Level', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TREMOLO', paramId: 7, name: 'TREMOLO_LEVEL', displayLabel: 'Level', unit: 'db' }, // unit from typecode class 0x1
   { family: 'TREMOLO', paramId: 8, name: 'TREMOLO_PAN', displayLabel: 'Balance', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from Fractal convention
   { family: 'TREMOLO', paramId: 9, name: 'TREMOLO_BYPASSMODE', displayLabel: 'Bypass Mode', unit: 'enum' }, // inferred from Fractal convention
   { family: 'TREMOLO', paramId: 10, name: 'TREMOLO_GLOBALMIX', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from Fractal convention
@@ -1930,12 +1930,12 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'TREMOLO', paramId: 12, name: 'TREMOLO_WIDTH', displayLabel: 'Width', unit: 'percent', displayMin: 0, displayMax: 100 }, // inferred from AM4
   { family: 'TREMOLO', paramId: 13, name: 'TREMOLO_CENTER', displayLabel: 'Pan Center', unit: 'bipolar_percent', displayMin: -100, displayMax: 100 }, // inferred from AM4
   { family: 'TREMOLO', paramId: 14, name: 'TREMOLO_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'TREMOLO', paramId: 15, name: 'TREMOLO_STARTPHASE', displayLabel: 'Start Phase', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TREMOLO', paramId: 15, name: 'TREMOLO_STARTPHASE', displayLabel: 'Start Phase', unit: 'degrees' }, // unit from typecode class 0x6
   { family: 'TREMOLO', paramId: 16, name: 'TREMOLO_ORDER', displayLabel: 'Crossover Slope', unit: 'enum' }, // inferred from AxeEdit III XML controlType
-  { family: 'TREMOLO', paramId: 17, name: 'TREMOLO_XOVER', displayLabel: 'Crossover Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'TREMOLO', paramId: 18, name: 'TREMOLO_THRESH', displayLabel: 'Trigger Threshold', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TREMOLO', paramId: 17, name: 'TREMOLO_XOVER', displayLabel: 'Crossover Frequency', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'TREMOLO', paramId: 18, name: 'TREMOLO_THRESH', displayLabel: 'Trigger Threshold', unit: 'db' }, // unit from typecode class 0x1
   { family: 'TREMOLO', paramId: 19, name: 'TREMOLO_SCENEIGNORE', displayLabel: 'Scene Ignore', unit: 'enum' }, // inferred from Fractal convention
-  { family: 'TREMOLO', paramId: 20, name: 'TREMOLO_BETA', displayLabel: 'LFO Shape', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'TREMOLO', paramId: 20, name: 'TREMOLO_BETA', displayLabel: 'LFO Shape', unit: 'percent' }, // unit from typecode class 0x5
   { family: 'TREMOLO', paramId: 21, name: 'TREMOLO_DUCKING', displayLabel: 'Ducking', unit: 'knob_0_10', displayMin: 0, displayMax: 10 }, // inferred from AM4
   { family: 'VOCODER', paramId: 0, name: 'VOCODER_ANSOURCE', displayLabel: 'Analysis Source', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'VOCODER', paramId: 1, name: 'VOCODER_ANCHANNEL', displayLabel: 'Analysis Channel', unit: 'enum' }, // inferred from AxeEdit III XML controlType
@@ -2020,8 +2020,8 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'VOLUME', paramId: 13, name: 'VOLUME_HYSTERESIS', displayLabel: 'Hysteresis', unit: 'db', displayMin: 0, displayMax: 12 }, // inferred from AM4
   { family: 'VOLUME', paramId: 14, name: 'VOLUME_METER', unit: 'unverified' },
   { family: 'WAH', paramId: 0, name: 'WAH_TYPE', unit: 'enum' }, // inferred from AM4
-  { family: 'WAH', paramId: 1, name: 'WAH_FSTART', displayLabel: 'Frequency Min', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'WAH', paramId: 2, name: 'WAH_FSTOP', displayLabel: 'Frequency Max', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'WAH', paramId: 1, name: 'WAH_FSTART', displayLabel: 'Frequency Min', unit: 'hz' }, // unit from typecode class 0x2
+  { family: 'WAH', paramId: 2, name: 'WAH_FSTOP', displayLabel: 'Frequency Max', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'WAH', paramId: 3, name: 'WAH_Q', displayLabel: 'Resonance Q', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'WAH', paramId: 4, name: 'WAH_TRACK', displayLabel: 'Q Tracking', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'WAH', paramId: 5, name: 'WAH_CONTROL', displayLabel: 'Control', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
@@ -2033,7 +2033,7 @@ export const FM3_PARAMS: readonly Param[] = [
   { family: 'WAH', paramId: 11, name: 'WAH_TAPER', displayLabel: 'Control Taper', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'WAH', paramId: 12, name: 'WAH_BYPASS', displayLabel: 'Bypass', unit: 'enum' }, // inferred from Fractal convention
   { family: 'WAH', paramId: 13, name: 'WAH_BIAS', displayLabel: 'Inductor Bias', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
-  { family: 'WAH', paramId: 14, name: 'WAH_HPF', displayLabel: 'Low Cut Frequency', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
+  { family: 'WAH', paramId: 14, name: 'WAH_HPF', displayLabel: 'Low Cut Frequency', unit: 'hz' }, // unit from typecode class 0x2
   { family: 'WAH', paramId: 15, name: 'WAH_EQON', displayLabel: 'Graphic EQ', unit: 'enum' }, // inferred from AxeEdit III XML controlType
   { family: 'WAH', paramId: 16, name: 'WAH_EQ1', displayLabel: '160', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
   { family: 'WAH', paramId: 17, name: 'WAH_EQ2', displayLabel: '250', unit: 'numeric' }, // inferred from AxeEdit III XML controlType
